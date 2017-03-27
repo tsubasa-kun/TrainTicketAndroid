@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">火车票12307</string>
+
+    <string name="login_text">登录</string>
+    <string name="account_text">账号</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="password_text">密码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="auto_login">自动登录</string>
+
+    <string name="register_text">注册</string>
+    <string name="re_password_text">确认密码</string>
+    <string name="re_password_hint">请再次输入密码</string>
+    <string name="real_name_text">真实姓名</string>
+    <string name="real_name_hint">请输入真实姓名</string>
+    <string name="id_number_text">身份证号</string>
+    <string name="id_number_hint">请输入身份证号</string>
+
+    <string name="main_tab_one">购票</string>
+    <string name="start_station_hint">出发地</string>
+    <string name="end_station_hint">目的地</string>
+    <string name="date_text">出发日期</string>
+    <string name="student_text">学生票</string>
+    <string name="model_all">全部</string>
+    <string name="model_gdc">G/D/C</string>
+    <string name="model_z">Z字头</string>
+    <string name="model_t">T字头</string>
+    <string name="model_k">K字头</string>
+    <string name="model_other">其他</string>
+    <string name="query_text">查询</string>
+    <string name="query_ticket_failed">查询车票失败</string>
+    <string name="swz_num_text">商务座\n%s</string>
+    <string name="zy_num_text">一等座\n%s</string>
+    <string name="ze_num_text">二等座\n%s</string>
+    <string name="yz_num_text">硬座\n%s</string>
+    <string name="yw_num_text">硬卧\n%s</string>
+    <string name="wz_num_text">无座\n%s</string>
+    <string name="submit_text">提交</string>
+    <string name="pay_success_text">支付成功！</string>
+    <string name="pay_failed_text">支付失败！</string>
+    <string name="tip">提示</string>
+
+    <string name="main_tab_two">订单</string>
+    <string name="order_now">未出行订单</string>
+    <string name="order_old">历史订单</string>
+
+    <string name="main_tab_three">我</string>
+    <string name="modify_info">修改信息</string>
+    <string name="reset_password">修改密码</string>
+    <string name="reset_password_old_password_text">原密码</string>
+    <string name="reset_password_old_password_hint">请输入原密码</string>
+    <string name="reset_password_new_password_text">新密码</string>
+    <string name="reset_password_new_password_hint">请输入新密码</string>
+    <string name="reset_password_re_new_password_text">确认新密码</string>
+    <string name="reset_password_re_new_password_hint">请再次输入新密码</string>
+
+    <string name="about">关于</string>
+
+    <string name="exit_text">注销</string>
+</resources>

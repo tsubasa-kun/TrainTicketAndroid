@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!--出发地目的地区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <AutoCompleteTextView
+            android:id="@+id/start_station_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:hint="@string/start_station_hint"
+            android:completionThreshold="1"/>
+
+        <ImageView
+            android:id="@+id/change_btn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_compare_arrows"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/end_station_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:hint="@string/end_station_hint"
+            android:completionThreshold="1"/>
+
+    </LinearLayout>
+
+    <!--日期区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkgray"
+            android:textSize="16dp"
+            android:text="@string/date_text"/>
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <!--学生票选项区域-->
+    <CheckBox
+        android:id="@+id/student_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/student_text"
+        android:textColor="@color/black" />
+
+    <!--车型选项区域-->
+    <RadioGroup
+        android:id="@+id/model_rg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/model_all_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/model_radio_btn_bg"
+            android:text="@string/model_all"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/model_gdc_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/model_radio_btn_bg"
+            android:text="@string/model_gdc"
+            android:textColor="@drawable/model_radio_btn_text_color"/>
+
+        <RadioButton
+            android:id="@+id/model_z_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/model_radio_btn_bg"
+            android:text="@string/model_z"
+            android:textColor="@drawable/model_radio_btn_text_color"/>
+
+        <RadioButton
+            android:id="@+id/model_t_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/model_radio_btn_bg"
+            android:text="@string/model_t"
+            android:textColor="@drawable/model_radio_btn_text_color"/>
+
+        <RadioButton
+            android:id="@+id/model_k_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/model_radio_btn_bg"
+            android:text="@string/model_k"
+            android:textColor="@drawable/model_radio_btn_text_color"/>
+
+        <RadioButton
+            android:id="@+id/model_other_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/model_radio_btn_bg"
+            android:text="@string/model_other"
+            android:textColor="@drawable/model_radio_btn_text_color"/>
+
+    </RadioGroup>
+
+    <!--查询按钮区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/query_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_btn_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/query_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

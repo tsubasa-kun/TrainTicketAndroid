@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/view_title_bar" />
+
+    <!--车票信息区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <!--出发地及出发时间区域-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/start_station_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="徐州" />
+
+            <TextView
+                android:id="@+id/start_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                tools:text="12:30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--车次编号-->
+            <TextView
+                android:id="@+id/train_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="G1213" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_trending_flat" />
+
+            <TextView
+                android:id="@+id/take_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                tools:text="12:30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/end_station_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="徐州" />
+
+            <TextView
+                android:id="@+id/end_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                tools:text="12:30" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_color" />
+
+    <!--座次选择区域-->
+    <com.wyt.trainticket.view.widget.RadioGroupEx
+        android:id="@+id/seat_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/swz_rb"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/model_radio_btn_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:textSize="16sp"
+            tools:text="@string/swz_num_text" />
+
+        <RadioButton
+            android:id="@+id/zy_rb"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/model_radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:textSize="16sp"
+            tools:text="@string/zy_num_text" />
+
+        <RadioButton
+            android:id="@+id/ze_rb"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/model_radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:textSize="16sp"
+            tools:text="@string/ze_num_text" />
+
+        <RadioButton
+            android:id="@+id/yz_rb"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/model_radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:textSize="16sp"
+            tools:text="@string/yz_num_text" />
+
+        <RadioButton
+            android:id="@+id/yw_rb"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/model_radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:textSize="16sp"
+            tools:text="@string/yw_num_text" />
+
+        <RadioButton
+            android:id="@+id/wz_rb"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/model_radio_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/model_radio_btn_text_color"
+            android:textSize="16sp"
+            tools:text="@string/wz_num_text" />
+
+    </com.wyt.trainticket.view.widget.RadioGroupEx>
+
+    <!--提交按钮区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_btn_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/submit_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

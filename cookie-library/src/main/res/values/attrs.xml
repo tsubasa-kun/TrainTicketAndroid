@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="border_inside_thickness" format="dimension" />
+        <attr name="border_outside_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="UnderlineView">
+        <attr name="type" format="enum">
+            <enum name="path" value="0" />
+            <enum name="region" value="1" />
+        </attr>
+        <attr name="family" format="string" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>

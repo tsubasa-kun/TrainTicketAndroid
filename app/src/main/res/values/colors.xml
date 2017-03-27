@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#51A8DD</color>
+    <color name="colorPrimaryDark">#51A8DD</color>
+    <color name="colorAccent">#51A8DD</color>
+
+    <color name="theme_color">#51A8DD</color>
+    <color name="common_btn_color">#51A8DD</color>
+    <color name="pressed_btn_color">#AA51A8DD</color>
+
+    <color name="white">#FFFFFF</color>
+</resources>

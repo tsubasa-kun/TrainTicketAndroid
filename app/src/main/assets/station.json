@@ -1,0 +1,10556 @@
+{
+  "station_info": [
+    {
+      "station": "北京北",
+      "code": "VAP"
+    },
+    {
+      "station": "北京东",
+      "code": "BOP"
+    },
+    {
+      "station": "北京",
+      "code": "BJP"
+    },
+    {
+      "station": "北京南",
+      "code": "VNP"
+    },
+    {
+      "station": "北京西",
+      "code": "BXP"
+    },
+    {
+      "station": "广州南",
+      "code": "IZQ"
+    },
+    {
+      "station": "重庆北",
+      "code": "CUW"
+    },
+    {
+      "station": "重庆",
+      "code": "CQW"
+    },
+    {
+      "station": "重庆南",
+      "code": "CRW"
+    },
+    {
+      "station": "广州东",
+      "code": "GGQ"
+    },
+    {
+      "station": "上海",
+      "code": "SHH"
+    },
+    {
+      "station": "上海南",
+      "code": "SNH"
+    },
+    {
+      "station": "上海虹桥",
+      "code": "AOH"
+    },
+    {
+      "station": "上海西",
+      "code": "SXH"
+    },
+    {
+      "station": "天津北",
+      "code": "TBP"
+    },
+    {
+      "station": "天津",
+      "code": "TJP"
+    },
+    {
+      "station": "天津南",
+      "code": "TIP"
+    },
+    {
+      "station": "天津西",
+      "code": "TXP"
+    },
+    {
+      "station": "长春",
+      "code": "CCT"
+    },
+    {
+      "station": "长春南",
+      "code": "CET"
+    },
+    {
+      "station": "长春西",
+      "code": "CRT"
+    },
+    {
+      "station": "成都东",
+      "code": "ICW"
+    },
+    {
+      "station": "成都南",
+      "code": "CNW"
+    },
+    {
+      "station": "成都",
+      "code": "CDW"
+    },
+    {
+      "station": "长沙",
+      "code": "CSQ"
+    },
+    {
+      "station": "长沙南",
+      "code": "CWQ"
+    },
+    {
+      "station": "福州",
+      "code": "FZS"
+    },
+    {
+      "station": "福州南",
+      "code": "FYS"
+    },
+    {
+      "station": "贵阳",
+      "code": "GIW"
+    },
+    {
+      "station": "广州",
+      "code": "GZQ"
+    },
+    {
+      "station": "广州西",
+      "code": "GXQ"
+    },
+    {
+      "station": "哈尔滨",
+      "code": "HBB"
+    },
+    {
+      "station": "哈尔滨东",
+      "code": "VBB"
+    },
+    {
+      "station": "哈尔滨西",
+      "code": "VAB"
+    },
+    {
+      "station": "合肥",
+      "code": "HFH"
+    },
+    {
+      "station": "合肥西",
+      "code": "HTH"
+    },
+    {
+      "station": "呼和浩特东",
+      "code": "NDC"
+    },
+    {
+      "station": "呼和浩特",
+      "code": "HHC"
+    },
+    {
+      "station": "海  口东",
+      "code": "KEQ"
+    },
+    {
+      "station": "海口东",
+      "code": "HMQ"
+    },
+    {
+      "station": "海口",
+      "code": "VUQ"
+    },
+    {
+      "station": "杭州东",
+      "code": "HGH"
+    },
+    {
+      "station": "杭州",
+      "code": "HZH"
+    },
+    {
+      "station": "杭州南",
+      "code": "XHH"
+    },
+    {
+      "station": "济南",
+      "code": "JNK"
+    },
+    {
+      "station": "济南东",
+      "code": "JAK"
+    },
+    {
+      "station": "济南西",
+      "code": "JGK"
+    },
+    {
+      "station": "昆明",
+      "code": "KMM"
+    },
+    {
+      "station": "昆明西",
+      "code": "KXM"
+    },
+    {
+      "station": "拉萨",
+      "code": "LSO"
+    },
+    {
+      "station": "兰州东",
+      "code": "LVJ"
+    },
+    {
+      "station": "兰州",
+      "code": "LZJ"
+    },
+    {
+      "station": "兰州西",
+      "code": "LAJ"
+    },
+    {
+      "station": "南昌",
+      "code": "NCG"
+    },
+    {
+      "station": "南京",
+      "code": "NJH"
+    },
+    {
+      "station": "南京南",
+      "code": "NKH"
+    },
+    {
+      "station": "南宁",
+      "code": "NNZ"
+    },
+    {
+      "station": "石家庄北",
+      "code": "VVP"
+    },
+    {
+      "station": "石家庄",
+      "code": "SJP"
+    },
+    {
+      "station": "沈阳",
+      "code": "SYT"
+    },
+    {
+      "station": "沈阳北",
+      "code": "SBT"
+    },
+    {
+      "station": "沈阳东",
+      "code": "SDT"
+    },
+    {
+      "station": "太原北",
+      "code": "TBV"
+    },
+    {
+      "station": "太原东",
+      "code": "TDV"
+    },
+    {
+      "station": "太原",
+      "code": "TYV"
+    },
+    {
+      "station": "武汉",
+      "code": "WHN"
+    },
+    {
+      "station": "王家营西",
+      "code": "KNM"
+    },
+    {
+      "station": "乌鲁木齐南",
+      "code": "WMR"
+    },
+    {
+      "station": "西安北",
+      "code": "EAY"
+    },
+    {
+      "station": "西安",
+      "code": "XAY"
+    },
+    {
+      "station": "西安南",
+      "code": "CAY"
+    },
+    {
+      "station": "西宁",
+      "code": "XNO"
+    },
+    {
+      "station": "银川",
+      "code": "YIJ"
+    },
+    {
+      "station": "郑州",
+      "code": "ZZF"
+    },
+    {
+      "station": "阿尔山",
+      "code": "ART"
+    },
+    {
+      "station": "安康",
+      "code": "AKY"
+    },
+    {
+      "station": "阿克苏",
+      "code": "ASR"
+    },
+    {
+      "station": "阿里河",
+      "code": "AHX"
+    },
+    {
+      "station": "阿拉山口",
+      "code": "AKR"
+    },
+    {
+      "station": "安平",
+      "code": "APT"
+    },
+    {
+      "station": "安庆",
+      "code": "AQH"
+    },
+    {
+      "station": "安顺",
+      "code": "ASW"
+    },
+    {
+      "station": "鞍山",
+      "code": "AST"
+    },
+    {
+      "station": "安阳",
+      "code": "AYF"
+    },
+    {
+      "station": "北安",
+      "code": "BAB"
+    },
+    {
+      "station": "蚌埠",
+      "code": "BBH"
+    },
+    {
+      "station": "白城",
+      "code": "BCT"
+    },
+    {
+      "station": "北海",
+      "code": "BHZ"
+    },
+    {
+      "station": "白河",
+      "code": "BEL"
+    },
+    {
+      "station": "白涧",
+      "code": "BAP"
+    },
+    {
+      "station": "宝鸡",
+      "code": "BJY"
+    },
+    {
+      "station": "滨江",
+      "code": "BJB"
+    },
+    {
+      "station": "博克图",
+      "code": "BKX"
+    },
+    {
+      "station": "百色",
+      "code": "BIZ"
+    },
+    {
+      "station": "白山市",
+      "code": "HJL"
+    },
+    {
+      "station": "北台",
+      "code": "BTT"
+    },
+    {
+      "station": "包头东",
+      "code": "BDC"
+    },
+    {
+      "station": "包头",
+      "code": "BTC"
+    },
+    {
+      "station": "北屯市",
+      "code": "BXR"
+    },
+    {
+      "station": "本溪",
+      "code": "BXT"
+    },
+    {
+      "station": "白云鄂博",
+      "code": "BEC"
+    },
+    {
+      "station": "白银西",
+      "code": "BXJ"
+    },
+    {
+      "station": "亳州",
+      "code": "BZH"
+    },
+    {
+      "station": "赤壁",
+      "code": "CBN"
+    },
+    {
+      "station": "常德",
+      "code": "VGQ"
+    },
+    {
+      "station": "承德",
+      "code": "CDP"
+    },
+    {
+      "station": "长甸",
+      "code": "CDT"
+    },
+    {
+      "station": "赤峰",
+      "code": "CFD"
+    },
+    {
+      "station": "茶陵",
+      "code": "CDG"
+    },
+    {
+      "station": "苍南",
+      "code": "CEH"
+    },
+    {
+      "station": "昌平",
+      "code": "CPP"
+    },
+    {
+      "station": "崇仁",
+      "code": "CRG"
+    },
+    {
+      "station": "昌图",
+      "code": "CTT"
+    },
+    {
+      "station": "长汀镇",
+      "code": "CDB"
+    },
+    {
+      "station": "曹县",
+      "code": "CXK"
+    },
+    {
+      "station": "楚雄",
+      "code": "COM"
+    },
+    {
+      "station": "陈相屯",
+      "code": "CXT"
+    },
+    {
+      "station": "长治北",
+      "code": "CBF"
+    },
+    {
+      "station": "池州",
+      "code": "IYH"
+    },
+    {
+      "station": "长征",
+      "code": "CZJ"
+    },
+    {
+      "station": "常州",
+      "code": "CZH"
+    },
+    {
+      "station": "郴州",
+      "code": "CZQ"
+    },
+    {
+      "station": "长治",
+      "code": "CZF"
+    },
+    {
+      "station": "沧州",
+      "code": "COP"
+    },
+    {
+      "station": "崇左",
+      "code": "CZZ"
+    },
+    {
+      "station": "大安北",
+      "code": "RNT"
+    },
+    {
+      "station": "大成",
+      "code": "DCT"
+    },
+    {
+      "station": "丹东",
+      "code": "DUT"
+    },
+    {
+      "station": "东方红",
+      "code": "DFB"
+    },
+    {
+      "station": "东莞东",
+      "code": "DMQ"
+    },
+    {
+      "station": "大虎山",
+      "code": "DHD"
+    },
+    {
+      "station": "敦煌",
+      "code": "DHJ"
+    },
+    {
+      "station": "敦化",
+      "code": "DHL"
+    },
+    {
+      "station": "德惠",
+      "code": "DHT"
+    },
+    {
+      "station": "东京城",
+      "code": "DJB"
+    },
+    {
+      "station": "大涧",
+      "code": "DFP"
+    },
+    {
+      "station": "都江堰",
+      "code": "DDW"
+    },
+    {
+      "station": "大连北",
+      "code": "DFT"
+    },
+    {
+      "station": "大理",
+      "code": "DKM"
+    },
+    {
+      "station": "大连",
+      "code": "DLT"
+    },
+    {
+      "station": "定南",
+      "code": "DNG"
+    },
+    {
+      "station": "大庆",
+      "code": "DZX"
+    },
+    {
+      "station": "东胜",
+      "code": "DOC"
+    },
+    {
+      "station": "大石桥",
+      "code": "DQT"
+    },
+    {
+      "station": "大同",
+      "code": "DTV"
+    },
+    {
+      "station": "东营",
+      "code": "DPK"
+    },
+    {
+      "station": "大杨树",
+      "code": "DUX"
+    },
+    {
+      "station": "都匀",
+      "code": "RYW"
+    },
+    {
+      "station": "邓州",
+      "code": "DOF"
+    },
+    {
+      "station": "达州",
+      "code": "RXW"
+    },
+    {
+      "station": "德州",
+      "code": "DZP"
+    },
+    {
+      "station": "额济纳",
+      "code": "EJC"
+    },
+    {
+      "station": "二连",
+      "code": "RLC"
+    },
+    {
+      "station": "恩施",
+      "code": "ESN"
+    },
+    {
+      "station": "福鼎",
+      "code": "FES"
+    },
+    {
+      "station": "凤凰机场",
+      "code": "FJQ"
+    },
+    {
+      "station": "风陵渡",
+      "code": "FLV"
+    },
+    {
+      "station": "涪陵",
+      "code": "FLW"
+    },
+    {
+      "station": "富拉尔基",
+      "code": "FRX"
+    },
+    {
+      "station": "抚顺北",
+      "code": "FET"
+    },
+    {
+      "station": "佛山",
+      "code": "FSQ"
+    },
+    {
+      "station": "阜新南",
+      "code": "FXD"
+    },
+    {
+      "station": "阜阳",
+      "code": "FYH"
+    },
+    {
+      "station": "格尔木",
+      "code": "GRO"
+    },
+    {
+      "station": "广汉",
+      "code": "GHW"
+    },
+    {
+      "station": "古交",
+      "code": "GJV"
+    },
+    {
+      "station": "桂林北",
+      "code": "GBZ"
+    },
+    {
+      "station": "古莲",
+      "code": "GRX"
+    },
+    {
+      "station": "桂林",
+      "code": "GLZ"
+    },
+    {
+      "station": "固始",
+      "code": "GXN"
+    },
+    {
+      "station": "广水",
+      "code": "GSN"
+    },
+    {
+      "station": "干塘",
+      "code": "GNJ"
+    },
+    {
+      "station": "广元",
+      "code": "GYW"
+    },
+    {
+      "station": "广州北",
+      "code": "GBQ"
+    },
+    {
+      "station": "赣州",
+      "code": "GZG"
+    },
+    {
+      "station": "公主岭",
+      "code": "GLT"
+    },
+    {
+      "station": "公主岭南",
+      "code": "GBT"
+    },
+    {
+      "station": "淮安",
+      "code": "AUH"
+    },
+    {
+      "station": "淮北",
+      "code": "HRH"
+    },
+    {
+      "station": "鹤北",
+      "code": "HMB"
+    },
+    {
+      "station": "淮滨",
+      "code": "HVN"
+    },
+    {
+      "station": "河边",
+      "code": "HBV"
+    },
+    {
+      "station": "潢川",
+      "code": "KCN"
+    },
+    {
+      "station": "韩城",
+      "code": "HCY"
+    },
+    {
+      "station": "邯郸",
+      "code": "HDP"
+    },
+    {
+      "station": "横道河子",
+      "code": "HDB"
+    },
+    {
+      "station": "鹤岗",
+      "code": "HGB"
+    },
+    {
+      "station": "皇姑屯",
+      "code": "HTT"
+    },
+    {
+      "station": "红果",
+      "code": "HEM"
+    },
+    {
+      "station": "黑河",
+      "code": "HJB"
+    },
+    {
+      "station": "怀化",
+      "code": "HHQ"
+    },
+    {
+      "station": "汉口",
+      "code": "HKN",
+      "code": ""
+    },
+    {
+      "station": "葫芦岛",
+      "code": "HLD"
+    },
+    {
+      "station": "海拉尔",
+      "code": "HRX"
+    },
+    {
+      "station": "霍林郭勒",
+      "code": "HWD"
+    },
+    {
+      "station": "海伦",
+      "code": "HLB"
+    },
+    {
+      "station": "侯马",
+      "code": "HMV"
+    },
+    {
+      "station": "哈密",
+      "code": "HMR"
+    },
+    {
+      "station": "淮南",
+      "code": "HAH"
+    },
+    {
+      "station": "桦南",
+      "code": "HNB"
+    },
+    {
+      "station": "海宁西",
+      "code": "EUH"
+    },
+    {
+      "station": "鹤庆",
+      "code": "HQM"
+    },
+    {
+      "station": "怀柔北",
+      "code": "HBP"
+    },
+    {
+      "station": "怀柔",
+      "code": "HRP"
+    },
+    {
+      "station": "黄石东",
+      "code": "OSN"
+    },
+    {
+      "station": "华山",
+      "code": "HSY"
+    },
+    {
+      "station": "黄山",
+      "code": "HKH"
+    },
+    {
+      "station": "黄石",
+      "code": "HSN"
+    },
+    {
+      "station": "衡水",
+      "code": "HSP"
+    },
+    {
+      "station": "衡阳",
+      "code": "HYQ"
+    },
+    {
+      "station": "菏泽",
+      "code": "HIK"
+    },
+    {
+      "station": "贺州",
+      "code": "HXZ"
+    },
+    {
+      "station": "汉中",
+      "code": "HOY"
+    },
+    {
+      "station": "惠州",
+      "code": "HCQ"
+    },
+    {
+      "station": "吉安",
+      "code": "VAG"
+    },
+    {
+      "station": "集安",
+      "code": "JAL"
+    },
+    {
+      "station": "江边村",
+      "code": "JBG"
+    },
+    {
+      "station": "晋城",
+      "code": "JCF"
+    },
+    {
+      "station": "金城江",
+      "code": "JJZ"
+    },
+    {
+      "station": "景德镇",
+      "code": "JCG"
+    },
+    {
+      "station": "嘉峰",
+      "code": "JFF"
+    },
+    {
+      "station": "加格达奇",
+      "code": "JGX"
+    },
+    {
+      "station": "井冈山",
+      "code": "JGG"
+    },
+    {
+      "station": "蛟河",
+      "code": "JHL"
+    },
+    {
+      "station": "金华南",
+      "code": "RNH"
+    },
+    {
+      "station": "金华",
+      "code": "JBH"
+    },
+    {
+      "station": "九江",
+      "code": "JJG"
+    },
+    {
+      "station": "吉林",
+      "code": "JLL"
+    },
+    {
+      "station": "荆门",
+      "code": "JMN"
+    },
+    {
+      "station": "佳木斯",
+      "code": "JMB"
+    },
+    {
+      "station": "济宁",
+      "code": "JIK"
+    },
+    {
+      "station": "集宁南",
+      "code": "JAC"
+    },
+    {
+      "station": "酒泉",
+      "code": "JQJ"
+    },
+    {
+      "station": "江山",
+      "code": "JUH"
+    },
+    {
+      "station": "吉首",
+      "code": "JIQ"
+    },
+    {
+      "station": "九台",
+      "code": "JTL"
+    },
+    {
+      "station": "镜铁山",
+      "code": "JVJ"
+    },
+    {
+      "station": "鸡西",
+      "code": "JXB"
+    },
+    {
+      "station": "绩溪县",
+      "code": "JRH"
+    },
+    {
+      "station": "嘉峪关",
+      "code": "JGJ"
+    },
+    {
+      "station": "江油",
+      "code": "JFW"
+    },
+    {
+      "station": "锦州",
+      "code": "JZD"
+    },
+    {
+      "station": "金州",
+      "code": "JZT"
+    },
+    {
+      "station": "蓟州",
+      "code": "JKP"
+    },
+    {
+      "station": "库尔勒",
+      "code": "KLR"
+    },
+    {
+      "station": "开封",
+      "code": "KFF"
+    },
+    {
+      "station": "岢岚",
+      "code": "KLV"
+    },
+    {
+      "station": "凯里",
+      "code": "KLW"
+    },
+    {
+      "station": "喀什",
+      "code": "KSR"
+    },
+    {
+      "station": "昆山南",
+      "code": "KNH"
+    },
+    {
+      "station": "奎屯",
+      "code": "KTR"
+    },
+    {
+      "station": "开原",
+      "code": "KYT"
+    },
+    {
+      "station": "六安",
+      "code": "UAH"
+    },
+    {
+      "station": "灵宝",
+      "code": "LBF"
+    },
+    {
+      "station": "芦潮港",
+      "code": "UCH"
+    },
+    {
+      "station": "隆昌",
+      "code": "LCW"
+    },
+    {
+      "station": "陆川",
+      "code": "LKZ"
+    },
+    {
+      "station": "利川",
+      "code": "LCN"
+    },
+    {
+      "station": "临川",
+      "code": "LCG"
+    },
+    {
+      "station": "潞城",
+      "code": "UTP"
+    },
+    {
+      "station": "鹿道",
+      "code": "LDL"
+    },
+    {
+      "station": "娄底",
+      "code": "LDQ"
+    },
+    {
+      "station": "临汾",
+      "code": "LFV"
+    },
+    {
+      "station": "良各庄",
+      "code": "LGP"
+    },
+    {
+      "station": "临河",
+      "code": "LHC"
+    },
+    {
+      "station": "漯河",
+      "code": "LON"
+    },
+    {
+      "station": "绿化",
+      "code": "LWJ"
+    },
+    {
+      "station": "隆化",
+      "code": "UHP"
+    },
+    {
+      "station": "丽江",
+      "code": "LHM"
+    },
+    {
+      "station": "临江",
+      "code": "LQL"
+    },
+    {
+      "station": "龙井",
+      "code": "LJL"
+    },
+    {
+      "station": "吕梁",
+      "code": "LHV"
+    },
+    {
+      "station": "醴陵",
+      "code": "LLG"
+    },
+    {
+      "station": "柳林南",
+      "code": "LKV"
+    },
+    {
+      "station": "滦平",
+      "code": "UPP"
+    },
+    {
+      "station": "六盘水",
+      "code": "UMW"
+    },
+    {
+      "station": "灵丘",
+      "code": "LVV"
+    },
+    {
+      "station": "旅顺",
+      "code": "LST"
+    },
+    {
+      "station": "兰溪",
+      "code": "LWH"
+    },
+    {
+      "station": "陇西",
+      "code": "LXJ"
+    },
+    {
+      "station": "澧县",
+      "code": "LEQ"
+    },
+    {
+      "station": "临西",
+      "code": "UEP"
+    },
+    {
+      "station": "龙岩",
+      "code": "LYS"
+    },
+    {
+      "station": "耒阳",
+      "code": "LYQ"
+    },
+    {
+      "station": "洛阳",
+      "code": "LYF"
+    },
+    {
+      "station": "连云港东",
+      "code": "UKH"
+    },
+    {
+      "station": "洛阳东",
+      "code": "LDF"
+    },
+    {
+      "station": "临沂",
+      "code": "LVK"
+    },
+    {
+      "station": "洛阳龙门",
+      "code": "LLF"
+    },
+    {
+      "station": "柳园",
+      "code": "DHR"
+    },
+    {
+      "station": "凌源",
+      "code": "LYD"
+    },
+    {
+      "station": "辽源",
+      "code": "LYL"
+    },
+    {
+      "station": "立志",
+      "code": "LZX"
+    },
+    {
+      "station": "柳州",
+      "code": "LZZ"
+    },
+    {
+      "station": "辽中",
+      "code": "LZD"
+    },
+    {
+      "station": "麻城",
+      "code": "MCN"
+    },
+    {
+      "station": "免渡河",
+      "code": "MDX"
+    },
+    {
+      "station": "牡丹江",
+      "code": "MDB"
+    },
+    {
+      "station": "莫尔道嘎",
+      "code": "MRX"
+    },
+    {
+      "station": "明光",
+      "code": "MGH"
+    },
+    {
+      "station": "满归",
+      "code": "MHX"
+    },
+    {
+      "station": "漠河",
+      "code": "MVX"
+    },
+    {
+      "station": "茂名",
+      "code": "MDQ"
+    },
+    {
+      "station": "茂名西",
+      "code": "MMZ"
+    },
+    {
+      "station": "密山",
+      "code": "MSB"
+    },
+    {
+      "station": "马三家",
+      "code": "MJT"
+    },
+    {
+      "station": "麻尾",
+      "code": "VAW"
+    },
+    {
+      "station": "绵阳",
+      "code": "MYW"
+    },
+    {
+      "station": "梅州",
+      "code": "MOQ"
+    },
+    {
+      "station": "满洲里",
+      "code": "MLX"
+    },
+    {
+      "station": "宁波东",
+      "code": "NVH"
+    },
+    {
+      "station": "宁波",
+      "code": "NGH"
+    },
+    {
+      "station": "南岔",
+      "code": "NCB"
+    },
+    {
+      "station": "南充",
+      "code": "NCW"
+    },
+    {
+      "station": "南丹",
+      "code": "NDZ"
+    },
+    {
+      "station": "南大庙",
+      "code": "NMP"
+    },
+    {
+      "station": "南芬",
+      "code": "NFT"
+    },
+    {
+      "station": "讷河",
+      "code": "NHX"
+    },
+    {
+      "station": "嫩江",
+      "code": "NGX"
+    },
+    {
+      "station": "内江",
+      "code": "NJW"
+    },
+    {
+      "station": "南平",
+      "code": "NPS"
+    },
+    {
+      "station": "南通",
+      "code": "NUH"
+    },
+    {
+      "station": "南阳",
+      "code": "NFF"
+    },
+    {
+      "station": "碾子山",
+      "code": "NZX"
+    },
+    {
+      "station": "平顶山",
+      "code": "PEN"
+    },
+    {
+      "station": "盘锦",
+      "code": "PVD"
+    },
+    {
+      "station": "平凉",
+      "code": "PIJ"
+    },
+    {
+      "station": "平凉南",
+      "code": "POJ"
+    },
+    {
+      "station": "平泉",
+      "code": "PQP"
+    },
+    {
+      "station": "坪石",
+      "code": "PSQ"
+    },
+    {
+      "station": "萍乡",
+      "code": "PXG"
+    },
+    {
+      "station": "凭祥",
+      "code": "PXZ"
+    },
+    {
+      "station": "郫县西",
+      "code": "PCW"
+    },
+    {
+      "station": "攀枝花",
+      "code": "PRW"
+    },
+    {
+      "station": "蕲春",
+      "code": "QRN"
+    },
+    {
+      "station": "青城山",
+      "code": "QSW"
+    },
+    {
+      "station": "青岛",
+      "code": "QDK"
+    },
+    {
+      "station": "清河城",
+      "code": "QYP"
+    },
+    {
+      "station": "曲靖",
+      "code": "QJM"
+    },
+    {
+      "station": "黔江",
+      "code": "QNW"
+    },
+    {
+      "station": "前进镇",
+      "code": "QEB"
+    },
+    {
+      "station": "齐齐哈尔",
+      "code": "QHX"
+    },
+    {
+      "station": "七台河",
+      "code": "QTB"
+    },
+    {
+      "station": "沁县",
+      "code": "QVV"
+    },
+    {
+      "station": "泉州东",
+      "code": "QRS"
+    },
+    {
+      "station": "泉州",
+      "code": "QYS"
+    },
+    {
+      "station": "衢州",
+      "code": "QEH"
+    },
+    {
+      "station": "融安",
+      "code": "RAZ"
+    },
+    {
+      "station": "汝箕沟",
+      "code": "RQJ"
+    },
+    {
+      "station": "瑞金",
+      "code": "RJG"
+    },
+    {
+      "station": "日照",
+      "code": "RZK"
+    },
+    {
+      "station": "双城堡",
+      "code": "SCB"
+    },
+    {
+      "station": "绥芬河",
+      "code": "SFB"
+    },
+    {
+      "station": "韶关东",
+      "code": "SGQ"
+    },
+    {
+      "station": "山海关",
+      "code": "SHD"
+    },
+    {
+      "station": "绥化",
+      "code": "SHB"
+    },
+    {
+      "station": "三间房",
+      "code": "SFX"
+    },
+    {
+      "station": "苏家屯",
+      "code": "SXT"
+    },
+    {
+      "station": "舒兰",
+      "code": "SLL"
+    },
+    {
+      "station": "三明",
+      "code": "SMS"
+    },
+    {
+      "station": "神木",
+      "code": "OMY"
+    },
+    {
+      "station": "三门峡",
+      "code": "SMF"
+    },
+    {
+      "station": "商南",
+      "code": "ONY"
+    },
+    {
+      "station": "遂宁",
+      "code": "NIW"
+    },
+    {
+      "station": "四平",
+      "code": "SPT"
+    },
+    {
+      "station": "商丘",
+      "code": "SQF"
+    },
+    {
+      "station": "上饶",
+      "code": "SRG"
+    },
+    {
+      "station": "韶山",
+      "code": "SSQ"
+    },
+    {
+      "station": "宿松",
+      "code": "OAH"
+    },
+    {
+      "station": "汕头",
+      "code": "OTQ"
+    },
+    {
+      "station": "邵武",
+      "code": "SWS"
+    },
+    {
+      "station": "涉县",
+      "code": "OEP"
+    },
+    {
+      "station": "三亚",
+      "code": "SEQ"
+    },
+    {
+      "station": "三  亚",
+      "code": "JUQ"
+    },
+    {
+      "station": "邵阳",
+      "code": "SYQ"
+    },
+    {
+      "station": "十堰",
+      "code": "SNN"
+    },
+    {
+      "station": "双鸭山",
+      "code": "SSB"
+    },
+    {
+      "station": "松原",
+      "code": "VYT"
+    },
+    {
+      "station": "苏州",
+      "code": "SZH"
+    },
+    {
+      "station": "深圳",
+      "code": "SZQ"
+    },
+    {
+      "station": "宿州",
+      "code": "OXH"
+    },
+    {
+      "station": "随州",
+      "code": "SZN"
+    },
+    {
+      "station": "朔州",
+      "code": "SUV"
+    },
+    {
+      "station": "深圳西",
+      "code": "OSQ"
+    },
+    {
+      "station": "塘豹",
+      "code": "TBQ"
+    },
+    {
+      "station": "塔尔气",
+      "code": "TVX"
+    },
+    {
+      "station": "潼关",
+      "code": "TGY"
+    },
+    {
+      "station": "塘沽",
+      "code": "TGP"
+    },
+    {
+      "station": "塔河",
+      "code": "TXX"
+    },
+    {
+      "station": "通化",
+      "code": "THL"
+    },
+    {
+      "station": "泰来",
+      "code": "TLX"
+    },
+    {
+      "station": "吐鲁番",
+      "code": "TFR"
+    },
+    {
+      "station": "通辽",
+      "code": "TLD"
+    },
+    {
+      "station": "铁岭",
+      "code": "TLT"
+    },
+    {
+      "station": "陶赖昭",
+      "code": "TPT"
+    },
+    {
+      "station": "图们",
+      "code": "TML"
+    },
+    {
+      "station": "铜仁",
+      "code": "RDQ"
+    },
+    {
+      "station": "唐山北",
+      "code": "FUP"
+    },
+    {
+      "station": "田师府",
+      "code": "TFT"
+    },
+    {
+      "station": "泰山",
+      "code": "TAK"
+    },
+    {
+      "station": "唐山",
+      "code": "TSP"
+    },
+    {
+      "station": "天水",
+      "code": "TSJ"
+    },
+    {
+      "station": "通远堡",
+      "code": "TYT"
+    },
+    {
+      "station": "太阳升",
+      "code": "TQT"
+    },
+    {
+      "station": "泰州",
+      "code": "UTH"
+    },
+    {
+      "station": "桐梓",
+      "code": "TZW"
+    },
+    {
+      "station": "通州西",
+      "code": "TAP"
+    },
+    {
+      "station": "五常",
+      "code": "WCB"
+    },
+    {
+      "station": "武昌",
+      "code": "WCN"
+    },
+    {
+      "station": "瓦房店",
+      "code": "WDT"
+    },
+    {
+      "station": "威海",
+      "code": "WKK"
+    },
+    {
+      "station": "芜湖",
+      "code": "WHH"
+    },
+    {
+      "station": "乌海西",
+      "code": "WXC"
+    },
+    {
+      "station": "吴家屯",
+      "code": "WJT"
+    },
+    {
+      "station": "武隆",
+      "code": "WLW"
+    },
+    {
+      "station": "乌兰浩特",
+      "code": "WWT"
+    },
+    {
+      "station": "渭南",
+      "code": "WNY"
+    },
+    {
+      "station": "威舍",
+      "code": "WSM"
+    },
+    {
+      "station": "歪头山",
+      "code": "WIT"
+    },
+    {
+      "station": "武威",
+      "code": "WUJ"
+    },
+    {
+      "station": "武威南",
+      "code": "WWJ"
+    },
+    {
+      "station": "无锡",
+      "code": "WXH"
+    },
+    {
+      "station": "乌西",
+      "code": "WXR"
+    },
+    {
+      "station": "乌伊岭",
+      "code": "WPB"
+    },
+    {
+      "station": "武夷山",
+      "code": "WAS"
+    },
+    {
+      "station": "万源",
+      "code": "WYY"
+    },
+    {
+      "station": "万州",
+      "code": "WYW"
+    },
+    {
+      "station": "梧州",
+      "code": "WZZ"
+    },
+    {
+      "station": "温州",
+      "code": "RZH"
+    },
+    {
+      "station": "温州南",
+      "code": "VRH"
+    },
+    {
+      "station": "西昌",
+      "code": "ECW"
+    },
+    {
+      "station": "许昌",
+      "code": "XCF"
+    },
+    {
+      "station": "西昌南",
+      "code": "ENW"
+    },
+    {
+      "station": "香坊",
+      "code": "XFB"
+    },
+    {
+      "station": "轩岗",
+      "code": "XGV"
+    },
+    {
+      "station": "兴国",
+      "code": "EUG"
+    },
+    {
+      "station": "宣汉",
+      "code": "XHY"
+    },
+    {
+      "station": "新会",
+      "code": "EFQ"
+    },
+    {
+      "station": "新晃",
+      "code": "XLQ"
+    },
+    {
+      "station": "锡林浩特",
+      "code": "XTC"
+    },
+    {
+      "station": "兴隆县",
+      "code": "EXP"
+    },
+    {
+      "station": "厦门北",
+      "code": "XKS"
+    },
+    {
+      "station": "厦门",
+      "code": "XMS"
+    },
+    {
+      "station": "厦门高崎",
+      "code": "XBS"
+    },
+    {
+      "station": "小市",
+      "code": "XST"
+    },
+    {
+      "station": "秀山",
+      "code": "ETW"
+    },
+    {
+      "station": "向塘",
+      "code": "XTG"
+    },
+    {
+      "station": "宣威",
+      "code": "XWM"
+    },
+    {
+      "station": "新乡",
+      "code": "XXF"
+    },
+    {
+      "station": "信阳",
+      "code": "XUN"
+    },
+    {
+      "station": "咸阳",
+      "code": "XYY"
+    },
+    {
+      "station": "襄阳",
+      "code": "XFN"
+    },
+    {
+      "station": "熊岳城",
+      "code": "XYT"
+    },
+    {
+      "station": "新沂",
+      "code": "VIH"
+    },
+    {
+      "station": "兴义",
+      "code": "XRZ"
+    },
+    {
+      "station": "新余",
+      "code": "XUG"
+    },
+    {
+      "station": "徐州",
+      "code": "XCH"
+    },
+    {
+      "station": "延安",
+      "code": "YWY"
+    },
+    {
+      "station": "宜宾",
+      "code": "YBW"
+    },
+    {
+      "station": "亚布力南",
+      "code": "YWB"
+    },
+    {
+      "station": "叶柏寿",
+      "code": "YBD"
+    },
+    {
+      "station": "宜昌东",
+      "code": "HAN"
+    },
+    {
+      "station": "永川",
+      "code": "YCW"
+    },
+    {
+      "station": "盐城",
+      "code": "AFH"
+    },
+    {
+      "station": "宜昌",
+      "code": "YCN"
+    },
+    {
+      "station": "运城",
+      "code": "YNV"
+    },
+    {
+      "station": "伊春",
+      "code": "YCB"
+    },
+    {
+      "station": "榆次",
+      "code": "YCV"
+    },
+    {
+      "station": "杨村",
+      "code": "YBP"
+    },
+    {
+      "station": "宜春西",
+      "code": "YCG"
+    },
+    {
+      "station": "伊尔施",
+      "code": "YET"
+    },
+    {
+      "station": "燕岗",
+      "code": "YGW"
+    },
+    {
+      "station": "永济",
+      "code": "YIV"
+    },
+    {
+      "station": "延吉",
+      "code": "YJL"
+    },
+    {
+      "station": "营口",
+      "code": "YKT"
+    },
+    {
+      "station": "牙克石",
+      "code": "YKX"
+    },
+    {
+      "station": "阎良",
+      "code": "YNY"
+    },
+    {
+      "station": "玉林",
+      "code": "YLZ"
+    },
+    {
+      "station": "榆林",
+      "code": "ALY"
+    },
+    {
+      "station": "亚龙湾",
+      "code": "TWQ"
+    },
+    {
+      "station": "一面坡",
+      "code": "YPB"
+    },
+    {
+      "station": "伊宁",
+      "code": "YMR"
+    },
+    {
+      "station": "阳平关",
+      "code": "YAY"
+    },
+    {
+      "station": "玉屏",
+      "code": "YZW"
+    },
+    {
+      "station": "原平",
+      "code": "YPV"
+    },
+    {
+      "station": "延庆",
+      "code": "YNP"
+    },
+    {
+      "station": "阳泉曲",
+      "code": "YYV"
+    },
+    {
+      "station": "玉泉",
+      "code": "YQB"
+    },
+    {
+      "station": "阳泉",
+      "code": "AQP"
+    },
+    {
+      "station": "营山",
+      "code": "NUW"
+    },
+    {
+      "station": "玉山",
+      "code": "YNG"
+    },
+    {
+      "station": "燕山",
+      "code": "AOP"
+    },
+    {
+      "station": "榆树",
+      "code": "YRT"
+    },
+    {
+      "station": "鹰潭",
+      "code": "YTG"
+    },
+    {
+      "station": "烟台",
+      "code": "YAK"
+    },
+    {
+      "station": "伊图里河",
+      "code": "YEX"
+    },
+    {
+      "station": "玉田县",
+      "code": "ATP"
+    },
+    {
+      "station": "义乌",
+      "code": "YWH"
+    },
+    {
+      "station": "阳新",
+      "code": "YON"
+    },
+    {
+      "station": "义县",
+      "code": "YXD"
+    },
+    {
+      "station": "益阳",
+      "code": "AEQ"
+    },
+    {
+      "station": "岳阳",
+      "code": "YYQ"
+    },
+    {
+      "station": "崖州",
+      "code": "YUQ"
+    },
+    {
+      "station": "永州",
+      "code": "AOQ"
+    },
+    {
+      "station": "扬州",
+      "code": "YLH"
+    },
+    {
+      "station": "淄博",
+      "code": "ZBK"
+    },
+    {
+      "station": "镇城底",
+      "code": "ZDV"
+    },
+    {
+      "station": "自贡",
+      "code": "ZGW"
+    },
+    {
+      "station": "珠海",
+      "code": "ZHQ"
+    },
+    {
+      "station": "珠海北",
+      "code": "ZIQ"
+    },
+    {
+      "station": "湛江",
+      "code": "ZJZ"
+    },
+    {
+      "station": "镇江",
+      "code": "ZJH"
+    },
+    {
+      "station": "张家界",
+      "code": "DIQ"
+    },
+    {
+      "station": "张家口",
+      "code": "ZKP"
+    },
+    {
+      "station": "张家口南",
+      "code": "ZMP"
+    },
+    {
+      "station": "周口",
+      "code": "ZKN"
+    },
+    {
+      "station": "哲里木",
+      "code": "ZLC"
+    },
+    {
+      "station": "扎兰屯",
+      "code": "ZTX"
+    },
+    {
+      "station": "驻马店",
+      "code": "ZDN"
+    },
+    {
+      "station": "肇庆",
+      "code": "ZVQ"
+    },
+    {
+      "station": "周水子",
+      "code": "ZIT"
+    },
+    {
+      "station": "昭通",
+      "code": "ZDW"
+    },
+    {
+      "station": "中卫",
+      "code": "ZWJ"
+    },
+    {
+      "station": "资阳",
+      "code": "ZYW"
+    },
+    {
+      "station": "遵义",
+      "code": "ZIW"
+    },
+    {
+      "station": "枣庄",
+      "code": "ZEK"
+    },
+    {
+      "station": "资中",
+      "code": "ZZW"
+    },
+    {
+      "station": "株洲",
+      "code": "ZZQ"
+    },
+    {
+      "station": "枣庄西",
+      "code": "ZFK"
+    },
+    {
+      "station": "昂昂溪",
+      "code": "AAX"
+    },
+    {
+      "station": "阿城",
+      "code": "ACB"
+    },
+    {
+      "station": "安达",
+      "code": "ADX"
+    },
+    {
+      "station": "安德",
+      "code": "ARW"
+    },
+    {
+      "station": "安定",
+      "code": "ADP"
+    },
+    {
+      "station": "安广",
+      "code": "AGT"
+    },
+    {
+      "station": "艾河",
+      "code": "AHP"
+    },
+    {
+      "station": "安化",
+      "code": "PKQ"
+    },
+    {
+      "station": "艾家村",
+      "code": "AJJ"
+    },
+    {
+      "station": "鳌江",
+      "code": "ARH"
+    },
+    {
+      "station": "安家",
+      "code": "AJB"
+    },
+    {
+      "station": "阿金",
+      "code": "AJD"
+    },
+    {
+      "station": "阿克陶",
+      "code": "AER"
+    },
+    {
+      "station": "安口窑",
+      "code": "AYY"
+    },
+    {
+      "station": "敖力布告",
+      "code": "ALD"
+    },
+    {
+      "station": "安龙",
+      "code": "AUZ"
+    },
+    {
+      "station": "阿龙山",
+      "code": "ASX"
+    },
+    {
+      "station": "安陆",
+      "code": "ALN"
+    },
+    {
+      "station": "阿木尔",
+      "code": "JTX"
+    },
+    {
+      "station": "阿南庄",
+      "code": "AZM"
+    },
+    {
+      "station": "安庆西",
+      "code": "APH"
+    },
+    {
+      "station": "鞍山西",
+      "code": "AXT"
+    },
+    {
+      "station": "安塘",
+      "code": "ATV"
+    },
+    {
+      "station": "安亭北",
+      "code": "ASH"
+    },
+    {
+      "station": "阿图什",
+      "code": "ATR"
+    },
+    {
+      "station": "安图",
+      "code": "ATL"
+    },
+    {
+      "station": "安溪",
+      "code": "AXS"
+    },
+    {
+      "station": "博鳌",
+      "code": "BWQ"
+    },
+    {
+      "station": "北碚",
+      "code": "BPW"
+    },
+    {
+      "station": "白壁关",
+      "code": "BGV"
+    },
+    {
+      "station": "蚌埠南",
+      "code": "BMH"
+    },
+    {
+      "station": "巴楚",
+      "code": "BCR"
+    },
+    {
+      "station": "板城",
+      "code": "BUP"
+    },
+    {
+      "station": "北戴河",
+      "code": "BEP"
+    },
+    {
+      "station": "保定",
+      "code": "BDP"
+    },
+    {
+      "station": "宝坻",
+      "code": "BPP"
+    },
+    {
+      "station": "八达岭",
+      "code": "ILP"
+    },
+    {
+      "station": "巴东",
+      "code": "BNN"
+    },
+    {
+      "station": "柏果",
+      "code": "BGM"
+    },
+    {
+      "station": "布海",
+      "code": "BUT"
+    },
+    {
+      "station": "白河东",
+      "code": "BIY"
+    },
+    {
+      "station": "贲红",
+      "code": "BVC"
+    },
+    {
+      "station": "宝华山",
+      "code": "BWH"
+    },
+    {
+      "station": "白河县",
+      "code": "BEY"
+    },
+    {
+      "station": "白芨沟",
+      "code": "BJJ"
+    },
+    {
+      "station": "碧鸡关",
+      "code": "BJM"
+    },
+    {
+      "station": "北滘",
+      "code": "IBQ"
+    },
+    {
+      "station": "碧江",
+      "code": "BLQ"
+    },
+    {
+      "station": "白鸡坡",
+      "code": "BBM"
+    },
+    {
+      "station": "笔架山",
+      "code": "BSB"
+    },
+    {
+      "station": "八角台",
+      "code": "BTD"
+    },
+    {
+      "station": "保康",
+      "code": "BKD"
+    },
+    {
+      "station": "白奎堡",
+      "code": "BKB"
+    },
+    {
+      "station": "白狼",
+      "code": "BAT"
+    },
+    {
+      "station": "百浪",
+      "code": "BRZ"
+    },
+    {
+      "station": "博乐",
+      "code": "BOR"
+    },
+    {
+      "station": "宝拉格",
+      "code": "BQC"
+    },
+    {
+      "station": "巴林",
+      "code": "BLX"
+    },
+    {
+      "station": "宝林",
+      "code": "BNB"
+    },
+    {
+      "station": "北流",
+      "code": "BOZ"
+    },
+    {
+      "station": "勃利",
+      "code": "BLB"
+    },
+    {
+      "station": "布列开",
+      "code": "BLR"
+    },
+    {
+      "station": "宝龙山",
+      "code": "BND"
+    },
+    {
+      "station": "百里峡",
+      "code": "AAP"
+    },
+    {
+      "station": "八面城",
+      "code": "BMD"
+    },
+    {
+      "station": "班猫箐",
+      "code": "BNM"
+    },
+    {
+      "station": "八面通",
+      "code": "BMB"
+    },
+    {
+      "station": "北马圈子",
+      "code": "BRP"
+    },
+    {
+      "station": "北票南",
+      "code": "RPD"
+    },
+    {
+      "station": "白旗",
+      "code": "BQP"
+    },
+    {
+      "station": "宝泉岭",
+      "code": "BQB"
+    },
+    {
+      "station": "白泉",
+      "code": "BQL"
+    },
+    {
+      "station": "巴山",
+      "code": "BAY"
+    },
+    {
+      "station": "白沙",
+      "code": "BSW"
+    },
+    {
+      "station": "白水江",
+      "code": "BSY"
+    },
+    {
+      "station": "白沙坡",
+      "code": "BPM"
+    },
+    {
+      "station": "白石山",
+      "code": "BAL"
+    },
+    {
+      "station": "白水镇",
+      "code": "BUM"
+    },
+    {
+      "station": "包头 东",
+      "code": "FDC"
+    },
+    {
+      "station": "坂田",
+      "code": "BTQ"
+    },
+    {
+      "station": "泊头",
+      "code": "BZP"
+    },
+    {
+      "station": "北屯",
+      "code": "BYP"
+    },
+    {
+      "station": "本溪湖",
+      "code": "BHT"
+    },
+    {
+      "station": "博兴",
+      "code": "BXK"
+    },
+    {
+      "station": "八仙筒",
+      "code": "VXD"
+    },
+    {
+      "station": "白音察干",
+      "code": "BYC"
+    },
+    {
+      "station": "背荫河",
+      "code": "BYB"
+    },
+    {
+      "station": "北营",
+      "code": "BIV"
+    },
+    {
+      "station": "巴彦高勒",
+      "code": "BAC"
+    },
+    {
+      "station": "白音他拉",
+      "code": "BID"
+    },
+    {
+      "station": "鲅鱼圈",
+      "code": "BYT"
+    },
+    {
+      "station": "白银市",
+      "code": "BNJ"
+    },
+    {
+      "station": "白音胡硕",
+      "code": "BCD"
+    },
+    {
+      "station": "巴中",
+      "code": "IEW"
+    },
+    {
+      "station": "霸州",
+      "code": "RMP"
+    },
+    {
+      "station": "北宅",
+      "code": "BVP"
+    },
+    {
+      "station": "赤壁北",
+      "code": "CIN"
+    },
+    {
+      "station": "查布嘎",
+      "code": "CBC"
+    },
+    {
+      "station": "长城",
+      "code": "CEJ"
+    },
+    {
+      "station": "长冲",
+      "code": "CCM"
+    },
+    {
+      "station": "承德东",
+      "code": "CCP"
+    },
+    {
+      "station": "赤峰西",
+      "code": "CID"
+    },
+    {
+      "station": "嵯岗",
+      "code": "CAX"
+    },
+    {
+      "station": "柴岗",
+      "code": "CGT"
+    },
+    {
+      "station": "长葛",
+      "code": "CEF"
+    },
+    {
+      "station": "柴沟堡",
+      "code": "CGV"
+    },
+    {
+      "station": "城固",
+      "code": "CGY"
+    },
+    {
+      "station": "陈官营",
+      "code": "CAJ"
+    },
+    {
+      "station": "成高子",
+      "code": "CZB"
+    },
+    {
+      "station": "草海",
+      "code": "WBW"
+    },
+    {
+      "station": "柴河",
+      "code": "CHB"
+    },
+    {
+      "station": "册亨",
+      "code": "CHZ"
+    },
+    {
+      "station": "草河口",
+      "code": "CKT"
+    },
+    {
+      "station": "崔黄口",
+      "code": "CHP"
+    },
+    {
+      "station": "巢湖",
+      "code": "CIH"
+    },
+    {
+      "station": "蔡家沟",
+      "code": "CJT"
+    },
+    {
+      "station": "成吉思汗",
+      "code": "CJX"
+    },
+    {
+      "station": "岔江",
+      "code": "CAM"
+    },
+    {
+      "station": "蔡家坡",
+      "code": "CJY"
+    },
+    {
+      "station": "昌乐",
+      "code": "CLK"
+    },
+    {
+      "station": "超梁沟",
+      "code": "CYP"
+    },
+    {
+      "station": "慈利",
+      "code": "CUQ"
+    },
+    {
+      "station": "昌黎",
+      "code": "CLP"
+    },
+    {
+      "station": "长岭子",
+      "code": "CLT"
+    },
+    {
+      "station": "晨明",
+      "code": "CMB"
+    },
+    {
+      "station": "长农",
+      "code": "CNJ"
+    },
+    {
+      "station": "昌平北",
+      "code": "VBP"
+    },
+    {
+      "station": "常平",
+      "code": "DAQ"
+    },
+    {
+      "station": "长坡岭",
+      "code": "CPM"
+    },
+    {
+      "station": "辰清",
+      "code": "CQB"
+    },
+    {
+      "station": "蔡山",
+      "code": "CON"
+    },
+    {
+      "station": "楚山",
+      "code": "CSB"
+    },
+    {
+      "station": "长寿",
+      "code": "EFW"
+    },
+    {
+      "station": "磁山",
+      "code": "CSP"
+    },
+    {
+      "station": "苍石",
+      "code": "CST"
+    },
+    {
+      "station": "草市",
+      "code": "CSL"
+    },
+    {
+      "station": "察素齐",
+      "code": "CSC"
+    },
+    {
+      "station": "长山屯",
+      "code": "CVT"
+    },
+    {
+      "station": "长汀",
+      "code": "CES"
+    },
+    {
+      "station": "昌图西",
+      "code": "CPT"
+    },
+    {
+      "station": "春湾",
+      "code": "CQQ"
+    },
+    {
+      "station": "磁县",
+      "code": "CIP"
+    },
+    {
+      "station": "岑溪",
+      "code": "CNZ"
+    },
+    {
+      "station": "辰溪",
+      "code": "CXQ"
+    },
+    {
+      "station": "磁西",
+      "code": "CRP"
+    },
+    {
+      "station": "长兴南",
+      "code": "CFH"
+    },
+    {
+      "station": "磁窑",
+      "code": "CYK"
+    },
+    {
+      "station": "朝阳",
+      "code": "CYD"
+    },
+    {
+      "station": "春阳",
+      "code": "CAL"
+    },
+    {
+      "station": "城阳",
+      "code": "CEK"
+    },
+    {
+      "station": "创业村",
+      "code": "CEX"
+    },
+    {
+      "station": "朝阳川",
+      "code": "CYL"
+    },
+    {
+      "station": "朝阳地",
+      "code": "CDD"
+    },
+    {
+      "station": "长垣",
+      "code": "CYF"
+    },
+    {
+      "station": "朝阳镇",
+      "code": "CZL"
+    },
+    {
+      "station": "滁州北",
+      "code": "CUH"
+    },
+    {
+      "station": "常州北",
+      "code": "ESH"
+    },
+    {
+      "station": "滁州",
+      "code": "CXH"
+    },
+    {
+      "station": "潮州",
+      "code": "CKQ"
+    },
+    {
+      "station": "常庄",
+      "code": "CVK"
+    },
+    {
+      "station": "曹子里",
+      "code": "CFP"
+    },
+    {
+      "station": "车转湾",
+      "code": "CWM"
+    },
+    {
+      "station": "郴州西",
+      "code": "ICQ"
+    },
+    {
+      "station": "沧州西",
+      "code": "CBP"
+    },
+    {
+      "station": "德安",
+      "code": "DAG"
+    },
+    {
+      "station": "大安",
+      "code": "RAT"
+    },
+    {
+      "station": "大坝",
+      "code": "DBJ"
+    },
+    {
+      "station": "大板",
+      "code": "DBC"
+    },
+    {
+      "station": "大巴",
+      "code": "DBD"
+    },
+    {
+      "station": "到保",
+      "code": "RBT"
+    },
+    {
+      "station": "定边",
+      "code": "DYJ"
+    },
+    {
+      "station": "东边井",
+      "code": "DBB"
+    },
+    {
+      "station": "德伯斯",
+      "code": "RDT"
+    },
+    {
+      "station": "打柴沟",
+      "code": "DGJ"
+    },
+    {
+      "station": "德昌",
+      "code": "DVW"
+    },
+    {
+      "station": "滴道",
+      "code": "DDB"
+    },
+    {
+      "station": "大磴沟",
+      "code": "DKJ"
+    },
+    {
+      "station": "刀尔登",
+      "code": "DRD"
+    },
+    {
+      "station": "得耳布尔",
+      "code": "DRX"
+    },
+    {
+      "station": "东方",
+      "code": "UFQ"
+    },
+    {
+      "station": "丹凤",
+      "code": "DGY"
+    },
+    {
+      "station": "东丰",
+      "code": "DIL"
+    },
+    {
+      "station": "都格",
+      "code": "DMM"
+    },
+    {
+      "station": "大官屯",
+      "code": "DTT"
+    },
+    {
+      "station": "大关",
+      "code": "RGW"
+    },
+    {
+      "station": "东光",
+      "code": "DGP"
+    },
+    {
+      "station": "东海",
+      "code": "DHB"
+    },
+    {
+      "station": "大灰厂",
+      "code": "DHP"
+    },
+    {
+      "station": "大红旗",
+      "code": "DQD"
+    },
+    {
+      "station": "大禾塘",
+      "code": "SOQ"
+    },
+    {
+      "station": "东海县",
+      "code": "DQH"
+    },
+    {
+      "station": "德惠西",
+      "code": "DXT"
+    },
+    {
+      "station": "达家沟",
+      "code": "DJT"
+    },
+    {
+      "station": "东津",
+      "code": "DKB"
+    },
+    {
+      "station": "杜家",
+      "code": "DJL"
+    },
+    {
+      "station": "大口屯",
+      "code": "DKP"
+    },
+    {
+      "station": "东来",
+      "code": "RVD"
+    },
+    {
+      "station": "德令哈",
+      "code": "DHO"
+    },
+    {
+      "station": "大陆号",
+      "code": "DLC"
+    },
+    {
+      "station": "带岭",
+      "code": "DLB"
+    },
+    {
+      "station": "大林",
+      "code": "DLD"
+    },
+    {
+      "station": "达拉特旗",
+      "code": "DIC"
+    },
+    {
+      "station": "独立屯",
+      "code": "DTX"
+    },
+    {
+      "station": "豆罗",
+      "code": "DLV"
+    },
+    {
+      "station": "达拉特西",
+      "code": "DNC"
+    },
+    {
+      "station": "东明村",
+      "code": "DMD"
+    },
+    {
+      "station": "洞庙河",
+      "code": "DEP"
+    },
+    {
+      "station": "东明县",
+      "code": "DNF"
+    },
+    {
+      "station": "大拟",
+      "code": "DNZ"
+    },
+    {
+      "station": "大平房",
+      "code": "DPD"
+    },
+    {
+      "station": "大盘石",
+      "code": "RPP"
+    },
+    {
+      "station": "大埔",
+      "code": "DPI"
+    },
+    {
+      "station": "大堡",
+      "code": "DVT"
+    },
+    {
+      "station": "大庆东",
+      "code": "LFX"
+    },
+    {
+      "station": "大其拉哈",
+      "code": "DQX"
+    },
+    {
+      "station": "道清",
+      "code": "DML"
+    },
+    {
+      "station": "对青山",
+      "code": "DQB"
+    },
+    {
+      "station": "德清西",
+      "code": "MOH"
+    },
+    {
+      "station": "大庆西",
+      "code": "RHX"
+    },
+    {
+      "station": "东升",
+      "code": "DRQ"
+    },
+    {
+      "station": "砀山",
+      "code": "DKH"
+    },
+    {
+      "station": "独山",
+      "code": "RWW"
+    },
+    {
+      "station": "登沙河",
+      "code": "DWT"
+    },
+    {
+      "station": "读书铺",
+      "code": "DPM"
+    },
+    {
+      "station": "大石头",
+      "code": "DSL"
+    },
+    {
+      "station": "东胜西",
+      "code": "DYC"
+    },
+    {
+      "station": "大石寨",
+      "code": "RZT"
+    },
+    {
+      "station": "东台",
+      "code": "DBH"
+    },
+    {
+      "station": "定陶",
+      "code": "DQK"
+    },
+    {
+      "station": "灯塔",
+      "code": "DGT"
+    },
+    {
+      "station": "大田边",
+      "code": "DBM"
+    },
+    {
+      "station": "东通化",
+      "code": "DTL"
+    },
+    {
+      "station": "丹徒",
+      "code": "RUH"
+    },
+    {
+      "station": "大屯",
+      "code": "DNT"
+    },
+    {
+      "station": "东湾",
+      "code": "DRJ"
+    },
+    {
+      "station": "大武口",
+      "code": "DFJ"
+    },
+    {
+      "station": "低窝铺",
+      "code": "DWJ"
+    },
+    {
+      "station": "大王滩",
+      "code": "DZZ"
+    },
+    {
+      "station": "大湾子",
+      "code": "DFM"
+    },
+    {
+      "station": "大兴沟",
+      "code": "DXL"
+    },
+    {
+      "station": "大兴",
+      "code": "DXX"
+    },
+    {
+      "station": "定西",
+      "code": "DSJ"
+    },
+    {
+      "station": "甸心",
+      "code": "DXM"
+    },
+    {
+      "station": "东乡",
+      "code": "DXG"
+    },
+    {
+      "station": "代县",
+      "code": "DKV"
+    },
+    {
+      "station": "定襄",
+      "code": "DXV"
+    },
+    {
+      "station": "东戌",
+      "code": "RXP"
+    },
+    {
+      "station": "东辛庄",
+      "code": "DXD"
+    },
+    {
+      "station": "丹阳",
+      "code": "DYH"
+    },
+    {
+      "station": "德阳",
+      "code": "DYW"
+    },
+    {
+      "station": "大雁",
+      "code": "DYX"
+    },
+    {
+      "station": "当阳",
+      "code": "DYN"
+    },
+    {
+      "station": "丹阳北",
+      "code": "EXH"
+    },
+    {
+      "station": "大英东",
+      "code": "IAW"
+    },
+    {
+      "station": "东淤地",
+      "code": "DBV"
+    },
+    {
+      "station": "大营",
+      "code": "DYV"
+    },
+    {
+      "station": "定远",
+      "code": "EWH"
+    },
+    {
+      "station": "岱岳",
+      "code": "RYV"
+    },
+    {
+      "station": "大元",
+      "code": "DYZ"
+    },
+    {
+      "station": "大营镇",
+      "code": "DJP"
+    },
+    {
+      "station": "大营子",
+      "code": "DZD"
+    },
+    {
+      "station": "大战场",
+      "code": "DTJ"
+    },
+    {
+      "station": "德州东",
+      "code": "DIP"
+    },
+    {
+      "station": "东至",
+      "code": "DCH"
+    },
+    {
+      "station": "低庄",
+      "code": "DVQ"
+    },
+    {
+      "station": "东镇",
+      "code": "DNV"
+    },
+    {
+      "station": "道州",
+      "code": "DFZ"
+    },
+    {
+      "station": "东庄",
+      "code": "DZV"
+    },
+    {
+      "station": "兑镇",
+      "code": "DWV"
+    },
+    {
+      "station": "豆庄",
+      "code": "ROP"
+    },
+    {
+      "station": "定州",
+      "code": "DXP"
+    },
+    {
+      "station": "大竹园",
+      "code": "DZY"
+    },
+    {
+      "station": "大杖子",
+      "code": "DAP"
+    },
+    {
+      "station": "豆张庄",
+      "code": "RZP"
+    },
+    {
+      "station": "峨边",
+      "code": "EBW"
+    },
+    {
+      "station": "二道沟门",
+      "code": "RDP"
+    },
+    {
+      "station": "二道湾",
+      "code": "RDX"
+    },
+    {
+      "station": "鄂尔多斯",
+      "code": "EEC"
+    },
+    {
+      "station": "二龙",
+      "code": "RLD"
+    },
+    {
+      "station": "二龙山屯",
+      "code": "ELA"
+    },
+    {
+      "station": "峨眉",
+      "code": "EMW"
+    },
+    {
+      "station": "二密河",
+      "code": "RML"
+    },
+    {
+      "station": "二营",
+      "code": "RYJ"
+    },
+    {
+      "station": "鄂州",
+      "code": "ECN"
+    },
+    {
+      "station": "福安",
+      "code": "FAS"
+    },
+    {
+      "station": "丰城",
+      "code": "FCG"
+    },
+    {
+      "station": "丰城南",
+      "code": "FNG"
+    },
+    {
+      "station": "肥东",
+      "code": "FIH"
+    },
+    {
+      "station": "发耳",
+      "code": "FEM"
+    },
+    {
+      "station": "富海",
+      "code": "FHX"
+    },
+    {
+      "station": "福海",
+      "code": "FHR"
+    },
+    {
+      "station": "凤凰城",
+      "code": "FHT"
+    },
+    {
+      "station": "汾河",
+      "code": "FEV"
+    },
+    {
+      "station": "奉化",
+      "code": "FHH"
+    },
+    {
+      "station": "富锦",
+      "code": "FIB"
+    },
+    {
+      "station": "范家屯",
+      "code": "FTT"
+    },
+    {
+      "station": "福利区",
+      "code": "FLJ"
+    },
+    {
+      "station": "福利屯",
+      "code": "FTB"
+    },
+    {
+      "station": "丰乐镇",
+      "code": "FZB"
+    },
+    {
+      "station": "阜南",
+      "code": "FNH"
+    },
+    {
+      "station": "阜宁",
+      "code": "AKH"
+    },
+    {
+      "station": "抚宁",
+      "code": "FNP"
+    },
+    {
+      "station": "福清",
+      "code": "FQS"
+    },
+    {
+      "station": "福泉",
+      "code": "VMW"
+    },
+    {
+      "station": "丰水村",
+      "code": "FSJ"
+    },
+    {
+      "station": "丰顺",
+      "code": "FUQ"
+    },
+    {
+      "station": "繁峙",
+      "code": "FSV"
+    },
+    {
+      "station": "抚顺",
+      "code": "FST"
+    },
+    {
+      "station": "福山口",
+      "code": "FKP"
+    },
+    {
+      "station": "扶绥",
+      "code": "FSZ"
+    },
+    {
+      "station": "冯屯",
+      "code": "FTX"
+    },
+    {
+      "station": "浮图峪",
+      "code": "FYP"
+    },
+    {
+      "station": "富县东",
+      "code": "FDY"
+    },
+    {
+      "station": "凤县",
+      "code": "FXY"
+    },
+    {
+      "station": "富县",
+      "code": "FEY"
+    },
+    {
+      "station": "费县",
+      "code": "FXK"
+    },
+    {
+      "station": "凤阳",
+      "code": "FUH"
+    },
+    {
+      "station": "汾阳",
+      "code": "FAV"
+    },
+    {
+      "station": "扶余北",
+      "code": "FBT"
+    },
+    {
+      "station": "分宜",
+      "code": "FYG"
+    },
+    {
+      "station": "富源",
+      "code": "FYM"
+    },
+    {
+      "station": "扶余",
+      "code": "FYT"
+    },
+    {
+      "station": "富裕",
+      "code": "FYX"
+    },
+    {
+      "station": "抚州北",
+      "code": "FBG"
+    },
+    {
+      "station": "凤州",
+      "code": "FZY"
+    },
+    {
+      "station": "丰镇",
+      "code": "FZC"
+    },
+    {
+      "station": "范镇",
+      "code": "VZK"
+    },
+    {
+      "station": "固安",
+      "code": "GFP"
+    },
+    {
+      "station": "广安",
+      "code": "VJW"
+    },
+    {
+      "station": "高碑店",
+      "code": "GBP"
+    },
+    {
+      "station": "沟帮子",
+      "code": "GBD"
+    },
+    {
+      "station": "甘草店",
+      "code": "GDJ"
+    },
+    {
+      "station": "谷城",
+      "code": "GCN"
+    },
+    {
+      "station": "藁城",
+      "code": "GEP"
+    },
+    {
+      "station": "高村",
+      "code": "GCV"
+    },
+    {
+      "station": "古城镇",
+      "code": "GZB"
+    },
+    {
+      "station": "广德",
+      "code": "GRH"
+    },
+    {
+      "station": "贵定",
+      "code": "GTW"
+    },
+    {
+      "station": "贵定南",
+      "code": "IDW"
+    },
+    {
+      "station": "古东",
+      "code": "GDV"
+    },
+    {
+      "station": "贵港",
+      "code": "GGZ"
+    },
+    {
+      "station": "官高",
+      "code": "GVP"
+    },
+    {
+      "station": "葛根庙",
+      "code": "GGT"
+    },
+    {
+      "station": "干沟",
+      "code": "GGL"
+    },
+    {
+      "station": "甘谷",
+      "code": "GGJ"
+    },
+    {
+      "station": "高各庄",
+      "code": "GGP"
+    },
+    {
+      "station": "甘河",
+      "code": "GAX"
+    },
+    {
+      "station": "根河",
+      "code": "GEX"
+    },
+    {
+      "station": "郭家店",
+      "code": "GDT"
+    },
+    {
+      "station": "孤家子",
+      "code": "GKT"
+    },
+    {
+      "station": "古浪",
+      "code": "GLJ"
+    },
+    {
+      "station": "皋兰",
+      "code": "GEJ"
+    },
+    {
+      "station": "高楼房",
+      "code": "GFM"
+    },
+    {
+      "station": "归流河",
+      "code": "GHT"
+    },
+    {
+      "station": "关林",
+      "code": "GLF"
+    },
+    {
+      "station": "甘洛",
+      "code": "VOW"
+    },
+    {
+      "station": "郭磊庄",
+      "code": "GLP"
+    },
+    {
+      "station": "高密",
+      "code": "GMK"
+    },
+    {
+      "station": "公庙子",
+      "code": "GMC"
+    },
+    {
+      "station": "工农湖",
+      "code": "GRT"
+    },
+    {
+      "station": "广宁寺南",
+      "code": "GNT"
+    },
+    {
+      "station": "广南卫",
+      "code": "GNM"
+    },
+    {
+      "station": "高平",
+      "code": "GPF"
+    },
+    {
+      "station": "甘泉北",
+      "code": "GEY"
+    },
+    {
+      "station": "共青城",
+      "code": "GAG"
+    },
+    {
+      "station": "甘旗卡",
+      "code": "GQD"
+    },
+    {
+      "station": "甘泉",
+      "code": "GQY"
+    },
+    {
+      "station": "高桥镇",
+      "code": "GZD"
+    },
+    {
+      "station": "灌水",
+      "code": "GST"
+    },
+    {
+      "station": "赶水",
+      "code": "GSW"
+    },
+    {
+      "station": "孤山口",
+      "code": "GSP"
+    },
+    {
+      "station": "果松",
+      "code": "GSL"
+    },
+    {
+      "station": "高山子",
+      "code": "GSD"
+    },
+    {
+      "station": "嘎什甸子",
+      "code": "GXD"
+    },
+    {
+      "station": "高台",
+      "code": "GTJ"
+    },
+    {
+      "station": "高滩",
+      "code": "GAY"
+    },
+    {
+      "station": "古田",
+      "code": "GTS"
+    },
+    {
+      "station": "官厅",
+      "code": "GTP"
+    },
+    {
+      "station": "官厅西",
+      "code": "KEP"
+    },
+    {
+      "station": "贵溪",
+      "code": "GXG"
+    },
+    {
+      "station": "涡阳",
+      "code": "GYH"
+    },
+    {
+      "station": "巩义",
+      "code": "GXF"
+    },
+    {
+      "station": "高邑",
+      "code": "GIP"
+    },
+    {
+      "station": "巩义南",
+      "code": "GYF"
+    },
+    {
+      "station": "广元南",
+      "code": "GAW"
+    },
+    {
+      "station": "固原",
+      "code": "GUJ"
+    },
+    {
+      "station": "菇园",
+      "code": "GYL"
+    },
+    {
+      "station": "公营子",
+      "code": "GYD"
+    },
+    {
+      "station": "光泽",
+      "code": "GZS"
+    },
+    {
+      "station": "古镇",
+      "code": "GNQ"
+    },
+    {
+      "station": "固镇",
+      "code": "GEH"
+    },
+    {
+      "station": "虢镇",
+      "code": "GZY"
+    },
+    {
+      "station": "瓜州",
+      "code": "GZJ"
+    },
+    {
+      "station": "高州",
+      "code": "GSQ"
+    },
+    {
+      "station": "盖州",
+      "code": "GXT"
+    },
+    {
+      "station": "官字井",
+      "code": "GOT"
+    },
+    {
+      "station": "革镇堡",
+      "code": "GZT"
+    },
+    {
+      "station": "冠豸山",
+      "code": "GSS"
+    },
+    {
+      "station": "盖州西",
+      "code": "GAT"
+    },
+    {
+      "station": "淮安南",
+      "code": "AMH"
+    },
+    {
+      "station": "红安",
+      "code": "HWN"
+    },
+    {
+      "station": "海安县",
+      "code": "HIH"
+    },
+    {
+      "station": "红安西",
+      "code": "VXN"
+    },
+    {
+      "station": "黄柏",
+      "code": "HBL"
+    },
+    {
+      "station": "海北",
+      "code": "HEB"
+    },
+    {
+      "station": "鹤壁",
+      "code": "HAF"
+    },
+    {
+      "station": "会昌北",
+      "code": "XEG"
+    },
+    {
+      "station": "华城",
+      "code": "VCQ"
+    },
+    {
+      "station": "河唇",
+      "code": "HCZ"
+    },
+    {
+      "station": "汉川",
+      "code": "HCN"
+    },
+    {
+      "station": "海城",
+      "code": "HCT"
+    },
+    {
+      "station": "合川",
+      "code": "WKW"
+    },
+    {
+      "station": "黑冲滩",
+      "code": "HCJ"
+    },
+    {
+      "station": "黄村",
+      "code": "HCP"
+    },
+    {
+      "station": "海城西",
+      "code": "HXT"
+    },
+    {
+      "station": "化德",
+      "code": "HGC"
+    },
+    {
+      "station": "洪洞",
+      "code": "HDV"
+    },
+    {
+      "station": "霍尔果斯",
+      "code": "HFR"
+    },
+    {
+      "station": "横峰",
+      "code": "HFG"
+    },
+    {
+      "station": "韩府湾",
+      "code": "HXJ"
+    },
+    {
+      "station": "汉沽",
+      "code": "HGP"
+    },
+    {
+      "station": "黄瓜园",
+      "code": "HYM"
+    },
+    {
+      "station": "红光镇",
+      "code": "IGW"
+    },
+    {
+      "station": "浑河",
+      "code": "HHT"
+    },
+    {
+      "station": "红花沟",
+      "code": "VHD"
+    },
+    {
+      "station": "黄花筒",
+      "code": "HUD"
+    },
+    {
+      "station": "贺家店",
+      "code": "HJJ"
+    },
+    {
+      "station": "和静",
+      "code": "HJR"
+    },
+    {
+      "station": "红江",
+      "code": "HFM"
+    },
+    {
+      "station": "黑井",
+      "code": "HIM"
+    },
+    {
+      "station": "获嘉",
+      "code": "HJF"
+    },
+    {
+      "station": "河津",
+      "code": "HJV"
+    },
+    {
+      "station": "涵江",
+      "code": "HJS"
+    },
+    {
+      "station": "华家",
+      "code": "HJT"
+    },
+    {
+      "station": "杭锦后旗",
+      "code": "HDC"
+    },
+    {
+      "station": "河间西",
+      "code": "HXP"
+    },
+    {
+      "station": "花家庄",
+      "code": "HJM"
+    },
+    {
+      "station": "河口南",
+      "code": "HKJ"
+    },
+    {
+      "station": "黄口",
+      "code": "KOH"
+    },
+    {
+      "station": "湖口",
+      "code": "HKG"
+    },
+    {
+      "station": "呼兰",
+      "code": "HUB"
+    },
+    {
+      "station": "葫芦岛北",
+      "code": "HPD"
+    },
+    {
+      "station": "浩良河",
+      "code": "HHB"
+    },
+    {
+      "station": "哈拉海",
+      "code": "HIT"
+    },
+    {
+      "station": "鹤立",
+      "code": "HOB"
+    },
+    {
+      "station": "桦林",
+      "code": "HIB"
+    },
+    {
+      "station": "黄陵",
+      "code": "ULY"
+    },
+    {
+      "station": "海林",
+      "code": "HRB"
+    },
+    {
+      "station": "虎林",
+      "code": "VLB"
+    },
+    {
+      "station": "寒岭",
+      "code": "HAT"
+    },
+    {
+      "station": "和龙",
+      "code": "HLL"
+    },
+    {
+      "station": "海龙",
+      "code": "HIL"
+    },
+    {
+      "station": "哈拉苏",
+      "code": "HAX"
+    },
+    {
+      "station": "呼鲁斯太",
+      "code": "VTJ"
+    },
+    {
+      "station": "火连寨",
+      "code": "HLT"
+    },
+    {
+      "station": "黄梅",
+      "code": "VEH"
+    },
+    {
+      "station": "韩麻营",
+      "code": "HYP"
+    },
+    {
+      "station": "黄泥河",
+      "code": "HHL"
+    },
+    {
+      "station": "海宁",
+      "code": "HNH"
+    },
+    {
+      "station": "惠农",
+      "code": "HMJ"
+    },
+    {
+      "station": "和平",
+      "code": "VAQ"
+    },
+    {
+      "station": "花棚子",
+      "code": "HZM"
+    },
+    {
+      "station": "花桥",
+      "code": "VQH"
+    },
+    {
+      "station": "宏庆",
+      "code": "HEY"
+    },
+    {
+      "station": "怀仁",
+      "code": "HRV"
+    },
+    {
+      "station": "华容",
+      "code": "HRN"
+    },
+    {
+      "station": "华山北",
+      "code": "HDY"
+    },
+    {
+      "station": "黄松甸",
+      "code": "HDL"
+    },
+    {
+      "station": "和什托洛盖",
+      "code": "VSR"
+    },
+    {
+      "station": "红山",
+      "code": "VSB"
+    },
+    {
+      "station": "汉寿",
+      "code": "VSQ"
+    },
+    {
+      "station": "衡山",
+      "code": "HSQ"
+    },
+    {
+      "station": "黑水",
+      "code": "HOT"
+    },
+    {
+      "station": "惠山",
+      "code": "VCH"
+    },
+    {
+      "station": "虎什哈",
+      "code": "HHP"
+    },
+    {
+      "station": "红寺堡",
+      "code": "HSJ"
+    },
+    {
+      "station": "虎石台",
+      "code": "HUT"
+    },
+    {
+      "station": "海石湾",
+      "code": "HSO"
+    },
+    {
+      "station": "衡山西",
+      "code": "HEQ"
+    },
+    {
+      "station": "红砂岘",
+      "code": "VSJ"
+    },
+    {
+      "station": "黑台",
+      "code": "HQB"
+    },
+    {
+      "station": "桓台",
+      "code": "VTK"
+    },
+    {
+      "station": "和田",
+      "code": "VTR"
+    },
+    {
+      "station": "会同",
+      "code": "VTQ"
+    },
+    {
+      "station": "海坨子",
+      "code": "HZT"
+    },
+    {
+      "station": "黑旺",
+      "code": "HWK"
+    },
+    {
+      "station": "海湾",
+      "code": "RWH"
+    },
+    {
+      "station": "红星",
+      "code": "VXB"
+    },
+    {
+      "station": "徽县",
+      "code": "HYY"
+    },
+    {
+      "station": "红兴隆",
+      "code": "VHB"
+    },
+    {
+      "station": "换新天",
+      "code": "VTB"
+    },
+    {
+      "station": "红岘台",
+      "code": "HTJ"
+    },
+    {
+      "station": "红彦",
+      "code": "VIX"
+    },
+    {
+      "station": "合阳",
+      "code": "HAY"
+    },
+    {
+      "station": "海阳",
+      "code": "HYK"
+    },
+    {
+      "station": "衡阳东",
+      "code": "HVQ"
+    },
+    {
+      "station": "华蓥",
+      "code": "HUW"
+    },
+    {
+      "station": "汉阴",
+      "code": "HQY"
+    },
+    {
+      "station": "黄羊滩",
+      "code": "HGJ"
+    },
+    {
+      "station": "汉源",
+      "code": "WHW"
+    },
+    {
+      "station": "河源",
+      "code": "VIQ"
+    },
+    {
+      "station": "花园",
+      "code": "HUN"
+    },
+    {
+      "station": "湟源",
+      "code": "HNO"
+    },
+    {
+      "station": "黄羊镇",
+      "code": "HYJ"
+    },
+    {
+      "station": "湖州",
+      "code": "VZH"
+    },
+    {
+      "station": "化州",
+      "code": "HZZ"
+    },
+    {
+      "station": "黄州",
+      "code": "VON"
+    },
+    {
+      "station": "霍州",
+      "code": "HZV"
+    },
+    {
+      "station": "惠州西",
+      "code": "VXQ"
+    },
+    {
+      "station": "巨宝",
+      "code": "JRT"
+    },
+    {
+      "station": "靖边",
+      "code": "JIY"
+    },
+    {
+      "station": "金宝屯",
+      "code": "JBD"
+    },
+    {
+      "station": "晋城北",
+      "code": "JEF"
+    },
+    {
+      "station": "金昌",
+      "code": "JCJ"
+    },
+    {
+      "station": "鄄城",
+      "code": "JCK"
+    },
+    {
+      "station": "交城",
+      "code": "JNV"
+    },
+    {
+      "station": "建昌",
+      "code": "JFD"
+    },
+    {
+      "station": "峻德",
+      "code": "JDB"
+    },
+    {
+      "station": "井店",
+      "code": "JFP"
+    },
+    {
+      "station": "鸡东",
+      "code": "JOB"
+    },
+    {
+      "station": "江都",
+      "code": "UDH"
+    },
+    {
+      "station": "鸡冠山",
+      "code": "JST"
+    },
+    {
+      "station": "金沟屯",
+      "code": "VGP"
+    },
+    {
+      "station": "静海",
+      "code": "JHP"
+    },
+    {
+      "station": "金河",
+      "code": "JHX"
+    },
+    {
+      "station": "锦河",
+      "code": "JHB"
+    },
+    {
+      "station": "精河",
+      "code": "JHR"
+    },
+    {
+      "station": "精河南",
+      "code": "JIR"
+    },
+    {
+      "station": "江华",
+      "code": "JHZ"
+    },
+    {
+      "station": "建湖",
+      "code": "AJH"
+    },
+    {
+      "station": "纪家沟",
+      "code": "VJD"
+    },
+    {
+      "station": "晋江",
+      "code": "JJS"
+    },
+    {
+      "station": "姜家",
+      "code": "JJB"
+    },
+    {
+      "station": "江津",
+      "code": "JJW"
+    },
+    {
+      "station": "金坑",
+      "code": "JKT"
+    },
+    {
+      "station": "芨岭",
+      "code": "JLJ"
+    },
+    {
+      "station": "金马村",
+      "code": "JMM"
+    },
+    {
+      "station": "角美",
+      "code": "JES"
+    },
+    {
+      "station": "江门东",
+      "code": "JWQ"
+    },
+    {
+      "station": "莒南",
+      "code": "JOK"
+    },
+    {
+      "station": "井南",
+      "code": "JNP"
+    },
+    {
+      "station": "建瓯",
+      "code": "JVS"
+    },
+    {
+      "station": "经棚",
+      "code": "JPC"
+    },
+    {
+      "station": "江桥",
+      "code": "JQX"
+    },
+    {
+      "station": "九三",
+      "code": "SSX"
+    },
+    {
+      "station": "金山北",
+      "code": "EGH"
+    },
+    {
+      "station": "嘉善",
+      "code": "JSH"
+    },
+    {
+      "station": "京山",
+      "code": "JCN"
+    },
+    {
+      "station": "建始",
+      "code": "JRN"
+    },
+    {
+      "station": "稷山",
+      "code": "JVV"
+    },
+    {
+      "station": "吉舒",
+      "code": "JSL"
+    },
+    {
+      "station": "建设",
+      "code": "JET"
+    },
+    {
+      "station": "甲山",
+      "code": "JOP"
+    },
+    {
+      "station": "建三江",
+      "code": "JIB"
+    },
+    {
+      "station": "嘉善南",
+      "code": "EAH"
+    },
+    {
+      "station": "金山屯",
+      "code": "JTB"
+    },
+    {
+      "station": "江所田",
+      "code": "JOM"
+    },
+    {
+      "station": "景泰",
+      "code": "JTJ"
+    },
+    {
+      "station": "九台南",
+      "code": "JNL"
+    },
+    {
+      "station": "吉文",
+      "code": "JWX"
+    },
+    {
+      "station": "进贤",
+      "code": "JUG"
+    },
+    {
+      "station": "莒县",
+      "code": "JKK"
+    },
+    {
+      "station": "嘉祥",
+      "code": "JUK"
+    },
+    {
+      "station": "介休",
+      "code": "JXV"
+    },
+    {
+      "station": "嘉兴",
+      "code": "JXH"
+    },
+    {
+      "station": "井陉",
+      "code": "JJP"
+    },
+    {
+      "station": "嘉兴南",
+      "code": "EPH"
+    },
+    {
+      "station": "夹心子",
+      "code": "JXT"
+    },
+    {
+      "station": "姜堰",
+      "code": "UEH"
+    },
+    {
+      "station": "揭阳",
+      "code": "JRQ"
+    },
+    {
+      "station": "建阳",
+      "code": "JYS"
+    },
+    {
+      "station": "简阳",
+      "code": "JYW"
+    },
+    {
+      "station": "巨野",
+      "code": "JYK"
+    },
+    {
+      "station": "江永",
+      "code": "JYZ"
+    },
+    {
+      "station": "缙云",
+      "code": "JYH"
+    },
+    {
+      "station": "靖远",
+      "code": "JYJ"
+    },
+    {
+      "station": "江源",
+      "code": "SZL"
+    },
+    {
+      "station": "济源",
+      "code": "JYF"
+    },
+    {
+      "station": "靖远西",
+      "code": "JXJ"
+    },
+    {
+      "station": "胶州北",
+      "code": "JZK"
+    },
+    {
+      "station": "焦作东",
+      "code": "WEF"
+    },
+    {
+      "station": "金寨",
+      "code": "JZH"
+    },
+    {
+      "station": "靖州",
+      "code": "JEQ"
+    },
+    {
+      "station": "荆州",
+      "code": "JBN"
+    },
+    {
+      "station": "胶州",
+      "code": "JXK"
+    },
+    {
+      "station": "晋州",
+      "code": "JXP"
+    },
+    {
+      "station": "锦州南",
+      "code": "JOD"
+    },
+    {
+      "station": "焦作",
+      "code": "JOF"
+    },
+    {
+      "station": "旧庄窝",
+      "code": "JVP"
+    },
+    {
+      "station": "金杖子",
+      "code": "JYD"
+    },
+    {
+      "station": "开安",
+      "code": "KAT"
+    },
+    {
+      "station": "库车",
+      "code": "KCR"
+    },
+    {
+      "station": "康城",
+      "code": "KCP"
+    },
+    {
+      "station": "库都尔",
+      "code": "KDX"
+    },
+    {
+      "station": "宽甸",
+      "code": "KDT"
+    },
+    {
+      "station": "克东",
+      "code": "KOB"
+    },
+    {
+      "station": "昆独仑召",
+      "code": "KDC"
+    },
+    {
+      "station": "开江",
+      "code": "KAW"
+    },
+    {
+      "station": "康金井",
+      "code": "KJB"
+    },
+    {
+      "station": "喀喇其",
+      "code": "KQX"
+    },
+    {
+      "station": "开鲁",
+      "code": "KLC"
+    },
+    {
+      "station": "克拉玛依",
+      "code": "KHR"
+    },
+    {
+      "station": "口前",
+      "code": "KQL"
+    },
+    {
+      "station": "昆山",
+      "code": "KSH"
+    },
+    {
+      "station": "奎山",
+      "code": "KAB"
+    },
+    {
+      "station": "克山",
+      "code": "KSB"
+    },
+    {
+      "station": "开通",
+      "code": "KTT"
+    },
+    {
+      "station": "康熙岭",
+      "code": "KXZ"
+    },
+    {
+      "station": "昆阳",
+      "code": "KAM"
+    },
+    {
+      "station": "克一河",
+      "code": "KHX"
+    },
+    {
+      "station": "开原西",
+      "code": "KXT"
+    },
+    {
+      "station": "康庄",
+      "code": "KZP"
+    },
+    {
+      "station": "来宾",
+      "code": "UBZ"
+    },
+    {
+      "station": "老边",
+      "code": "LLT"
+    },
+    {
+      "station": "灵宝西",
+      "code": "LPF"
+    },
+    {
+      "station": "龙川",
+      "code": "LUQ"
+    },
+    {
+      "station": "乐昌",
+      "code": "LCQ"
+    },
+    {
+      "station": "黎城",
+      "code": "UCP"
+    },
+    {
+      "station": "聊城",
+      "code": "UCK"
+    },
+    {
+      "station": "蓝村",
+      "code": "LCK"
+    },
+    {
+      "station": "两当",
+      "code": "LDY"
+    },
+    {
+      "station": "林东",
+      "code": "LRC"
+    },
+    {
+      "station": "乐都",
+      "code": "LDO"
+    },
+    {
+      "station": "梁底下",
+      "code": "LDP"
+    },
+    {
+      "station": "六道河子",
+      "code": "LVP"
+    },
+    {
+      "station": "鲁番",
+      "code": "LVM"
+    },
+    {
+      "station": "廊坊",
+      "code": "LJP"
+    },
+    {
+      "station": "落垡",
+      "code": "LOP"
+    },
+    {
+      "station": "廊坊北",
+      "code": "LFP"
+    },
+    {
+      "station": "老府",
+      "code": "UFD"
+    },
+    {
+      "station": "兰岗",
+      "code": "LNB"
+    },
+    {
+      "station": "龙骨甸",
+      "code": "LGM"
+    },
+    {
+      "station": "芦沟",
+      "code": "LOM"
+    },
+    {
+      "station": "龙沟",
+      "code": "LGJ"
+    },
+    {
+      "station": "拉古",
+      "code": "LGB"
+    },
+    {
+      "station": "临海",
+      "code": "UFH"
+    },
+    {
+      "station": "林海",
+      "code": "LXX"
+    },
+    {
+      "station": "拉哈",
+      "code": "LHX"
+    },
+    {
+      "station": "凌海",
+      "code": "JID"
+    },
+    {
+      "station": "柳河",
+      "code": "LNL"
+    },
+    {
+      "station": "六合",
+      "code": "KLH"
+    },
+    {
+      "station": "龙华",
+      "code": "LHP"
+    },
+    {
+      "station": "滦河沿",
+      "code": "UNP"
+    },
+    {
+      "station": "六合镇",
+      "code": "LEX"
+    },
+    {
+      "station": "亮甲店",
+      "code": "LRT"
+    },
+    {
+      "station": "刘家店",
+      "code": "UDT"
+    },
+    {
+      "station": "刘家河",
+      "code": "LVT"
+    },
+    {
+      "station": "连江",
+      "code": "LKS"
+    },
+    {
+      "station": "庐江",
+      "code": "UJH"
+    },
+    {
+      "station": "李家",
+      "code": "LJB"
+    },
+    {
+      "station": "罗江",
+      "code": "LJW"
+    },
+    {
+      "station": "廉江",
+      "code": "LJZ"
+    },
+    {
+      "station": "两家",
+      "code": "UJT"
+    },
+    {
+      "station": "龙江",
+      "code": "LJX"
+    },
+    {
+      "station": "龙嘉",
+      "code": "UJL"
+    },
+    {
+      "station": "莲江口",
+      "code": "LHB"
+    },
+    {
+      "station": "蔺家楼",
+      "code": "ULK"
+    },
+    {
+      "station": "李家坪",
+      "code": "LIJ"
+    },
+    {
+      "station": "兰考",
+      "code": "LKF"
+    },
+    {
+      "station": "林口",
+      "code": "LKB"
+    },
+    {
+      "station": "路口铺",
+      "code": "LKQ"
+    },
+    {
+      "station": "老莱",
+      "code": "LAX"
+    },
+    {
+      "station": "拉林",
+      "code": "LAB"
+    },
+    {
+      "station": "陆良",
+      "code": "LRM"
+    },
+    {
+      "station": "龙里",
+      "code": "LLW"
+    },
+    {
+      "station": "临澧",
+      "code": "LWQ"
+    },
+    {
+      "station": "兰棱",
+      "code": "LLB"
+    },
+    {
+      "station": "零陵",
+      "code": "UWZ"
+    },
+    {
+      "station": "卢龙",
+      "code": "UAP"
+    },
+    {
+      "station": "喇嘛甸",
+      "code": "LMX"
+    },
+    {
+      "station": "里木店",
+      "code": "LMB"
+    },
+    {
+      "station": "洛门",
+      "code": "LMJ"
+    },
+    {
+      "station": "龙南",
+      "code": "UNG"
+    },
+    {
+      "station": "梁平",
+      "code": "UQW"
+    },
+    {
+      "station": "罗平",
+      "code": "LPM"
+    },
+    {
+      "station": "落坡岭",
+      "code": "LPP"
+    },
+    {
+      "station": "六盘山",
+      "code": "UPJ"
+    },
+    {
+      "station": "乐平市",
+      "code": "LPG"
+    },
+    {
+      "station": "临清",
+      "code": "UQK"
+    },
+    {
+      "station": "龙泉寺",
+      "code": "UQJ"
+    },
+    {
+      "station": "乐山北",
+      "code": "UTW"
+    },
+    {
+      "station": "乐善村",
+      "code": "LUM"
+    },
+    {
+      "station": "冷水江东",
+      "code": "UDQ"
+    },
+    {
+      "station": "连山关",
+      "code": "LGT"
+    },
+    {
+      "station": "流水沟",
+      "code": "USP"
+    },
+    {
+      "station": "陵水",
+      "code": "LIQ"
+    },
+    {
+      "station": "丽水",
+      "code": "USH"
+    },
+    {
+      "station": "罗山",
+      "code": "LRN"
+    },
+    {
+      "station": "鲁山",
+      "code": "LAF"
+    },
+    {
+      "station": "梁山",
+      "code": "LMK"
+    },
+    {
+      "station": "灵石",
+      "code": "LSV"
+    },
+    {
+      "station": "露水河",
+      "code": "LUL"
+    },
+    {
+      "station": "庐山",
+      "code": "LSG"
+    },
+    {
+      "station": "林盛堡",
+      "code": "LBT"
+    },
+    {
+      "station": "柳树屯",
+      "code": "LSD"
+    },
+    {
+      "station": "龙山镇",
+      "code": "LAS"
+    },
+    {
+      "station": "梨树镇",
+      "code": "LSB"
+    },
+    {
+      "station": "李石寨",
+      "code": "LET"
+    },
+    {
+      "station": "黎塘",
+      "code": "LTZ"
+    },
+    {
+      "station": "轮台",
+      "code": "LAR"
+    },
+    {
+      "station": "芦台",
+      "code": "LTP"
+    },
+    {
+      "station": "龙塘坝",
+      "code": "LBM"
+    },
+    {
+      "station": "濑湍",
+      "code": "LVZ"
+    },
+    {
+      "station": "骆驼巷",
+      "code": "LTJ"
+    },
+    {
+      "station": "李旺",
+      "code": "VLJ"
+    },
+    {
+      "station": "莱芜东",
+      "code": "LWK"
+    },
+    {
+      "station": "狼尾山",
+      "code": "LRJ"
+    },
+    {
+      "station": "灵武",
+      "code": "LNJ"
+    },
+    {
+      "station": "莱芜西",
+      "code": "UXK"
+    },
+    {
+      "station": "朗乡",
+      "code": "LXB"
+    },
+    {
+      "station": "陇县",
+      "code": "LXY"
+    },
+    {
+      "station": "临湘",
+      "code": "LXQ"
+    },
+    {
+      "station": "芦溪",
+      "code": "LUG"
+    },
+    {
+      "station": "莱西",
+      "code": "LXK"
+    },
+    {
+      "station": "林西",
+      "code": "LXC"
+    },
+    {
+      "station": "滦县",
+      "code": "UXP"
+    },
+    {
+      "station": "略阳",
+      "code": "LYY"
+    },
+    {
+      "station": "莱阳",
+      "code": "LYK"
+    },
+    {
+      "station": "辽阳",
+      "code": "LYT"
+    },
+    {
+      "station": "临沂北",
+      "code": "UYK"
+    },
+    {
+      "station": "凌源东",
+      "code": "LDD"
+    },
+    {
+      "station": "连云港",
+      "code": "UIH"
+    },
+    {
+      "station": "临颍",
+      "code": "LNF"
+    },
+    {
+      "station": "老营",
+      "code": "LXL"
+    },
+    {
+      "station": "龙游",
+      "code": "LMH"
+    },
+    {
+      "station": "罗源",
+      "code": "LVS"
+    },
+    {
+      "station": "林源",
+      "code": "LYX"
+    },
+    {
+      "station": "涟源",
+      "code": "LAQ"
+    },
+    {
+      "station": "涞源",
+      "code": "LYP"
+    },
+    {
+      "station": "耒阳西",
+      "code": "LPQ"
+    },
+    {
+      "station": "临泽",
+      "code": "LEJ"
+    },
+    {
+      "station": "龙爪沟",
+      "code": "LZT"
+    },
+    {
+      "station": "雷州",
+      "code": "UAQ"
+    },
+    {
+      "station": "六枝",
+      "code": "LIW"
+    },
+    {
+      "station": "鹿寨",
+      "code": "LIZ"
+    },
+    {
+      "station": "来舟",
+      "code": "LZS"
+    },
+    {
+      "station": "龙镇",
+      "code": "LZA"
+    },
+    {
+      "station": "拉鲊",
+      "code": "LEM"
+    },
+    {
+      "station": "兰州新区",
+      "code": "LQJ"
+    },
+    {
+      "station": "马鞍山",
+      "code": "MAH"
+    },
+    {
+      "station": "毛坝",
+      "code": "MBY"
+    },
+    {
+      "station": "毛坝关",
+      "code": "MGY"
+    },
+    {
+      "station": "麻城北",
+      "code": "MBN"
+    },
+    {
+      "station": "渑池",
+      "code": "MCF"
+    },
+    {
+      "station": "明城",
+      "code": "MCL"
+    },
+    {
+      "station": "庙城",
+      "code": "MAP"
+    },
+    {
+      "station": "渑池南",
+      "code": "MNF"
+    },
+    {
+      "station": "茅草坪",
+      "code": "KPM"
+    },
+    {
+      "station": "猛洞河",
+      "code": "MUQ"
+    },
+    {
+      "station": "磨刀石",
+      "code": "MOB"
+    },
+    {
+      "station": "弥渡",
+      "code": "MDF"
+    },
+    {
+      "station": "帽儿山",
+      "code": "MRB"
+    },
+    {
+      "station": "明港",
+      "code": "MGN"
+    },
+    {
+      "station": "梅河口",
+      "code": "MHL"
+    },
+    {
+      "station": "马皇",
+      "code": "MHZ"
+    },
+    {
+      "station": "孟家岗",
+      "code": "MGB"
+    },
+    {
+      "station": "美兰",
+      "code": "MHQ"
+    },
+    {
+      "station": "汨罗东",
+      "code": "MQQ"
+    },
+    {
+      "station": "马莲河",
+      "code": "MHB"
+    },
+    {
+      "station": "茅岭",
+      "code": "MLZ"
+    },
+    {
+      "station": "庙岭",
+      "code": "MLL"
+    },
+    {
+      "station": "茂林",
+      "code": "MLD"
+    },
+    {
+      "station": "穆棱",
+      "code": "MLB"
+    },
+    {
+      "station": "马林",
+      "code": "MID"
+    },
+    {
+      "station": "马龙",
+      "code": "MGM"
+    },
+    {
+      "station": "木里图",
+      "code": "MUD"
+    },
+    {
+      "station": "汨罗",
+      "code": "MLQ"
+    },
+    {
+      "station": "玛纳斯湖",
+      "code": "MNR"
+    },
+    {
+      "station": "冕宁",
+      "code": "UGW"
+    },
+    {
+      "station": "沐滂",
+      "code": "MPQ"
+    },
+    {
+      "station": "马桥河",
+      "code": "MQB"
+    },
+    {
+      "station": "闽清",
+      "code": "MQS"
+    },
+    {
+      "station": "民权",
+      "code": "MQF"
+    },
+    {
+      "station": "明水河",
+      "code": "MUT"
+    },
+    {
+      "station": "麻山",
+      "code": "MAB"
+    },
+    {
+      "station": "眉山",
+      "code": "MSW"
+    },
+    {
+      "station": "漫水湾",
+      "code": "MKW"
+    },
+    {
+      "station": "茂舍祖",
+      "code": "MOM"
+    },
+    {
+      "station": "米沙子",
+      "code": "MST"
+    },
+    {
+      "station": "美溪",
+      "code": "MEB"
+    },
+    {
+      "station": "勉县",
+      "code": "MVY"
+    },
+    {
+      "station": "麻阳",
+      "code": "MVQ"
+    },
+    {
+      "station": "密云北",
+      "code": "MUP"
+    },
+    {
+      "station": "米易",
+      "code": "MMW"
+    },
+    {
+      "station": "麦园",
+      "code": "MYS"
+    },
+    {
+      "station": "墨玉",
+      "code": "MUR"
+    },
+    {
+      "station": "庙庄",
+      "code": "MZJ"
+    },
+    {
+      "station": "米脂",
+      "code": "MEY"
+    },
+    {
+      "station": "明珠",
+      "code": "MFQ"
+    },
+    {
+      "station": "宁安",
+      "code": "NAB"
+    },
+    {
+      "station": "农安",
+      "code": "NAT"
+    },
+    {
+      "station": "南博山",
+      "code": "NBK"
+    },
+    {
+      "station": "南仇",
+      "code": "NCK"
+    },
+    {
+      "station": "南城司",
+      "code": "NSP"
+    },
+    {
+      "station": "宁村",
+      "code": "NCZ"
+    },
+    {
+      "station": "宁德",
+      "code": "NES"
+    },
+    {
+      "station": "南观村",
+      "code": "NGP"
+    },
+    {
+      "station": "南宫东",
+      "code": "NFP"
+    },
+    {
+      "station": "南关岭",
+      "code": "NLT"
+    },
+    {
+      "station": "宁国",
+      "code": "NNH"
+    },
+    {
+      "station": "宁海",
+      "code": "NHH"
+    },
+    {
+      "station": "南河川",
+      "code": "NHJ"
+    },
+    {
+      "station": "南华",
+      "code": "NHS"
+    },
+    {
+      "station": "泥河子",
+      "code": "NHD"
+    },
+    {
+      "station": "宁家",
+      "code": "NVT"
+    },
+    {
+      "station": "南靖",
+      "code": "NJS"
+    },
+    {
+      "station": "牛家",
+      "code": "NJB"
+    },
+    {
+      "station": "能家",
+      "code": "NJD"
+    },
+    {
+      "station": "南口",
+      "code": "NKP"
+    },
+    {
+      "station": "南口前",
+      "code": "NKT"
+    },
+    {
+      "station": "南朗",
+      "code": "NNQ"
+    },
+    {
+      "station": "乃林",
+      "code": "NLD"
+    },
+    {
+      "station": "尼勒克",
+      "code": "NIR"
+    },
+    {
+      "station": "那罗",
+      "code": "ULZ"
+    },
+    {
+      "station": "宁陵县",
+      "code": "NLF"
+    },
+    {
+      "station": "奈曼",
+      "code": "NMD"
+    },
+    {
+      "station": "宁明",
+      "code": "NMZ"
+    },
+    {
+      "station": "南木",
+      "code": "NMX"
+    },
+    {
+      "station": "南平南",
+      "code": "NNS"
+    },
+    {
+      "station": "那铺",
+      "code": "NPZ"
+    },
+    {
+      "station": "南桥",
+      "code": "NQD"
+    },
+    {
+      "station": "那曲",
+      "code": "NQO"
+    },
+    {
+      "station": "暖泉",
+      "code": "NQJ"
+    },
+    {
+      "station": "南台",
+      "code": "NTT"
+    },
+    {
+      "station": "南头",
+      "code": "NOQ"
+    },
+    {
+      "station": "宁武",
+      "code": "NWV"
+    },
+    {
+      "station": "南湾子",
+      "code": "NWP"
+    },
+    {
+      "station": "南翔北",
+      "code": "NEH"
+    },
+    {
+      "station": "宁乡",
+      "code": "NXQ"
+    },
+    {
+      "station": "内乡",
+      "code": "NXF"
+    },
+    {
+      "station": "牛心台",
+      "code": "NXT"
+    },
+    {
+      "station": "南峪",
+      "code": "NUP"
+    },
+    {
+      "station": "娘子关",
+      "code": "NIP"
+    },
+    {
+      "station": "南召",
+      "code": "NAF"
+    },
+    {
+      "station": "南杂木",
+      "code": "NZT"
+    },
+    {
+      "station": "蓬安",
+      "code": "PAW"
+    },
+    {
+      "station": "平安",
+      "code": "PAL"
+    },
+    {
+      "station": "平安驿",
+      "code": "PNO"
+    },
+    {
+      "station": "磐安镇",
+      "code": "PAJ"
+    },
+    {
+      "station": "平安镇",
+      "code": "PZT"
+    },
+    {
+      "station": "蒲城东",
+      "code": "PEY"
+    },
+    {
+      "station": "蒲城",
+      "code": "PCY"
+    },
+    {
+      "station": "裴德",
+      "code": "PDB"
+    },
+    {
+      "station": "偏店",
+      "code": "PRP"
+    },
+    {
+      "station": "平顶山西",
+      "code": "BFF"
+    },
+    {
+      "station": "坡底下",
+      "code": "PXJ"
+    },
+    {
+      "station": "瓢儿屯",
+      "code": "PRT"
+    },
+    {
+      "station": "平房",
+      "code": "PFB"
+    },
+    {
+      "station": "平岗",
+      "code": "PGL"
+    },
+    {
+      "station": "平关",
+      "code": "PGM"
+    },
+    {
+      "station": "盘关",
+      "code": "PAM"
+    },
+    {
+      "station": "平果",
+      "code": "PGZ"
+    },
+    {
+      "station": "徘徊北",
+      "code": "PHP"
+    },
+    {
+      "station": "平河口",
+      "code": "PHM"
+    },
+    {
+      "station": "平湖",
+      "code": "PHQ"
+    },
+    {
+      "station": "盘锦北",
+      "code": "PBD"
+    },
+    {
+      "station": "潘家店",
+      "code": "PDP"
+    },
+    {
+      "station": "皮口南",
+      "code": "PKT"
+    },
+    {
+      "station": "普兰店",
+      "code": "PLT"
+    },
+    {
+      "station": "偏岭",
+      "code": "PNT"
+    },
+    {
+      "station": "平山",
+      "code": "PSB"
+    },
+    {
+      "station": "彭山",
+      "code": "PSW"
+    },
+    {
+      "station": "皮山",
+      "code": "PSR"
+    },
+    {
+      "station": "磐石",
+      "code": "PSL"
+    },
+    {
+      "station": "平社",
+      "code": "PSV"
+    },
+    {
+      "station": "彭水",
+      "code": "PHW"
+    },
+    {
+      "station": "平台",
+      "code": "PVT"
+    },
+    {
+      "station": "平田",
+      "code": "PTM"
+    },
+    {
+      "station": "莆田",
+      "code": "PTS"
+    },
+    {
+      "station": "葡萄菁",
+      "code": "PTW"
+    },
+    {
+      "station": "普湾",
+      "code": "PWT"
+    },
+    {
+      "station": "平旺",
+      "code": "PWV"
+    },
+    {
+      "station": "平型关",
+      "code": "PGV"
+    },
+    {
+      "station": "普雄",
+      "code": "POW"
+    },
+    {
+      "station": "郫县",
+      "code": "PWW"
+    },
+    {
+      "station": "平洋",
+      "code": "PYX"
+    },
+    {
+      "station": "彭阳",
+      "code": "PYJ"
+    },
+    {
+      "station": "平遥",
+      "code": "PYV"
+    },
+    {
+      "station": "平邑",
+      "code": "PIK"
+    },
+    {
+      "station": "平原堡",
+      "code": "PPJ"
+    },
+    {
+      "station": "平原",
+      "code": "PYK"
+    },
+    {
+      "station": "平峪",
+      "code": "PYP"
+    },
+    {
+      "station": "彭泽",
+      "code": "PZG"
+    },
+    {
+      "station": "邳州",
+      "code": "PJH"
+    },
+    {
+      "station": "平庄",
+      "code": "PZD"
+    },
+    {
+      "station": "泡子",
+      "code": "POD"
+    },
+    {
+      "station": "平庄南",
+      "code": "PND"
+    },
+    {
+      "station": "乾安",
+      "code": "QOT"
+    },
+    {
+      "station": "庆安",
+      "code": "QAB"
+    },
+    {
+      "station": "迁安",
+      "code": "QQP"
+    },
+    {
+      "station": "祁东北",
+      "code": "QRQ"
+    },
+    {
+      "station": "七甸",
+      "code": "QDM"
+    },
+    {
+      "station": "曲阜东",
+      "code": "QAK"
+    },
+    {
+      "station": "庆丰",
+      "code": "QFT"
+    },
+    {
+      "station": "奇峰塔",
+      "code": "QVP"
+    },
+    {
+      "station": "曲阜",
+      "code": "QFK"
+    },
+    {
+      "station": "琼海",
+      "code": "QYQ"
+    },
+    {
+      "station": "秦皇岛",
+      "code": "QTP"
+    },
+    {
+      "station": "千河",
+      "code": "QUY"
+    },
+    {
+      "station": "清河",
+      "code": "QIP"
+    },
+    {
+      "station": "清河门",
+      "code": "QHD"
+    },
+    {
+      "station": "清华园",
+      "code": "QHP"
+    },
+    {
+      "station": "全椒",
+      "code": "INH"
+    },
+    {
+      "station": "渠旧",
+      "code": "QJZ"
+    },
+    {
+      "station": "潜江",
+      "code": "QJN"
+    },
+    {
+      "station": "秦家",
+      "code": "QJB"
+    },
+    {
+      "station": "綦江",
+      "code": "QJW"
+    },
+    {
+      "station": "祁家堡",
+      "code": "QBT"
+    },
+    {
+      "station": "清涧县",
+      "code": "QNY"
+    },
+    {
+      "station": "秦家庄",
+      "code": "QZV"
+    },
+    {
+      "station": "七里河",
+      "code": "QLD"
+    },
+    {
+      "station": "秦岭",
+      "code": "QLY"
+    },
+    {
+      "station": "渠黎",
+      "code": "QLZ"
+    },
+    {
+      "station": "青龙",
+      "code": "QIB"
+    },
+    {
+      "station": "青龙山",
+      "code": "QGH"
+    },
+    {
+      "station": "祁门",
+      "code": "QIH"
+    },
+    {
+      "station": "前磨头",
+      "code": "QMP"
+    },
+    {
+      "station": "青山",
+      "code": "QSB"
+    },
+    {
+      "station": "确山",
+      "code": "QSN"
+    },
+    {
+      "station": "前山",
+      "code": "QXQ"
+    },
+    {
+      "station": "清水",
+      "code": "QUJ"
+    },
+    {
+      "station": "戚墅堰",
+      "code": "QYH"
+    },
+    {
+      "station": "青田",
+      "code": "QVH"
+    },
+    {
+      "station": "桥头",
+      "code": "QAT"
+    },
+    {
+      "station": "青铜峡",
+      "code": "QTJ"
+    },
+    {
+      "station": "前卫",
+      "code": "QWD"
+    },
+    {
+      "station": "前苇塘",
+      "code": "QWP"
+    },
+    {
+      "station": "渠县",
+      "code": "QRW"
+    },
+    {
+      "station": "祁县",
+      "code": "QXV"
+    },
+    {
+      "station": "青县",
+      "code": "QXP"
+    },
+    {
+      "station": "桥西",
+      "code": "QXJ"
+    },
+    {
+      "station": "清徐",
+      "code": "QUV"
+    },
+    {
+      "station": "旗下营",
+      "code": "QXC"
+    },
+    {
+      "station": "千阳",
+      "code": "QOY"
+    },
+    {
+      "station": "沁阳",
+      "code": "QYF"
+    },
+    {
+      "station": "泉阳",
+      "code": "QYL"
+    },
+    {
+      "station": "祁阳北",
+      "code": "QVQ"
+    },
+    {
+      "station": "七营",
+      "code": "QYJ"
+    },
+    {
+      "station": "庆阳山",
+      "code": "QSJ"
+    },
+    {
+      "station": "清远",
+      "code": "QBQ"
+    },
+    {
+      "station": "清原",
+      "code": "QYT"
+    },
+    {
+      "station": "钦州东",
+      "code": "QDZ"
+    },
+    {
+      "station": "钦州",
+      "code": "QRZ"
+    },
+    {
+      "station": "青州市",
+      "code": "QZK"
+    },
+    {
+      "station": "瑞安",
+      "code": "RAH"
+    },
+    {
+      "station": "荣昌",
+      "code": "RCW"
+    },
+    {
+      "station": "瑞昌",
+      "code": "RCG"
+    },
+    {
+      "station": "如皋",
+      "code": "RBH"
+    },
+    {
+      "station": "容桂",
+      "code": "RUQ"
+    },
+    {
+      "station": "任丘",
+      "code": "RQP"
+    },
+    {
+      "station": "乳山",
+      "code": "ROK"
+    },
+    {
+      "station": "融水",
+      "code": "RSZ"
+    },
+    {
+      "station": "热水",
+      "code": "RSD"
+    },
+    {
+      "station": "容县",
+      "code": "RXZ"
+    },
+    {
+      "station": "饶阳",
+      "code": "RVP"
+    },
+    {
+      "station": "汝阳",
+      "code": "RYF"
+    },
+    {
+      "station": "绕阳河",
+      "code": "RHD"
+    },
+    {
+      "station": "汝州",
+      "code": "ROF"
+    },
+    {
+      "station": "石坝",
+      "code": "OBJ"
+    },
+    {
+      "station": "上板城",
+      "code": "SBP"
+    },
+    {
+      "station": "施秉",
+      "code": "AQW"
+    },
+    {
+      "station": "上板城南",
+      "code": "OBP"
+    },
+    {
+      "station": "世博园",
+      "code": "ZWT"
+    },
+    {
+      "station": "双城北",
+      "code": "SBB"
+    },
+    {
+      "station": "舒城",
+      "code": "OCH"
+    },
+    {
+      "station": "商城",
+      "code": "SWN"
+    },
+    {
+      "station": "莎车",
+      "code": "SCR"
+    },
+    {
+      "station": "顺昌",
+      "code": "SCS"
+    },
+    {
+      "station": "神池",
+      "code": "SMV"
+    },
+    {
+      "station": "沙城",
+      "code": "SCP"
+    },
+    {
+      "station": "石城",
+      "code": "SCT"
+    },
+    {
+      "station": "山城镇",
+      "code": "SCL"
+    },
+    {
+      "station": "山丹",
+      "code": "SDJ"
+    },
+    {
+      "station": "顺德",
+      "code": "ORQ"
+    },
+    {
+      "station": "绥德",
+      "code": "ODY"
+    },
+    {
+      "station": "水洞",
+      "code": "SIL"
+    },
+    {
+      "station": "商都",
+      "code": "SXC"
+    },
+    {
+      "station": "十渡",
+      "code": "SEP"
+    },
+    {
+      "station": "四道湾",
+      "code": "OUD"
+    },
+    {
+      "station": "顺德学院",
+      "code": "OJQ"
+    },
+    {
+      "station": "绅坊",
+      "code": "OLH"
+    },
+    {
+      "station": "双丰",
+      "code": "OFB"
+    },
+    {
+      "station": "四方台",
+      "code": "STB"
+    },
+    {
+      "station": "水富",
+      "code": "OTW"
+    },
+    {
+      "station": "三关口",
+      "code": "OKJ"
+    },
+    {
+      "station": "桑根达来",
+      "code": "OGC"
+    },
+    {
+      "station": "韶关",
+      "code": "SNQ"
+    },
+    {
+      "station": "上高镇",
+      "code": "SVK"
+    },
+    {
+      "station": "上杭",
+      "code": "JBS"
+    },
+    {
+      "station": "沙海",
+      "code": "SED"
+    },
+    {
+      "station": "松河",
+      "code": "SBM"
+    },
+    {
+      "station": "沙河",
+      "code": "SHP"
+    },
+    {
+      "station": "沙河口",
+      "code": "SKT"
+    },
+    {
+      "station": "赛汗塔拉",
+      "code": "SHC"
+    },
+    {
+      "station": "沙河市",
+      "code": "VOP"
+    },
+    {
+      "station": "沙后所",
+      "code": "SSD"
+    },
+    {
+      "station": "山河屯",
+      "code": "SHL"
+    },
+    {
+      "station": "三河县",
+      "code": "OXP"
+    },
+    {
+      "station": "四合永",
+      "code": "OHD"
+    },
+    {
+      "station": "三汇镇",
+      "code": "OZW"
+    },
+    {
+      "station": "双河镇",
+      "code": "SEL"
+    },
+    {
+      "station": "石河子",
+      "code": "SZR"
+    },
+    {
+      "station": "三合庄",
+      "code": "SVP"
+    },
+    {
+      "station": "三家店",
+      "code": "ODP"
+    },
+    {
+      "station": "水家湖",
+      "code": "SQH"
+    },
+    {
+      "station": "沈家河",
+      "code": "OJJ"
+    },
+    {
+      "station": "松江河",
+      "code": "SJL"
+    },
+    {
+      "station": "尚家",
+      "code": "SJB"
+    },
+    {
+      "station": "孙家",
+      "code": "SUB"
+    },
+    {
+      "station": "沈家",
+      "code": "OJB"
+    },
+    {
+      "station": "双吉",
+      "code": "SML"
+    },
+    {
+      "station": "松江",
+      "code": "SAH"
+    },
+    {
+      "station": "三江口",
+      "code": "SKD"
+    },
+    {
+      "station": "司家岭",
+      "code": "OLK"
+    },
+    {
+      "station": "松江南",
+      "code": "IMH"
+    },
+    {
+      "station": "石景山南",
+      "code": "SRP"
+    },
+    {
+      "station": "邵家堂",
+      "code": "SJJ"
+    },
+    {
+      "station": "三江县",
+      "code": "SOZ"
+    },
+    {
+      "station": "三家寨",
+      "code": "SMM"
+    },
+    {
+      "station": "十家子",
+      "code": "SJD"
+    },
+    {
+      "station": "松江镇",
+      "code": "OZL"
+    },
+    {
+      "station": "施家嘴",
+      "code": "SHM"
+    },
+    {
+      "station": "深井子",
+      "code": "SWT"
+    },
+    {
+      "station": "什里店",
+      "code": "OMP"
+    },
+    {
+      "station": "疏勒",
+      "code": "SUR"
+    },
+    {
+      "station": "疏勒河",
+      "code": "SHJ"
+    },
+    {
+      "station": "舍力虎",
+      "code": "VLD"
+    },
+    {
+      "station": "石磷",
+      "code": "SPB"
+    },
+    {
+      "station": "双辽",
+      "code": "ZJD"
+    },
+    {
+      "station": "绥棱",
+      "code": "SIB"
+    },
+    {
+      "station": "石岭",
+      "code": "SOL"
+    },
+    {
+      "station": "石林",
+      "code": "SLM"
+    },
+    {
+      "station": "石林南",
+      "code": "LNM"
+    },
+    {
+      "station": "石龙",
+      "code": "SLQ"
+    },
+    {
+      "station": "萨拉齐",
+      "code": "SLC"
+    },
+    {
+      "station": "索伦",
+      "code": "SNT"
+    },
+    {
+      "station": "商洛",
+      "code": "OLY"
+    },
+    {
+      "station": "沙岭子",
+      "code": "SLP"
+    },
+    {
+      "station": "石门县北",
+      "code": "VFQ"
+    },
+    {
+      "station": "三门峡南",
+      "code": "SCF"
+    },
+    {
+      "station": "三门县",
+      "code": "OQH"
+    },
+    {
+      "station": "石门县",
+      "code": "OMQ"
+    },
+    {
+      "station": "三门峡西",
+      "code": "SXF"
+    },
+    {
+      "station": "肃宁",
+      "code": "SYP"
+    },
+    {
+      "station": "宋",
+      "code": "SOB"
+    },
+    {
+      "station": "双牌",
+      "code": "SBZ"
+    },
+    {
+      "station": "四平东",
+      "code": "PPT"
+    },
+    {
+      "station": "遂平",
+      "code": "SON"
+    },
+    {
+      "station": "沙坡头",
+      "code": "SFJ"
+    },
+    {
+      "station": "沙桥",
+      "code": "SQM"
+    },
+    {
+      "station": "商丘南",
+      "code": "SPF"
+    },
+    {
+      "station": "水泉",
+      "code": "SID"
+    },
+    {
+      "station": "石泉县",
+      "code": "SXY"
+    },
+    {
+      "station": "石桥子",
+      "code": "SQT"
+    },
+    {
+      "station": "石人城",
+      "code": "SRB"
+    },
+    {
+      "station": "石人",
+      "code": "SRL"
+    },
+    {
+      "station": "山市",
+      "code": "SQB"
+    },
+    {
+      "station": "神树",
+      "code": "SWB"
+    },
+    {
+      "station": "鄯善",
+      "code": "SSR"
+    },
+    {
+      "station": "三水",
+      "code": "SJQ"
+    },
+    {
+      "station": "泗水",
+      "code": "OSK"
+    },
+    {
+      "station": "石山",
+      "code": "SAD"
+    },
+    {
+      "station": "松树",
+      "code": "SFT"
+    },
+    {
+      "station": "首山",
+      "code": "SAT"
+    },
+    {
+      "station": "三十家",
+      "code": "SRD"
+    },
+    {
+      "station": "三十里堡",
+      "code": "SST"
+    },
+    {
+      "station": "松树镇",
+      "code": "SSL"
+    },
+    {
+      "station": "松桃",
+      "code": "MZQ"
+    },
+    {
+      "station": "索图罕",
+      "code": "SHX"
+    },
+    {
+      "station": "三堂集",
+      "code": "SDH"
+    },
+    {
+      "station": "石头",
+      "code": "OTB"
+    },
+    {
+      "station": "神头",
+      "code": "SEV"
+    },
+    {
+      "station": "沙沱",
+      "code": "SFM"
+    },
+    {
+      "station": "上万",
+      "code": "SWP"
+    },
+    {
+      "station": "孙吴",
+      "code": "SKB"
+    },
+    {
+      "station": "沙湾县",
+      "code": "SXR"
+    },
+    {
+      "station": "歙县",
+      "code": "OVH"
+    },
+    {
+      "station": "遂溪",
+      "code": "SXZ"
+    },
+    {
+      "station": "沙县",
+      "code": "SAS"
+    },
+    {
+      "station": "绍兴",
+      "code": "SOH"
+    },
+    {
+      "station": "石岘",
+      "code": "SXL"
+    },
+    {
+      "station": "上西铺",
+      "code": "SXM"
+    },
+    {
+      "station": "石峡子",
+      "code": "SXJ"
+    },
+    {
+      "station": "沭阳",
+      "code": "FMH"
+    },
+    {
+      "station": "绥阳",
+      "code": "SYB"
+    },
+    {
+      "station": "寿阳",
+      "code": "SYV"
+    },
+    {
+      "station": "水洋",
+      "code": "OYP"
+    },
+    {
+      "station": "三阳川",
+      "code": "SYJ"
+    },
+    {
+      "station": "上腰墩",
+      "code": "SPJ"
+    },
+    {
+      "station": "三营",
+      "code": "OEJ"
+    },
+    {
+      "station": "顺义",
+      "code": "SOP"
+    },
+    {
+      "station": "三义井",
+      "code": "OYD"
+    },
+    {
+      "station": "三源浦",
+      "code": "SYL"
+    },
+    {
+      "station": "上虞",
+      "code": "BDH"
+    },
+    {
+      "station": "三原",
+      "code": "SAY"
+    },
+    {
+      "station": "上园",
+      "code": "SUD"
+    },
+    {
+      "station": "水源",
+      "code": "OYJ"
+    },
+    {
+      "station": "桑园子",
+      "code": "SAJ"
+    },
+    {
+      "station": "绥中北",
+      "code": "SND"
+    },
+    {
+      "station": "苏州北",
+      "code": "OHH"
+    },
+    {
+      "station": "宿州东",
+      "code": "SRH"
+    },
+    {
+      "station": "深圳东",
+      "code": "BJQ"
+    },
+    {
+      "station": "深州",
+      "code": "OZP"
+    },
+    {
+      "station": "孙镇",
+      "code": "OZY"
+    },
+    {
+      "station": "绥中",
+      "code": "SZD"
+    },
+    {
+      "station": "尚志",
+      "code": "SZB"
+    },
+    {
+      "station": "师庄",
+      "code": "SNM"
+    },
+    {
+      "station": "松滋",
+      "code": "SIN"
+    },
+    {
+      "station": "师宗",
+      "code": "SEM"
+    },
+    {
+      "station": "苏州园区",
+      "code": "KAH"
+    },
+    {
+      "station": "苏州新区",
+      "code": "ITH"
+    },
+    {
+      "station": "泰安",
+      "code": "TMK"
+    },
+    {
+      "station": "台安",
+      "code": "TID"
+    },
+    {
+      "station": "通安驿",
+      "code": "TAJ"
+    },
+    {
+      "station": "桐柏",
+      "code": "TBF"
+    },
+    {
+      "station": "通北",
+      "code": "TBB"
+    },
+    {
+      "station": "桐城",
+      "code": "TTH"
+    },
+    {
+      "station": "汤池",
+      "code": "TCX"
+    },
+    {
+      "station": "郯城",
+      "code": "TZK"
+    },
+    {
+      "station": "铁厂",
+      "code": "TCL"
+    },
+    {
+      "station": "桃村",
+      "code": "TCK"
+    },
+    {
+      "station": "通道",
+      "code": "TRQ"
+    },
+    {
+      "station": "田东",
+      "code": "TDZ"
+    },
+    {
+      "station": "天岗",
+      "code": "TGL"
+    },
+    {
+      "station": "土贵乌拉",
+      "code": "TGC"
+    },
+    {
+      "station": "通沟",
+      "code": "TOL"
+    },
+    {
+      "station": "太谷",
+      "code": "TGV"
+    },
+    {
+      "station": "塔哈",
+      "code": "THX"
+    },
+    {
+      "station": "棠海",
+      "code": "THM"
+    },
+    {
+      "station": "唐河",
+      "code": "THF"
+    },
+    {
+      "station": "泰和",
+      "code": "THG"
+    },
+    {
+      "station": "太湖",
+      "code": "TKH"
+    },
+    {
+      "station": "团结",
+      "code": "TIX"
+    },
+    {
+      "station": "谭家井",
+      "code": "TNJ"
+    },
+    {
+      "station": "陶家屯",
+      "code": "TOT"
+    },
+    {
+      "station": "唐家湾",
+      "code": "PDQ"
+    },
+    {
+      "station": "统军庄",
+      "code": "TZP"
+    },
+    {
+      "station": "泰康",
+      "code": "TKX"
+    },
+    {
+      "station": "吐列毛杜",
+      "code": "TMD"
+    },
+    {
+      "station": "图里河",
+      "code": "TEX"
+    },
+    {
+      "station": "铜陵",
+      "code": "TJH"
+    },
+    {
+      "station": "田林",
+      "code": "TFZ"
+    },
+    {
+      "station": "亭亮",
+      "code": "TIZ"
+    },
+    {
+      "station": "铁力",
+      "code": "TLB"
+    },
+    {
+      "station": "铁岭西",
+      "code": "PXT"
+    },
+    {
+      "station": "图们北",
+      "code": "QSL"
+    },
+    {
+      "station": "天门",
+      "code": "TMN"
+    },
+    {
+      "station": "天门南",
+      "code": "TNN"
+    },
+    {
+      "station": "太姥山",
+      "code": "TLS"
+    },
+    {
+      "station": "土牧尔台",
+      "code": "TRC"
+    },
+    {
+      "station": "土门子",
+      "code": "TCJ"
+    },
+    {
+      "station": "洮南",
+      "code": "TVT"
+    },
+    {
+      "station": "潼南",
+      "code": "TVW"
+    },
+    {
+      "station": "太平川",
+      "code": "TIT"
+    },
+    {
+      "station": "太平镇",
+      "code": "TEB"
+    },
+    {
+      "station": "图强",
+      "code": "TQX"
+    },
+    {
+      "station": "台前",
+      "code": "TTK"
+    },
+    {
+      "station": "天桥岭",
+      "code": "TQL"
+    },
+    {
+      "station": "土桥子",
+      "code": "TQJ"
+    },
+    {
+      "station": "汤山城",
+      "code": "TCT"
+    },
+    {
+      "station": "桃山",
+      "code": "TAB"
+    },
+    {
+      "station": "塔石嘴",
+      "code": "TIM"
+    },
+    {
+      "station": "通途",
+      "code": "TUT"
+    },
+    {
+      "station": "汤旺河",
+      "code": "THB"
+    },
+    {
+      "station": "同心",
+      "code": "TXJ"
+    },
+    {
+      "station": "土溪",
+      "code": "TSW"
+    },
+    {
+      "station": "桐乡",
+      "code": "TCH"
+    },
+    {
+      "station": "田阳",
+      "code": "TRZ"
+    },
+    {
+      "station": "天义",
+      "code": "TND"
+    },
+    {
+      "station": "汤阴",
+      "code": "TYF"
+    },
+    {
+      "station": "驼腰岭",
+      "code": "TIL"
+    },
+    {
+      "station": "太阳山",
+      "code": "TYJ"
+    },
+    {
+      "station": "汤原",
+      "code": "TYB"
+    },
+    {
+      "station": "塔崖驿",
+      "code": "TYP"
+    },
+    {
+      "station": "滕州东",
+      "code": "TEK"
+    },
+    {
+      "station": "台州",
+      "code": "TZH"
+    },
+    {
+      "station": "天祝",
+      "code": "TZJ"
+    },
+    {
+      "station": "滕州",
+      "code": "TXK"
+    },
+    {
+      "station": "天镇",
+      "code": "TZV"
+    },
+    {
+      "station": "桐子林",
+      "code": "TEW"
+    },
+    {
+      "station": "天柱山",
+      "code": "QWH"
+    },
+    {
+      "station": "文安",
+      "code": "WBP"
+    },
+    {
+      "station": "武安",
+      "code": "WAP"
+    },
+    {
+      "station": "王安镇",
+      "code": "WVP"
+    },
+    {
+      "station": "旺苍",
+      "code": "WEW"
+    },
+    {
+      "station": "五叉沟",
+      "code": "WCT"
+    },
+    {
+      "station": "文昌",
+      "code": "WEQ"
+    },
+    {
+      "station": "温春",
+      "code": "WDB"
+    },
+    {
+      "station": "五大连池",
+      "code": "WRB"
+    },
+    {
+      "station": "文登",
+      "code": "WBK"
+    },
+    {
+      "station": "五道沟",
+      "code": "WDL"
+    },
+    {
+      "station": "五道河",
+      "code": "WHP"
+    },
+    {
+      "station": "文地",
+      "code": "WNZ"
+    },
+    {
+      "station": "卫东",
+      "code": "WVT"
+    },
+    {
+      "station": "武当山",
+      "code": "WRN"
+    },
+    {
+      "station": "望都",
+      "code": "WDP"
+    },
+    {
+      "station": "乌尔旗汗",
+      "code": "WHX"
+    },
+    {
+      "station": "潍坊",
+      "code": "WFK"
+    },
+    {
+      "station": "万发屯",
+      "code": "WFB"
+    },
+    {
+      "station": "王府",
+      "code": "WUT"
+    },
+    {
+      "station": "瓦房店西",
+      "code": "WXT"
+    },
+    {
+      "station": "王岗",
+      "code": "WGB"
+    },
+    {
+      "station": "武功",
+      "code": "WGY"
+    },
+    {
+      "station": "湾沟",
+      "code": "WGL"
+    },
+    {
+      "station": "吴官田",
+      "code": "WGM"
+    },
+    {
+      "station": "乌海",
+      "code": "WVC"
+    },
+    {
+      "station": "苇河",
+      "code": "WHB"
+    },
+    {
+      "station": "卫辉",
+      "code": "WHF"
+    },
+    {
+      "station": "吴家川",
+      "code": "WCJ"
+    },
+    {
+      "station": "五家",
+      "code": "WUB"
+    },
+    {
+      "station": "威箐",
+      "code": "WAM"
+    },
+    {
+      "station": "午汲",
+      "code": "WJP"
+    },
+    {
+      "station": "渭津",
+      "code": "WJL"
+    },
+    {
+      "station": "王家湾",
+      "code": "WJJ"
+    },
+    {
+      "station": "倭肯",
+      "code": "WQB"
+    },
+    {
+      "station": "五棵树",
+      "code": "WKT"
+    },
+    {
+      "station": "五龙背",
+      "code": "WBT"
+    },
+    {
+      "station": "乌兰哈达",
+      "code": "WLC"
+    },
+    {
+      "station": "万乐",
+      "code": "WEB"
+    },
+    {
+      "station": "瓦拉干",
+      "code": "WVX"
+    },
+    {
+      "station": "温岭",
+      "code": "VHH"
+    },
+    {
+      "station": "五莲",
+      "code": "WLK"
+    },
+    {
+      "station": "乌拉特前旗",
+      "code": "WQC"
+    },
+    {
+      "station": "乌拉山",
+      "code": "WSC"
+    },
+    {
+      "station": "卧里屯",
+      "code": "WLX"
+    },
+    {
+      "station": "渭南北",
+      "code": "WBY"
+    },
+    {
+      "station": "乌奴耳",
+      "code": "WRX"
+    },
+    {
+      "station": "万宁",
+      "code": "WNQ"
+    },
+    {
+      "station": "万年",
+      "code": "WWG"
+    },
+    {
+      "station": "渭南南",
+      "code": "WVY"
+    },
+    {
+      "station": "渭南镇",
+      "code": "WNJ"
+    },
+    {
+      "station": "沃皮",
+      "code": "WPT"
+    },
+    {
+      "station": "吴堡",
+      "code": "WUY"
+    },
+    {
+      "station": "吴桥",
+      "code": "WUP"
+    },
+    {
+      "station": "汪清",
+      "code": "WQL"
+    },
+    {
+      "station": "武清",
+      "code": "WWP"
+    },
+    {
+      "station": "武山",
+      "code": "WSJ"
+    },
+    {
+      "station": "文水",
+      "code": "WEV"
+    },
+    {
+      "station": "魏善庄",
+      "code": "WSP"
+    },
+    {
+      "station": "王瞳",
+      "code": "WTP"
+    },
+    {
+      "station": "五台山",
+      "code": "WSV"
+    },
+    {
+      "station": "王团庄",
+      "code": "WZJ"
+    },
+    {
+      "station": "五五",
+      "code": "WVR"
+    },
+    {
+      "station": "无锡东",
+      "code": "WGH"
+    },
+    {
+      "station": "卫星",
+      "code": "WVB"
+    },
+    {
+      "station": "闻喜",
+      "code": "WXV"
+    },
+    {
+      "station": "武乡",
+      "code": "WVV"
+    },
+    {
+      "station": "无锡新区",
+      "code": "IFH"
+    },
+    {
+      "station": "武穴",
+      "code": "WXN"
+    },
+    {
+      "station": "吴圩",
+      "code": "WYZ"
+    },
+    {
+      "station": "王杨",
+      "code": "WYB"
+    },
+    {
+      "station": "武义",
+      "code": "RYH"
+    },
+    {
+      "station": "五营",
+      "code": "WWB"
+    },
+    {
+      "station": "瓦窑田",
+      "code": "WIM"
+    },
+    {
+      "station": "五原",
+      "code": "WYC"
+    },
+    {
+      "station": "苇子沟",
+      "code": "WZL"
+    },
+    {
+      "station": "韦庄",
+      "code": "WZY"
+    },
+    {
+      "station": "五寨",
+      "code": "WZV"
+    },
+    {
+      "station": "王兆屯",
+      "code": "WZB"
+    },
+    {
+      "station": "微子镇",
+      "code": "WQP"
+    },
+    {
+      "station": "魏杖子",
+      "code": "WKD"
+    },
+    {
+      "station": "新安",
+      "code": "EAM"
+    },
+    {
+      "station": "兴安",
+      "code": "XAZ"
+    },
+    {
+      "station": "新安县",
+      "code": "XAF"
+    },
+    {
+      "station": "新保安",
+      "code": "XAP"
+    },
+    {
+      "station": "下板城",
+      "code": "EBP"
+    },
+    {
+      "station": "西八里",
+      "code": "XLP"
+    },
+    {
+      "station": "宣城",
+      "code": "ECH"
+    },
+    {
+      "station": "兴城",
+      "code": "XCD"
+    },
+    {
+      "station": "小村",
+      "code": "XEM"
+    },
+    {
+      "station": "新绰源",
+      "code": "XRX"
+    },
+    {
+      "station": "下城子",
+      "code": "XCB"
+    },
+    {
+      "station": "新城子",
+      "code": "XCT"
+    },
+    {
+      "station": "喜德",
+      "code": "EDW"
+    },
+    {
+      "station": "小得江",
+      "code": "EJM"
+    },
+    {
+      "station": "西大庙",
+      "code": "XMP"
+    },
+    {
+      "station": "小董",
+      "code": "XEZ"
+    },
+    {
+      "station": "小东",
+      "code": "XOD"
+    },
+    {
+      "station": "信丰",
+      "code": "EFG"
+    },
+    {
+      "station": "襄汾",
+      "code": "XFV"
+    },
+    {
+      "station": "息烽",
+      "code": "XFW"
+    },
+    {
+      "station": "新干",
+      "code": "EGG"
+    },
+    {
+      "station": "孝感",
+      "code": "XGN"
+    },
+    {
+      "station": "西固城",
+      "code": "XUJ"
+    },
+    {
+      "station": "西固",
+      "code": "XIJ"
+    },
+    {
+      "station": "夏官营",
+      "code": "XGJ"
+    },
+    {
+      "station": "西岗子",
+      "code": "NBB"
+    },
+    {
+      "station": "襄河",
+      "code": "XXB"
+    },
+    {
+      "station": "新和",
+      "code": "XIR"
+    },
+    {
+      "station": "宣和",
+      "code": "XWJ"
+    },
+    {
+      "station": "斜河涧",
+      "code": "EEP"
+    },
+    {
+      "station": "新华屯",
+      "code": "XAX"
+    },
+    {
+      "station": "新华",
+      "code": "XHB"
+    },
+    {
+      "station": "新化",
+      "code": "EHQ"
+    },
+    {
+      "station": "宣化",
+      "code": "XHP"
+    },
+    {
+      "station": "兴和西",
+      "code": "XEC"
+    },
+    {
+      "station": "小河沿",
+      "code": "XYD"
+    },
+    {
+      "station": "下花园",
+      "code": "XYP"
+    },
+    {
+      "station": "小河镇",
+      "code": "EKY"
+    },
+    {
+      "station": "徐家",
+      "code": "XJB"
+    },
+    {
+      "station": "峡江",
+      "code": "EJG"
+    },
+    {
+      "station": "新绛",
+      "code": "XJV"
+    },
+    {
+      "station": "辛集",
+      "code": "ENP"
+    },
+    {
+      "station": "新江",
+      "code": "XJM"
+    },
+    {
+      "station": "西街口",
+      "code": "EKM"
+    },
+    {
+      "station": "许家屯",
+      "code": "XJT"
+    },
+    {
+      "station": "许家台",
+      "code": "XTJ"
+    },
+    {
+      "station": "谢家镇",
+      "code": "XMT"
+    },
+    {
+      "station": "兴凯",
+      "code": "EKB"
+    },
+    {
+      "station": "小榄",
+      "code": "EAQ"
+    },
+    {
+      "station": "香兰",
+      "code": "XNB"
+    },
+    {
+      "station": "兴隆店",
+      "code": "XDD"
+    },
+    {
+      "station": "新乐",
+      "code": "ELP"
+    },
+    {
+      "station": "新林",
+      "code": "XPX"
+    },
+    {
+      "station": "小岭",
+      "code": "XLB"
+    },
+    {
+      "station": "新李",
+      "code": "XLJ"
+    },
+    {
+      "station": "西林",
+      "code": "XYB"
+    },
+    {
+      "station": "西柳",
+      "code": "GCT"
+    },
+    {
+      "station": "仙林",
+      "code": "XPH"
+    },
+    {
+      "station": "新立屯",
+      "code": "XLD"
+    },
+    {
+      "station": "兴隆镇",
+      "code": "XZB"
+    },
+    {
+      "station": "新立镇",
+      "code": "XGT"
+    },
+    {
+      "station": "新民",
+      "code": "XMD"
+    },
+    {
+      "station": "西麻山",
+      "code": "XMB"
+    },
+    {
+      "station": "下马塘",
+      "code": "XAT"
+    },
+    {
+      "station": "孝南",
+      "code": "XNV"
+    },
+    {
+      "station": "咸宁北",
+      "code": "XRN"
+    },
+    {
+      "station": "兴宁",
+      "code": "ENQ"
+    },
+    {
+      "station": "咸宁",
+      "code": "XNN"
+    },
+    {
+      "station": "犀浦东",
+      "code": "XAW"
+    },
+    {
+      "station": "西平",
+      "code": "XPN"
+    },
+    {
+      "station": "兴平",
+      "code": "XPY"
+    },
+    {
+      "station": "新坪田",
+      "code": "XPM"
+    },
+    {
+      "station": "霞浦",
+      "code": "XOS"
+    },
+    {
+      "station": "溆浦",
+      "code": "EPQ"
+    },
+    {
+      "station": "犀浦",
+      "code": "XIW"
+    },
+    {
+      "station": "新青",
+      "code": "XQB"
+    },
+    {
+      "station": "新邱",
+      "code": "XQD"
+    },
+    {
+      "station": "兴泉堡",
+      "code": "XQJ"
+    },
+    {
+      "station": "仙人桥",
+      "code": "XRL"
+    },
+    {
+      "station": "小寺沟",
+      "code": "ESP"
+    },
+    {
+      "station": "杏树",
+      "code": "XSB"
+    },
+    {
+      "station": "浠水",
+      "code": "XZN"
+    },
+    {
+      "station": "下社",
+      "code": "XSV"
+    },
+    {
+      "station": "徐水",
+      "code": "XSP"
+    },
+    {
+      "station": "夏石",
+      "code": "XIZ"
+    },
+    {
+      "station": "小哨",
+      "code": "XAM"
+    },
+    {
+      "station": "新松浦",
+      "code": "XOB"
+    },
+    {
+      "station": "杏树屯",
+      "code": "XDT"
+    },
+    {
+      "station": "许三湾",
+      "code": "XSJ"
+    },
+    {
+      "station": "湘潭",
+      "code": "XTQ"
+    },
+    {
+      "station": "邢台",
+      "code": "XTP"
+    },
+    {
+      "station": "仙桃西",
+      "code": "XAN"
+    },
+    {
+      "station": "下台子",
+      "code": "EIP"
+    },
+    {
+      "station": "徐闻",
+      "code": "XJQ"
+    },
+    {
+      "station": "新窝铺",
+      "code": "EPD"
+    },
+    {
+      "station": "修武",
+      "code": "XWF"
+    },
+    {
+      "station": "新县",
+      "code": "XSN"
+    },
+    {
+      "station": "息县",
+      "code": "ENN"
+    },
+    {
+      "station": "西乡",
+      "code": "XQY"
+    },
+    {
+      "station": "湘乡",
+      "code": "XXQ"
+    },
+    {
+      "station": "西峡",
+      "code": "XIF"
+    },
+    {
+      "station": "孝西",
+      "code": "XOV"
+    },
+    {
+      "station": "小新街",
+      "code": "XXM"
+    },
+    {
+      "station": "新兴县",
+      "code": "XGQ"
+    },
+    {
+      "station": "西小召",
+      "code": "XZC"
+    },
+    {
+      "station": "小西庄",
+      "code": "XXP"
+    },
+    {
+      "station": "向阳",
+      "code": "XDB"
+    },
+    {
+      "station": "旬阳",
+      "code": "XUY"
+    },
+    {
+      "station": "旬阳北",
+      "code": "XBY"
+    },
+    {
+      "station": "襄阳东",
+      "code": "XWN"
+    },
+    {
+      "station": "兴业",
+      "code": "SNZ"
+    },
+    {
+      "station": "小雨谷",
+      "code": "XHM"
+    },
+    {
+      "station": "信宜",
+      "code": "EEQ"
+    },
+    {
+      "station": "小月旧",
+      "code": "XFM"
+    },
+    {
+      "station": "小扬气",
+      "code": "XYX"
+    },
+    {
+      "station": "祥云",
+      "code": "EXM"
+    },
+    {
+      "station": "襄垣",
+      "code": "EIF"
+    },
+    {
+      "station": "夏邑县",
+      "code": "EJH"
+    },
+    {
+      "station": "新友谊",
+      "code": "EYB"
+    },
+    {
+      "station": "新阳镇",
+      "code": "XZJ"
+    },
+    {
+      "station": "徐州东",
+      "code": "UUH"
+    },
+    {
+      "station": "新帐房",
+      "code": "XZX"
+    },
+    {
+      "station": "悬钟",
+      "code": "XRP"
+    },
+    {
+      "station": "新肇",
+      "code": "XZT"
+    },
+    {
+      "station": "忻州",
+      "code": "XXV"
+    },
+    {
+      "station": "汐子",
+      "code": "XZD"
+    },
+    {
+      "station": "西哲里木",
+      "code": "XRD"
+    },
+    {
+      "station": "新杖子",
+      "code": "ERP"
+    },
+    {
+      "station": "姚安",
+      "code": "YAC"
+    },
+    {
+      "station": "依安",
+      "code": "YAX"
+    },
+    {
+      "station": "永安",
+      "code": "YAS"
+    },
+    {
+      "station": "永安乡",
+      "code": "YNB"
+    },
+    {
+      "station": "亚布力",
+      "code": "YBB"
+    },
+    {
+      "station": "元宝山",
+      "code": "YUD"
+    },
+    {
+      "station": "羊草",
+      "code": "YAB"
+    },
+    {
+      "station": "秧草地",
+      "code": "YKM"
+    },
+    {
+      "station": "阳澄湖",
+      "code": "AIH"
+    },
+    {
+      "station": "迎春",
+      "code": "YYB"
+    },
+    {
+      "station": "叶城",
+      "code": "YER"
+    },
+    {
+      "station": "盐池",
+      "code": "YKJ"
+    },
+    {
+      "station": "砚川",
+      "code": "YYY"
+    },
+    {
+      "station": "阳春",
+      "code": "YQQ"
+    },
+    {
+      "station": "宜城",
+      "code": "YIN"
+    },
+    {
+      "station": "应城",
+      "code": "YHN"
+    },
+    {
+      "station": "禹城",
+      "code": "YCK"
+    },
+    {
+      "station": "晏城",
+      "code": "YEK"
+    },
+    {
+      "station": "羊场",
+      "code": "YED"
+    },
+    {
+      "station": "阳城",
+      "code": "YNF"
+    },
+    {
+      "station": "阳岔",
+      "code": "YAL"
+    },
+    {
+      "station": "郓城",
+      "code": "YPK"
+    },
+    {
+      "station": "雁翅",
+      "code": "YAP"
+    },
+    {
+      "station": "云彩岭",
+      "code": "ACP"
+    },
+    {
+      "station": "虞城县",
+      "code": "IXH"
+    },
+    {
+      "station": "营城子",
+      "code": "YCT"
+    },
+    {
+      "station": "英德",
+      "code": "YDQ"
+    },
+    {
+      "station": "永登",
+      "code": "YDJ"
+    },
+    {
+      "station": "尹地",
+      "code": "YDM"
+    },
+    {
+      "station": "永定",
+      "code": "YGS"
+    },
+    {
+      "station": "雁荡山",
+      "code": "YGH"
+    },
+    {
+      "station": "于都",
+      "code": "YDG"
+    },
+    {
+      "station": "园墩",
+      "code": "YAJ"
+    },
+    {
+      "station": "英德西",
+      "code": "IIQ"
+    },
+    {
+      "station": "永丰营",
+      "code": "YYM"
+    },
+    {
+      "station": "杨岗",
+      "code": "YRB"
+    },
+    {
+      "station": "阳高",
+      "code": "YOV"
+    },
+    {
+      "station": "阳谷",
+      "code": "YIK"
+    },
+    {
+      "station": "友好",
+      "code": "YOB"
+    },
+    {
+      "station": "余杭",
+      "code": "EVH"
+    },
+    {
+      "station": "沿河城",
+      "code": "YHP"
+    },
+    {
+      "station": "岩会",
+      "code": "AEP"
+    },
+    {
+      "station": "羊臼河",
+      "code": "YHM"
+    },
+    {
+      "station": "永嘉",
+      "code": "URH"
+    },
+    {
+      "station": "营街",
+      "code": "YAM"
+    },
+    {
+      "station": "盐津",
+      "code": "AEW"
+    },
+    {
+      "station": "余江",
+      "code": "YHG"
+    },
+    {
+      "station": "燕郊",
+      "code": "AJP"
+    },
+    {
+      "station": "姚家",
+      "code": "YAT"
+    },
+    {
+      "station": "岳家井",
+      "code": "YGJ"
+    },
+    {
+      "station": "一间堡",
+      "code": "YJT"
+    },
+    {
+      "station": "英吉沙",
+      "code": "YIR"
+    },
+    {
+      "station": "云居寺",
+      "code": "AFP"
+    },
+    {
+      "station": "燕家庄",
+      "code": "AZK"
+    },
+    {
+      "station": "永康",
+      "code": "RFH"
+    },
+    {
+      "station": "营口东",
+      "code": "YGT"
+    },
+    {
+      "station": "银浪",
+      "code": "YJX"
+    },
+    {
+      "station": "永郎",
+      "code": "YLW"
+    },
+    {
+      "station": "宜良北",
+      "code": "YSM"
+    },
+    {
+      "station": "永乐店",
+      "code": "YDY"
+    },
+    {
+      "station": "伊拉哈",
+      "code": "YLX"
+    },
+    {
+      "station": "伊林",
+      "code": "YLB"
+    },
+    {
+      "station": "杨陵",
+      "code": "YSY"
+    },
+    {
+      "station": "彝良",
+      "code": "ALW"
+    },
+    {
+      "station": "杨林",
+      "code": "YLM"
+    },
+    {
+      "station": "余粮堡",
+      "code": "YLD"
+    },
+    {
+      "station": "杨柳青",
+      "code": "YQP"
+    },
+    {
+      "station": "月亮田",
+      "code": "YUM"
+    },
+    {
+      "station": "义马",
+      "code": "YMF"
+    },
+    {
+      "station": "玉门",
+      "code": "YXJ"
+    },
+    {
+      "station": "云梦",
+      "code": "YMN"
+    },
+    {
+      "station": "元谋",
+      "code": "YMM"
+    },
+    {
+      "station": "阳明堡",
+      "code": "YVV"
+    },
+    {
+      "station": "一面山",
+      "code": "YST"
+    },
+    {
+      "station": "沂南",
+      "code": "YNK"
+    },
+    {
+      "station": "宜耐",
+      "code": "YVM"
+    },
+    {
+      "station": "伊宁东",
+      "code": "YNR"
+    },
+    {
+      "station": "营盘水",
+      "code": "YZJ"
+    },
+    {
+      "station": "羊堡",
+      "code": "ABM"
+    },
+    {
+      "station": "阳泉北",
+      "code": "YPP"
+    },
+    {
+      "station": "乐清",
+      "code": "UPH"
+    },
+    {
+      "station": "焉耆",
+      "code": "YSR"
+    },
+    {
+      "station": "源迁",
+      "code": "AQK"
+    },
+    {
+      "station": "姚千户屯",
+      "code": "YQT"
+    },
+    {
+      "station": "阳曲",
+      "code": "YQV"
+    },
+    {
+      "station": "榆树沟",
+      "code": "YGP"
+    },
+    {
+      "station": "月山",
+      "code": "YBF"
+    },
+    {
+      "station": "玉石",
+      "code": "YSJ"
+    },
+    {
+      "station": "玉舍",
+      "code": "AUM"
+    },
+    {
+      "station": "偃师",
+      "code": "YSF"
+    },
+    {
+      "station": "沂水",
+      "code": "YUK"
+    },
+    {
+      "station": "榆社",
+      "code": "YSV"
+    },
+    {
+      "station": "窑上",
+      "code": "ASP"
+    },
+    {
+      "station": "元氏",
+      "code": "YSP"
+    },
+    {
+      "station": "杨树岭",
+      "code": "YAD"
+    },
+    {
+      "station": "野三坡",
+      "code": "AIP"
+    },
+    {
+      "station": "榆树屯",
+      "code": "YSX"
+    },
+    {
+      "station": "榆树台",
+      "code": "YUT"
+    },
+    {
+      "station": "鹰手营子",
+      "code": "YIP"
+    },
+    {
+      "station": "源潭",
+      "code": "YTQ"
+    },
+    {
+      "station": "牙屯堡",
+      "code": "YTZ"
+    },
+    {
+      "station": "烟筒山",
+      "code": "YSL"
+    },
+    {
+      "station": "烟筒屯",
+      "code": "YUX"
+    },
+    {
+      "station": "羊尾哨",
+      "code": "YWM"
+    },
+    {
+      "station": "越西",
+      "code": "YHW"
+    },
+    {
+      "station": "攸县",
+      "code": "YOG"
+    },
+    {
+      "station": "永修",
+      "code": "ACG"
+    },
+    {
+      "station": "玉溪西",
+      "code": "YXM"
+    },
+    {
+      "station": "弋阳",
+      "code": "YIG"
+    },
+    {
+      "station": "余姚",
+      "code": "YYH"
+    },
+    {
+      "station": "酉阳",
+      "code": "AFW"
+    },
+    {
+      "station": "岳阳东",
+      "code": "YIQ"
+    },
+    {
+      "station": "阳邑",
+      "code": "ARP"
+    },
+    {
+      "station": "鸭园",
+      "code": "YYL"
+    },
+    {
+      "station": "鸳鸯镇",
+      "code": "YYJ",
+      "code": ""
+    },
+    {
+      "station": "燕子砭",
+      "code": "YZY",
+      "code": ""
+    },
+    {
+      "station": "仪征",
+      "code": "UZH"
+    },
+    {
+      "station": "宜州",
+      "code": "YSZ"
+    },
+    {
+      "station": "兖州",
+      "code": "YZK"
+    },
+    {
+      "station": "迤资",
+      "code": "YQM"
+    },
+    {
+      "station": "羊者窝",
+      "code": "AEM"
+    },
+    {
+      "station": "杨杖子",
+      "code": "YZD"
+    },
+    {
+      "station": "镇安",
+      "code": "ZEY"
+    },
+    {
+      "station": "治安",
+      "code": "ZAD"
+    },
+    {
+      "station": "招柏",
+      "code": "ZBP"
+    },
+    {
+      "station": "张百湾",
+      "code": "ZUP"
+    },
+    {
+      "station": "中川机场",
+      "code": "ZJJ"
+    },
+    {
+      "station": "枝城",
+      "code": "ZCN"
+    },
+    {
+      "station": "子长",
+      "code": "ZHY"
+    },
+    {
+      "station": "诸城",
+      "code": "ZQK"
+    },
+    {
+      "station": "邹城",
+      "code": "ZIK"
+    },
+    {
+      "station": "赵城",
+      "code": "ZCV"
+    },
+    {
+      "station": "章党",
+      "code": "ZHT"
+    },
+    {
+      "station": "正定",
+      "code": "ZDP"
+    },
+    {
+      "station": "肇东",
+      "code": "ZDB"
+    },
+    {
+      "station": "照福铺",
+      "code": "ZFM"
+    },
+    {
+      "station": "章古台",
+      "code": "ZGD"
+    },
+    {
+      "station": "赵光",
+      "code": "ZGB"
+    },
+    {
+      "station": "中和",
+      "code": "ZHX"
+    },
+    {
+      "station": "中华门",
+      "code": "VNH"
+    },
+    {
+      "station": "枝江北",
+      "code": "ZIN"
+    },
+    {
+      "station": "钟家村",
+      "code": "ZJY"
+    },
+    {
+      "station": "朱家沟",
+      "code": "ZUB"
+    },
+    {
+      "station": "紫荆关",
+      "code": "ZYP"
+    },
+    {
+      "station": "周家",
+      "code": "ZOB"
+    },
+    {
+      "station": "诸暨",
+      "code": "ZDH"
+    },
+    {
+      "station": "镇江南",
+      "code": "ZEH"
+    },
+    {
+      "station": "周家屯",
+      "code": "ZOD"
+    },
+    {
+      "station": "褚家湾",
+      "code": "CWJ"
+    },
+    {
+      "station": "湛江西",
+      "code": "ZWQ"
+    },
+    {
+      "station": "朱家窑",
+      "code": "ZUJ"
+    },
+    {
+      "station": "曾家坪子",
+      "code": "ZBW"
+    },
+    {
+      "station": "张兰",
+      "code": "ZLV"
+    },
+    {
+      "station": "镇赉",
+      "code": "ZLT"
+    },
+    {
+      "station": "枣林",
+      "code": "ZIV"
+    },
+    {
+      "station": "扎鲁特",
+      "code": "ZLD"
+    },
+    {
+      "station": "扎赉诺尔西",
+      "code": "ZXX"
+    },
+    {
+      "station": "樟木头",
+      "code": "ZOQ"
+    },
+    {
+      "station": "中牟",
+      "code": "ZGF"
+    },
+    {
+      "station": "中宁东",
+      "code": "ZDJ"
+    },
+    {
+      "station": "中宁",
+      "code": "VNJ"
+    },
+    {
+      "station": "中宁南",
+      "code": "ZNJ"
+    },
+    {
+      "station": "镇平",
+      "code": "ZPF"
+    },
+    {
+      "station": "漳平",
+      "code": "ZPS"
+    },
+    {
+      "station": "泽普",
+      "code": "ZPR"
+    },
+    {
+      "station": "枣强",
+      "code": "ZVP"
+    },
+    {
+      "station": "张桥",
+      "code": "ZQY"
+    },
+    {
+      "station": "章丘",
+      "code": "ZTK"
+    },
+    {
+      "station": "朱日和",
+      "code": "ZRC"
+    },
+    {
+      "station": "泽润里",
+      "code": "ZLM"
+    },
+    {
+      "station": "中山北",
+      "code": "ZGQ"
+    },
+    {
+      "station": "樟树东",
+      "code": "ZOG"
+    },
+    {
+      "station": "中山",
+      "code": "ZSQ"
+    },
+    {
+      "station": "柞水",
+      "code": "ZSY"
+    },
+    {
+      "station": "钟山",
+      "code": "ZSZ"
+    },
+    {
+      "station": "樟树",
+      "code": "ZSG"
+    },
+    {
+      "station": "珠窝",
+      "code": "ZOP"
+    },
+    {
+      "station": "张维屯",
+      "code": "ZWB"
+    },
+    {
+      "station": "彰武",
+      "code": "ZWD"
+    },
+    {
+      "station": "棕溪",
+      "code": "ZOY"
+    },
+    {
+      "station": "钟祥",
+      "code": "ZTN"
+    },
+    {
+      "station": "资溪",
+      "code": "ZXS"
+    },
+    {
+      "station": "镇西",
+      "code": "ZVT"
+    },
+    {
+      "station": "张辛",
+      "code": "ZIP"
+    },
+    {
+      "station": "正镶白旗",
+      "code": "ZXC"
+    },
+    {
+      "station": "紫阳",
+      "code": "ZVY"
+    },
+    {
+      "station": "枣阳",
+      "code": "ZYN"
+    },
+    {
+      "station": "竹园坝",
+      "code": "ZAW"
+    },
+    {
+      "station": "张掖",
+      "code": "ZYJ"
+    },
+    {
+      "station": "镇远",
+      "code": "ZUW"
+    },
+    {
+      "station": "朱杨溪",
+      "code": "ZXW"
+    },
+    {
+      "station": "漳州东",
+      "code": "GOS"
+    },
+    {
+      "station": "漳州",
+      "code": "ZUS"
+    },
+    {
+      "station": "壮志",
+      "code": "ZUX"
+    },
+    {
+      "station": "子洲",
+      "code": "ZZY"
+    },
+    {
+      "station": "中寨",
+      "code": "ZZM"
+    },
+    {
+      "station": "涿州",
+      "code": "ZXP"
+    },
+    {
+      "station": "咋子",
+      "code": "ZAL"
+    },
+    {
+      "station": "卓资山",
+      "code": "ZZC"
+    },
+    {
+      "station": "株洲西",
+      "code": "ZAQ"
+    },
+    {
+      "station": "郑州西",
+      "code": "XPF"
+    },
+    {
+      "station": "阿巴嘎旗",
+      "code": "AQC"
+    },
+    {
+      "station": "阿尔山北",
+      "code": "ARX"
+    },
+    {
+      "station": "安仁",
+      "code": "ARG"
+    },
+    {
+      "station": "安顺西",
+      "code": "ASE"
+    },
+    {
+      "station": "安图西",
+      "code": "AXL"
+    },
+    {
+      "station": "安阳东",
+      "code": "ADF"
+    },
+    {
+      "station": "博白",
+      "code": "BBZ"
+    },
+    {
+      "station": "八步",
+      "code": "BBE"
+    },
+    {
+      "station": "栟茶",
+      "code": "FWH"
+    },
+    {
+      "station": "保定东",
+      "code": "BMP"
+    },
+    {
+      "station": "白沟",
+      "code": "FEP"
+    },
+    {
+      "station": "滨海",
+      "code": "FHP"
+    },
+    {
+      "station": "滨海北",
+      "code": "FCP"
+    },
+    {
+      "station": "宝鸡南",
+      "code": "BBY"
+    },
+    {
+      "station": "北井子",
+      "code": "BRT"
+    },
+    {
+      "station": "白马井",
+      "code": "BFQ"
+    },
+    {
+      "station": "宝清",
+      "code": "BUB"
+    },
+    {
+      "station": "璧山",
+      "code": "FZW"
+    },
+    {
+      "station": "白水县",
+      "code": "BGY"
+    },
+    {
+      "station": "板塘",
+      "code": "NGQ"
+    },
+    {
+      "station": "本溪新城",
+      "code": "BVT"
+    },
+    {
+      "station": "彬县",
+      "code": "BXY"
+    },
+    {
+      "station": "宾阳",
+      "code": "UKZ"
+    },
+    {
+      "station": "白洋淀",
+      "code": "FWP"
+    },
+    {
+      "station": "百宜",
+      "code": "FHW"
+    },
+    {
+      "station": "白音华南",
+      "code": "FNC"
+    },
+    {
+      "station": "巴中东",
+      "code": "BDE"
+    },
+    {
+      "station": "滨州",
+      "code": "BIK"
+    },
+    {
+      "station": "霸州西",
+      "code": "FOP"
+    },
+    {
+      "station": "澄城",
+      "code": "CUY"
+    },
+    {
+      "station": "巢湖东",
+      "code": "GUH"
+    },
+    {
+      "station": "从江",
+      "code": "KNW"
+    },
+    {
+      "station": "茶卡",
+      "code": "CVO"
+    },
+    {
+      "station": "长临河",
+      "code": "FVH"
+    },
+    {
+      "station": "茶陵南",
+      "code": "CNG"
+    },
+    {
+      "station": "常平东",
+      "code": "FQQ"
+    },
+    {
+      "station": "长庆桥",
+      "code": "CQJ"
+    },
+    {
+      "station": "长寿北",
+      "code": "COW"
+    },
+    {
+      "station": "长寿湖",
+      "code": "CSE"
+    },
+    {
+      "station": "潮汕",
+      "code": "CBQ"
+    },
+    {
+      "station": "长汀南",
+      "code": "CNS"
+    },
+    {
+      "station": "长武",
+      "code": "CWY"
+    },
+    {
+      "station": "长兴",
+      "code": "CBH"
+    },
+    {
+      "station": "苍溪",
+      "code": "CXE"
+    },
+    {
+      "station": "长阳",
+      "code": "CYN"
+    },
+    {
+      "station": "潮阳",
+      "code": "CNQ"
+    },
+    {
+      "station": "城子坦",
+      "code": "CWT"
+    },
+    {
+      "station": "东安东",
+      "code": "DCZ"
+    },
+    {
+      "station": "德保",
+      "code": "RBZ"
+    },
+    {
+      "station": "东戴河",
+      "code": "RDD"
+    },
+    {
+      "station": "丹东西",
+      "code": "RWT"
+    },
+    {
+      "station": "东二道河",
+      "code": "DRB"
+    },
+    {
+      "station": "大丰",
+      "code": "KRQ"
+    },
+    {
+      "station": "大方南",
+      "code": "DNE"
+    },
+    {
+      "station": "东港北",
+      "code": "RGT"
+    },
+    {
+      "station": "大孤山",
+      "code": "RMT"
+    },
+    {
+      "station": "东莞",
+      "code": "RTQ"
+    },
+    {
+      "station": "鼎湖东",
+      "code": "UWQ"
+    },
+    {
+      "station": "鼎湖山",
+      "code": "NVQ"
+    },
+    {
+      "station": "洞井",
+      "code": "FWQ"
+    },
+    {
+      "station": "垫江",
+      "code": "DJE"
+    },
+    {
+      "station": "大苴",
+      "code": "DIM"
+    },
+    {
+      "station": "大荔",
+      "code": "DNY"
+    },
+    {
+      "station": "大青沟",
+      "code": "DSD"
+    },
+    {
+      "station": "德清",
+      "code": "DRH"
+    },
+    {
+      "station": "砀山南",
+      "code": "PRH"
+    },
+    {
+      "station": "大石头南",
+      "code": "DAL"
+    },
+    {
+      "station": "当涂东",
+      "code": "OWH"
+    },
+    {
+      "station": "大通西",
+      "code": "DTO"
+    },
+    {
+      "station": "大旺",
+      "code": "WWQ"
+    },
+    {
+      "station": "德兴",
+      "code": "DWG"
+    },
+    {
+      "station": "丹霞山",
+      "code": "IRQ"
+    },
+    {
+      "station": "大冶北",
+      "code": "DBN"
+    },
+    {
+      "station": "都匀东",
+      "code": "KJW"
+    },
+    {
+      "station": "东营南",
+      "code": "DOK"
+    },
+    {
+      "station": "大余",
+      "code": "DYG"
+    },
+    {
+      "station": "定州东",
+      "code": "DOP"
+    },
+    {
+      "station": "端州",
+      "code": "WZQ"
+    },
+    {
+      "station": "大足南",
+      "code": "FQW"
+    },
+    {
+      "station": "峨眉山",
+      "code": "IXW"
+    },
+    {
+      "station": "鄂州东",
+      "code": "EFN"
+    },
+    {
+      "station": "防城港北",
+      "code": "FBZ"
+    },
+    {
+      "station": "凤城东",
+      "code": "FDT"
+    },
+    {
+      "station": "富川",
+      "code": "FDZ"
+    },
+    {
+      "station": "繁昌西",
+      "code": "PUH"
+    },
+    {
+      "station": "丰都",
+      "code": "FUW"
+    },
+    {
+      "station": "涪陵北",
+      "code": "FEW"
+    },
+    {
+      "station": "富宁",
+      "code": "FNM"
+    },
+    {
+      "station": "法启",
+      "code": "FQE"
+    },
+    {
+      "station": "芙蓉南",
+      "code": "KCQ"
+    },
+    {
+      "station": "复盛",
+      "code": "FAW"
+    },
+    {
+      "station": "抚松",
+      "code": "FSL"
+    },
+    {
+      "station": "福山镇",
+      "code": "FZQ"
+    },
+    {
+      "station": "福田",
+      "code": "NZQ"
+    },
+    {
+      "station": "富源北",
+      "code": "FBM"
+    },
+    {
+      "station": "抚远",
+      "code": "FYB"
+    },
+    {
+      "station": "抚州东",
+      "code": "FDG"
+    },
+    {
+      "station": "抚州",
+      "code": "FZG"
+    },
+    {
+      "station": "高安",
+      "code": "GCG"
+    },
+    {
+      "station": "广安南",
+      "code": "VUW"
+    },
+    {
+      "station": "贵安",
+      "code": "GAE"
+    },
+    {
+      "station": "高碑店东",
+      "code": "GMP"
+    },
+    {
+      "station": "恭城",
+      "code": "GCZ"
+    },
+    {
+      "station": "贵定北",
+      "code": "FMW"
+    },
+    {
+      "station": "葛店南",
+      "code": "GNN"
+    },
+    {
+      "station": "贵定县",
+      "code": "KIW"
+    },
+    {
+      "station": "广汉北",
+      "code": "GVW"
+    },
+    {
+      "station": "革居",
+      "code": "GEM"
+    },
+    {
+      "station": "关岭",
+      "code": "GLE"
+    },
+    {
+      "station": "桂林西",
+      "code": "GEZ"
+    },
+    {
+      "station": "光明城",
+      "code": "IMQ"
+    },
+    {
+      "station": "广宁",
+      "code": "FBQ"
+    },
+    {
+      "station": "广宁寺",
+      "code": "GQT"
+    },
+    {
+      "station": "广南县",
+      "code": "GXM"
+    },
+    {
+      "station": "桂平",
+      "code": "GAZ"
+    },
+    {
+      "station": "弓棚子",
+      "code": "GPT"
+    },
+    {
+      "station": "光山",
+      "code": "GUN"
+    },
+    {
+      "station": "古田北",
+      "code": "GBS"
+    },
+    {
+      "station": "广通北",
+      "code": "GPM"
+    },
+    {
+      "station": "高台南",
+      "code": "GAJ"
+    },
+    {
+      "station": "古田会址",
+      "code": "STS"
+    },
+    {
+      "station": "贵阳北",
+      "code": "KQW"
+    },
+    {
+      "station": "高邑西",
+      "code": "GNP"
+    },
+    {
+      "station": "惠安",
+      "code": "HNS"
+    },
+    {
+      "station": "鹤壁东",
+      "code": "HFF"
+    },
+    {
+      "station": "寒葱沟",
+      "code": "HKB"
+    },
+    {
+      "station": "珲春",
+      "code": "HUL"
+    },
+    {
+      "station": "邯郸东",
+      "code": "HPP"
+    },
+    {
+      "station": "惠东",
+      "code": "KDQ"
+    },
+    {
+      "station": "哈达铺",
+      "code": "HDJ"
+    },
+    {
+      "station": "海东西",
+      "code": "HDO"
+    },
+    {
+      "station": "洪洞西",
+      "code": "HTV"
+    },
+    {
+      "station": "哈尔滨北",
+      "code": "HTB"
+    },
+    {
+      "station": "合肥北城",
+      "code": "COH"
+    },
+    {
+      "station": "合肥南",
+      "code": "ENH"
+    },
+    {
+      "station": "黄冈",
+      "code": "KGN"
+    },
+    {
+      "station": "黄冈东",
+      "code": "KAN"
+    },
+    {
+      "station": "横沟桥东",
+      "code": "HNN"
+    },
+    {
+      "station": "黄冈西",
+      "code": "KXN"
+    },
+    {
+      "station": "洪河",
+      "code": "HPB"
+    },
+    {
+      "station": "怀化南",
+      "code": "KAQ"
+    },
+    {
+      "station": "黄河景区",
+      "code": "HCF"
+    },
+    {
+      "station": "花湖",
+      "code": "KHN"
+    },
+    {
+      "station": "惠环",
+      "code": "KHQ"
+    },
+    {
+      "station": "后湖",
+      "code": "IHN"
+    },
+    {
+      "station": "怀集",
+      "code": "FAQ"
+    },
+    {
+      "station": "河口北",
+      "code": "HBM"
+    },
+    {
+      "station": "黄流",
+      "code": "KLQ"
+    },
+    {
+      "station": "黄陵南",
+      "code": "VLY"
+    },
+    {
+      "station": "鲘门",
+      "code": "KMQ"
+    },
+    {
+      "station": "虎门",
+      "code": "IUQ"
+    },
+    {
+      "station": "侯马西",
+      "code": "HPV"
+    },
+    {
+      "station": "衡南",
+      "code": "HNG"
+    },
+    {
+      "station": "淮南东",
+      "code": "HOH"
+    },
+    {
+      "station": "合浦",
+      "code": "HVZ"
+    },
+    {
+      "station": "霍邱",
+      "code": "FBH"
+    },
+    {
+      "station": "怀仁东",
+      "code": "HFV"
+    },
+    {
+      "station": "华容东",
+      "code": "HPN"
+    },
+    {
+      "station": "华容南",
+      "code": "KRN"
+    },
+    {
+      "station": "黄石北",
+      "code": "KSN"
+    },
+    {
+      "station": "黄山北",
+      "code": "NYH"
+    },
+    {
+      "station": "贺胜桥东",
+      "code": "HLN"
+    },
+    {
+      "station": "和硕",
+      "code": "VUR"
+    },
+    {
+      "station": "花山南",
+      "code": "KNN"
+    },
+    {
+      "station": "荷塘",
+      "code": "KXQ"
+    },
+    {
+      "station": "合阳北",
+      "code": "HTY"
+    },
+    {
+      "station": "海阳北",
+      "code": "HEK"
+    },
+    {
+      "station": "槐荫",
+      "code": "IYN"
+    },
+    {
+      "station": "花园口",
+      "code": "HYT"
+    },
+    {
+      "station": "霍州东",
+      "code": "HWV"
+    },
+    {
+      "station": "惠州南",
+      "code": "KNQ"
+    },
+    {
+      "station": "泾川",
+      "code": "JAJ"
+    },
+    {
+      "station": "旌德",
+      "code": "NSH"
+    },
+    {
+      "station": "尖峰",
+      "code": "PFQ"
+    },
+    {
+      "station": "蛟河西",
+      "code": "JOL"
+    },
+    {
+      "station": "军粮城北",
+      "code": "JMP"
+    },
+    {
+      "station": "将乐",
+      "code": "JLS"
+    },
+    {
+      "station": "贾鲁河",
+      "code": "JLF"
+    },
+    {
+      "station": "九郎山",
+      "code": "KJQ"
+    },
+    {
+      "station": "即墨北",
+      "code": "JVK"
+    },
+    {
+      "station": "建宁县北",
+      "code": "JCS"
+    },
+    {
+      "station": "江宁",
+      "code": "JJH"
+    },
+    {
+      "station": "江宁西",
+      "code": "OKH"
+    },
+    {
+      "station": "建瓯西",
+      "code": "JUS"
+    },
+    {
+      "station": "酒泉南",
+      "code": "JNJ"
+    },
+    {
+      "station": "句容西",
+      "code": "JWH"
+    },
+    {
+      "station": "建水",
+      "code": "JSM"
+    },
+    {
+      "station": "界首市",
+      "code": "JUN"
+    },
+    {
+      "station": "绩溪北",
+      "code": "NRH"
+    },
+    {
+      "station": "介休东",
+      "code": "JDV"
+    },
+    {
+      "station": "泾县",
+      "code": "LOH"
+    },
+    {
+      "station": "靖西",
+      "code": "JMZ"
+    },
+    {
+      "station": "进贤南",
+      "code": "JXG"
+    },
+    {
+      "station": "嘉峪关南",
+      "code": "JBJ"
+    },
+    {
+      "station": "简阳南",
+      "code": "JOW"
+    },
+    {
+      "station": "金银潭",
+      "code": "JTN"
+    },
+    {
+      "station": "靖宇",
+      "code": "JYL"
+    },
+    {
+      "station": "金月湾",
+      "code": "PYQ"
+    },
+    {
+      "station": "缙云西",
+      "code": "PYH"
+    },
+    {
+      "station": "晋中",
+      "code": "JZV"
+    },
+    {
+      "station": "开封北",
+      "code": "KBF"
+    },
+    {
+      "station": "凯里南",
+      "code": "QKW"
+    },
+    {
+      "station": "库伦",
+      "code": "KLD"
+    },
+    {
+      "station": "昆明南",
+      "code": "KOM"
+    },
+    {
+      "station": "葵潭",
+      "code": "KTQ"
+    },
+    {
+      "station": "开阳",
+      "code": "KVW"
+    },
+    {
+      "station": "隆安东",
+      "code": "IDZ"
+    },
+    {
+      "station": "来宾北",
+      "code": "UCZ"
+    },
+    {
+      "station": "灵璧",
+      "code": "GMH"
+    },
+    {
+      "station": "绿博园",
+      "code": "LCF"
+    },
+    {
+      "station": "隆昌北",
+      "code": "NWW"
+    },
+    {
+      "station": "临城",
+      "code": "UUP"
+    },
+    {
+      "station": "罗城",
+      "code": "VCZ"
+    },
+    {
+      "station": "陵城",
+      "code": "LGK"
+    },
+    {
+      "station": "老城镇",
+      "code": "ACQ"
+    },
+    {
+      "station": "龙洞堡",
+      "code": "FVW"
+    },
+    {
+      "station": "乐都南",
+      "code": "LVO"
+    },
+    {
+      "station": "娄底南",
+      "code": "UOQ"
+    },
+    {
+      "station": "乐东",
+      "code": "UQQ"
+    },
+    {
+      "station": "离堆公园",
+      "code": "INW"
+    },
+    {
+      "station": "陆丰",
+      "code": "LLQ"
+    },
+    {
+      "station": "龙丰",
+      "code": "KFQ"
+    },
+    {
+      "station": "禄丰南",
+      "code": "LQM"
+    },
+    {
+      "station": "临汾西",
+      "code": "LXV"
+    },
+    {
+      "station": "临高南",
+      "code": "KGQ"
+    },
+    {
+      "station": "滦河",
+      "code": "UDP"
+    },
+    {
+      "station": "漯河西",
+      "code": "LBN"
+    },
+    {
+      "station": "罗江东",
+      "code": "IKW"
+    },
+    {
+      "station": "柳江",
+      "code": "UQZ"
+    },
+    {
+      "station": "利津南",
+      "code": "LNK"
+    },
+    {
+      "station": "兰考南",
+      "code": "LUF"
+    },
+    {
+      "station": "兰陵北",
+      "code": "COK"
+    },
+    {
+      "station": "龙里北",
+      "code": "KFW"
+    },
+    {
+      "station": "沥林北",
+      "code": "KBQ"
+    },
+    {
+      "station": "醴陵东",
+      "code": "UKQ"
+    },
+    {
+      "station": "陇南",
+      "code": "INJ"
+    },
+    {
+      "station": "梁平南",
+      "code": "LPE"
+    },
+    {
+      "station": "礼泉",
+      "code": "LGY"
+    },
+    {
+      "station": "灵石东",
+      "code": "UDV"
+    },
+    {
+      "station": "乐山",
+      "code": "IVW"
+    },
+    {
+      "station": "龙市",
+      "code": "LAG"
+    },
+    {
+      "station": "溧水",
+      "code": "LDH"
+    },
+    {
+      "station": "洛湾三江",
+      "code": "KRW"
+    },
+    {
+      "station": "莱西北",
+      "code": "LBK"
+    },
+    {
+      "station": "溧阳",
+      "code": "LEH"
+    },
+    {
+      "station": "临邑",
+      "code": "LUK"
+    },
+    {
+      "station": "柳园南",
+      "code": "LNR"
+    },
+    {
+      "station": "鹿寨北",
+      "code": "LSZ"
+    },
+    {
+      "station": "阆中",
+      "code": "LZE"
+    },
+    {
+      "station": "临泽南",
+      "code": "LDJ"
+    },
+    {
+      "station": "马鞍山东",
+      "code": "OMH"
+    },
+    {
+      "station": "毛陈",
+      "code": "MHN"
+    },
+    {
+      "station": "明港东",
+      "code": "MDN"
+    },
+    {
+      "station": "民和南",
+      "code": "MNO"
+    },
+    {
+      "station": "闵集",
+      "code": "MJN"
+    },
+    {
+      "station": "马兰",
+      "code": "MLR"
+    },
+    {
+      "station": "民乐",
+      "code": "MBJ"
+    },
+    {
+      "station": "弥勒",
+      "code": "MLM"
+    },
+    {
+      "station": "玛纳斯",
+      "code": "MSR"
+    },
+    {
+      "station": "牟平",
+      "code": "MBK"
+    },
+    {
+      "station": "闽清北",
+      "code": "MBS"
+    },
+    {
+      "station": "民权北",
+      "code": "MIF"
+    },
+    {
+      "station": "眉山东",
+      "code": "IUW"
+    },
+    {
+      "station": "庙山",
+      "code": "MSN"
+    },
+    {
+      "station": "岷县",
+      "code": "MXJ"
+    },
+    {
+      "station": "门源",
+      "code": "MYO"
+    },
+    {
+      "station": "暮云",
+      "code": "KIQ"
+    },
+    {
+      "station": "蒙自北",
+      "code": "MBM"
+    },
+    {
+      "station": "孟庄",
+      "code": "MZF"
+    },
+    {
+      "station": "蒙自",
+      "code": "MZM"
+    },
+    {
+      "station": "南部",
+      "code": "NBE"
+    },
+    {
+      "station": "南曹",
+      "code": "NEF"
+    },
+    {
+      "station": "南充北",
+      "code": "NCE"
+    },
+    {
+      "station": "南城",
+      "code": "NDG"
+    },
+    {
+      "station": "南昌西",
+      "code": "NXG"
+    },
+    {
+      "station": "宁东南",
+      "code": "NDJ"
+    },
+    {
+      "station": "宁东",
+      "code": "NOJ"
+    },
+    {
+      "station": "南芬北",
+      "code": "NUT"
+    },
+    {
+      "station": "南丰",
+      "code": "NFG"
+    },
+    {
+      "station": "南湖东",
+      "code": "NDN"
+    },
+    {
+      "station": "内江北",
+      "code": "NKW"
+    },
+    {
+      "station": "南江",
+      "code": "FIW"
+    },
+    {
+      "station": "南江口",
+      "code": "NDQ"
+    },
+    {
+      "station": "南陵",
+      "code": "LLH"
+    },
+    {
+      "station": "尼木",
+      "code": "NMO"
+    },
+    {
+      "station": "南宁东",
+      "code": "NFZ"
+    },
+    {
+      "station": "南宁西",
+      "code": "NXZ"
+    },
+    {
+      "station": "南平北",
+      "code": "NBS"
+    },
+    {
+      "station": "南雄",
+      "code": "NCQ"
+    },
+    {
+      "station": "纳雍",
+      "code": "NYE"
+    },
+    {
+      "station": "南阳寨",
+      "code": "NYF"
+    },
+    {
+      "station": "普安",
+      "code": "PAN"
+    },
+    {
+      "station": "普安县",
+      "code": "PUE"
+    },
+    {
+      "station": "屏边",
+      "code": "PBM"
+    },
+    {
+      "station": "平坝南",
+      "code": "PBE"
+    },
+    {
+      "station": "平昌",
+      "code": "PCE"
+    },
+    {
+      "station": "普定",
+      "code": "PGW"
+    },
+    {
+      "station": "平度",
+      "code": "PAK"
+    },
+    {
+      "station": "皮口",
+      "code": "PUT"
+    },
+    {
+      "station": "盘龙城",
+      "code": "PNN"
+    },
+    {
+      "station": "普宁",
+      "code": "PEQ"
+    },
+    {
+      "station": "平南南",
+      "code": "PAZ"
+    },
+    {
+      "station": "彭山北",
+      "code": "PPW"
+    },
+    {
+      "station": "坪上",
+      "code": "PSK"
+    },
+    {
+      "station": "萍乡北",
+      "code": "PBG"
+    },
+    {
+      "station": "濮阳",
+      "code": "PYF"
+    },
+    {
+      "station": "平遥古城",
+      "code": "PDV"
+    },
+    {
+      "station": "普者黑",
+      "code": "PZM"
+    },
+    {
+      "station": "盘州",
+      "code": "PAE"
+    },
+    {
+      "station": "彭州",
+      "code": "PMW"
+    },
+    {
+      "station": "青白江东",
+      "code": "QFW"
+    },
+    {
+      "station": "青岛北",
+      "code": "QHK"
+    },
+    {
+      "station": "祁东",
+      "code": "QMQ"
+    },
+    {
+      "station": "青堆",
+      "code": "QET"
+    },
+    {
+      "station": "前锋",
+      "code": "QFB"
+    },
+    {
+      "station": "曲靖北",
+      "code": "QBM"
+    },
+    {
+      "station": "曲江",
+      "code": "QIM"
+    },
+    {
+      "station": "青莲",
+      "code": "QEW"
+    },
+    {
+      "station": "齐齐哈尔南",
+      "code": "QNB"
+    },
+    {
+      "station": "清水北",
+      "code": "QEJ"
+    },
+    {
+      "station": "青神",
+      "code": "QVW"
+    },
+    {
+      "station": "岐山",
+      "code": "QAY"
+    },
+    {
+      "station": "庆盛",
+      "code": "QSQ"
+    },
+    {
+      "station": "曲水县",
+      "code": "QSO"
+    },
+    {
+      "station": "祁县东",
+      "code": "QGV"
+    },
+    {
+      "station": "乾县",
+      "code": "QBY"
+    },
+    {
+      "station": "祁阳",
+      "code": "QWQ"
+    },
+    {
+      "station": "全州南",
+      "code": "QNZ"
+    },
+    {
+      "station": "棋子湾",
+      "code": "QZQ"
+    },
+    {
+      "station": "仁布",
+      "code": "RUO"
+    },
+    {
+      "station": "荣昌北",
+      "code": "RQW"
+    },
+    {
+      "station": "荣成",
+      "code": "RCK"
+    },
+    {
+      "station": "如东",
+      "code": "RIH"
+    },
+    {
+      "station": "榕江",
+      "code": "RVW"
+    },
+    {
+      "station": "日喀则",
+      "code": "RKO"
+    },
+    {
+      "station": "饶平",
+      "code": "RVQ"
+    },
+    {
+      "station": "宋城路",
+      "code": "SFF"
+    },
+    {
+      "station": "三道湖",
+      "code": "SDL"
+    },
+    {
+      "station": "邵东",
+      "code": "FIQ"
+    },
+    {
+      "station": "三都县",
+      "code": "KKW"
+    },
+    {
+      "station": "胜芳",
+      "code": "SUP"
+    },
+    {
+      "station": "双峰北",
+      "code": "NFQ"
+    },
+    {
+      "station": "商河",
+      "code": "SOK"
+    },
+    {
+      "station": "泗洪",
+      "code": "GQH"
+    },
+    {
+      "station": "四会",
+      "code": "AHQ"
+    },
+    {
+      "station": "三江南",
+      "code": "SWZ"
+    },
+    {
+      "station": "三井子",
+      "code": "OJT"
+    },
+    {
+      "station": "双流机场",
+      "code": "IPW"
+    },
+    {
+      "station": "双流西",
+      "code": "IQW"
+    },
+    {
+      "station": "石林西",
+      "code": "SYM"
+    },
+    {
+      "station": "三明北",
+      "code": "SHS"
+    },
+    {
+      "station": "嵩明",
+      "code": "SVM"
+    },
+    {
+      "station": "树木岭",
+      "code": "FMQ"
+    },
+    {
+      "station": "苏尼特左旗",
+      "code": "ONC"
+    },
+    {
+      "station": "山坡东",
+      "code": "SBN"
+    },
+    {
+      "station": "石桥",
+      "code": "SQE"
+    },
+    {
+      "station": "沈丘",
+      "code": "SQN"
+    },
+    {
+      "station": "鄯善北",
+      "code": "SMR"
+    },
+    {
+      "station": "狮山北",
+      "code": "NSQ"
+    },
+    {
+      "station": "三水北",
+      "code": "ARQ"
+    },
+    {
+      "station": "狮山",
+      "code": "KSQ"
+    },
+    {
+      "station": "三水南",
+      "code": "RNQ"
+    },
+    {
+      "station": "韶山南",
+      "code": "INQ"
+    },
+    {
+      "station": "三穗",
+      "code": "QHW"
+    },
+    {
+      "station": "石梯",
+      "code": "STE"
+    },
+    {
+      "station": "汕尾",
+      "code": "OGQ"
+    },
+    {
+      "station": "歙县北",
+      "code": "NPH"
+    },
+    {
+      "station": "绍兴北",
+      "code": "SLH"
+    },
+    {
+      "station": "绍兴东",
+      "code": "SSH"
+    },
+    {
+      "station": "泗县",
+      "code": "GPH"
+    },
+    {
+      "station": "始兴",
+      "code": "IPQ"
+    },
+    {
+      "station": "泗阳",
+      "code": "MPH"
+    },
+    {
+      "station": "邵阳北",
+      "code": "OVQ"
+    },
+    {
+      "station": "松原北",
+      "code": "OCT"
+    },
+    {
+      "station": "山阴",
+      "code": "SNV"
+    },
+    {
+      "station": "沈阳南",
+      "code": "SOT"
+    },
+    {
+      "station": "深圳北",
+      "code": "IOQ"
+    },
+    {
+      "station": "神州",
+      "code": "SRQ"
+    },
+    {
+      "station": "深圳坪山",
+      "code": "IFQ"
+    },
+    {
+      "station": "石嘴山",
+      "code": "QQJ"
+    },
+    {
+      "station": "石柱县",
+      "code": "OSW"
+    },
+    {
+      "station": "桃村北",
+      "code": "TOK"
+    },
+    {
+      "station": "田东北",
+      "code": "TBZ"
+    },
+    {
+      "station": "土地堂东",
+      "code": "TTN"
+    },
+    {
+      "station": "太谷西",
+      "code": "TIV"
+    },
+    {
+      "station": "吐哈",
+      "code": "THR"
+    },
+    {
+      "station": "通海",
+      "code": "TAM"
+    },
+    {
+      "station": "天河机场",
+      "code": "TJN"
+    },
+    {
+      "station": "天河街",
+      "code": "TEN"
+    },
+    {
+      "station": "通化县",
+      "code": "TXL"
+    },
+    {
+      "station": "同江",
+      "code": "TJB"
+    },
+    {
+      "station": "铜陵北",
+      "code": "KXH"
+    },
+    {
+      "station": "吐鲁番北",
+      "code": "TAR"
+    },
+    {
+      "station": "泰宁",
+      "code": "TNS"
+    },
+    {
+      "station": "铜仁南",
+      "code": "TNW"
+    },
+    {
+      "station": "田心东",
+      "code": "KQQ"
+    },
+    {
+      "station": "汤逊湖",
+      "code": "THN"
+    },
+    {
+      "station": "藤县",
+      "code": "TAZ"
+    },
+    {
+      "station": "太原南",
+      "code": "TNV"
+    },
+    {
+      "station": "通远堡西",
+      "code": "TST"
+    },
+    {
+      "station": "文登东",
+      "code": "WGK"
+    },
+    {
+      "station": "五府山",
+      "code": "WFG"
+    },
+    {
+      "station": "威虎岭北",
+      "code": "WBL"
+    },
+    {
+      "station": "威海北",
+      "code": "WHK"
+    },
+    {
+      "station": "五龙背东",
+      "code": "WMT"
+    },
+    {
+      "station": "乌龙泉南",
+      "code": "WFN"
+    },
+    {
+      "station": "乌鲁木齐",
+      "code": "WAR"
+    },
+    {
+      "station": "五女山",
+      "code": "WET"
+    },
+    {
+      "station": "武胜",
+      "code": "WSE"
+    },
+    {
+      "station": "无为",
+      "code": "IIH"
+    },
+    {
+      "station": "瓦屋山",
+      "code": "WAH"
+    },
+    {
+      "station": "闻喜西",
+      "code": "WOV"
+    },
+    {
+      "station": "武义北",
+      "code": "WDH"
+    },
+    {
+      "station": "武夷山北",
+      "code": "WBS"
+    },
+    {
+      "station": "武夷山东",
+      "code": "WCS"
+    },
+    {
+      "station": "婺源",
+      "code": "WYG"
+    },
+    {
+      "station": "渭源",
+      "code": "WEJ"
+    },
+    {
+      "station": "万州北",
+      "code": "WZE"
+    },
+    {
+      "station": "武陟",
+      "code": "WIF"
+    },
+    {
+      "station": "梧州南",
+      "code": "WBZ"
+    },
+    {
+      "station": "兴安北",
+      "code": "XDZ"
+    },
+    {
+      "station": "许昌东",
+      "code": "XVF"
+    },
+    {
+      "station": "项城",
+      "code": "ERN"
+    },
+    {
+      "station": "新都东",
+      "code": "EWW"
+    },
+    {
+      "station": "西丰",
+      "code": "XFT"
+    },
+    {
+      "station": "先锋",
+      "code": "NQQ"
+    },
+    {
+      "station": "湘府路",
+      "code": "FVQ"
+    },
+    {
+      "station": "襄汾西",
+      "code": "XTV"
+    },
+    {
+      "station": "孝感北",
+      "code": "XJN"
+    },
+    {
+      "station": "孝感东",
+      "code": "GDN"
+    },
+    {
+      "station": "西湖东",
+      "code": "WDQ"
+    },
+    {
+      "station": "新化南",
+      "code": "EJQ"
+    },
+    {
+      "station": "新晃西",
+      "code": "EWQ"
+    },
+    {
+      "station": "新津",
+      "code": "IRW"
+    },
+    {
+      "station": "小金口",
+      "code": "NKQ"
+    },
+    {
+      "station": "新津南",
+      "code": "ITW"
+    },
+    {
+      "station": "咸宁东",
+      "code": "XKN"
+    },
+    {
+      "station": "咸宁南",
+      "code": "UNN"
+    },
+    {
+      "station": "溆浦南",
+      "code": "EMQ"
+    },
+    {
+      "station": "湘潭北",
+      "code": "EDQ"
+    },
+    {
+      "station": "邢台东",
+      "code": "EDP"
+    },
+    {
+      "station": "西乌旗",
+      "code": "XWC"
+    },
+    {
+      "station": "修武西",
+      "code": "EXF"
+    },
+    {
+      "station": "萧县北",
+      "code": "QSH"
+    },
+    {
+      "station": "新乡东",
+      "code": "EGF"
+    },
+    {
+      "station": "新余北",
+      "code": "XBG"
+    },
+    {
+      "station": "西阳村",
+      "code": "XQF"
+    },
+    {
+      "station": "信阳东",
+      "code": "OYN"
+    },
+    {
+      "station": "咸阳秦都",
+      "code": "XOY"
+    },
+    {
+      "station": "仙游",
+      "code": "XWS"
+    },
+    {
+      "station": "新郑机场",
+      "code": "EZF"
+    },
+    {
+      "station": "香樟路",
+      "code": "FNQ"
+    },
+    {
+      "station": "迎宾路",
+      "code": "YFW"
+    },
+    {
+      "station": "永城北",
+      "code": "RGH"
+    },
+    {
+      "station": "运城北",
+      "code": "ABV"
+    },
+    {
+      "station": "永川东",
+      "code": "WMW"
+    },
+    {
+      "station": "宜春",
+      "code": "YEG"
+    },
+    {
+      "station": "岳池",
+      "code": "AWW"
+    },
+    {
+      "station": "云东海",
+      "code": "NAQ"
+    },
+    {
+      "station": "姚渡",
+      "code": "AOJ"
+    },
+    {
+      "station": "云浮东",
+      "code": "IXQ"
+    },
+    {
+      "station": "永福南",
+      "code": "YBZ"
+    },
+    {
+      "station": "雨格",
+      "code": "VTM"
+    },
+    {
+      "station": "洋河",
+      "code": "GTH"
+    },
+    {
+      "station": "永济北",
+      "code": "AJV"
+    },
+    {
+      "station": "弋江",
+      "code": "RVH"
+    },
+    {
+      "station": "于家堡",
+      "code": "YKP"
+    },
+    {
+      "station": "延吉西",
+      "code": "YXL"
+    },
+    {
+      "station": "永康南",
+      "code": "QUH"
+    },
+    {
+      "station": "运粮河",
+      "code": "YEF"
+    },
+    {
+      "station": "炎陵",
+      "code": "YAG"
+    },
+    {
+      "station": "杨陵南",
+      "code": "YEY"
+    },
+    {
+      "station": "伊敏",
+      "code": "YMX"
+    },
+    {
+      "station": "郁南",
+      "code": "YKQ"
+    },
+    {
+      "station": "银瓶",
+      "code": "KPQ"
+    },
+    {
+      "station": "永寿",
+      "code": "ASY"
+    },
+    {
+      "station": "阳朔",
+      "code": "YCZ"
+    },
+    {
+      "station": "云山",
+      "code": "KZQ"
+    },
+    {
+      "station": "玉山南",
+      "code": "YGG"
+    },
+    {
+      "station": "永泰",
+      "code": "YTS"
+    },
+    {
+      "station": "银滩",
+      "code": "CTQ"
+    },
+    {
+      "station": "鹰潭北",
+      "code": "YKG"
+    },
+    {
+      "station": "烟台南",
+      "code": "YLK"
+    },
+    {
+      "station": "尤溪",
+      "code": "YXS"
+    },
+    {
+      "station": "云霄",
+      "code": "YBS"
+    },
+    {
+      "station": "宜兴",
+      "code": "YUH"
+    },
+    {
+      "station": "玉溪",
+      "code": "AXM"
+    },
+    {
+      "station": "阳信",
+      "code": "YVK"
+    },
+    {
+      "station": "应县",
+      "code": "YZV"
+    },
+    {
+      "station": "攸县南",
+      "code": "YXG"
+    },
+    {
+      "station": "余姚北",
+      "code": "CTH"
+    },
+    {
+      "station": "诏安",
+      "code": "ZDS"
+    },
+    {
+      "station": "正定机场",
+      "code": "ZHP"
+    },
+    {
+      "station": "纸坊东",
+      "code": "ZMN"
+    },
+    {
+      "station": "庄河北",
+      "code": "ZUT"
+    },
+    {
+      "station": "昭化",
+      "code": "ZHW"
+    },
+    {
+      "station": "织金北",
+      "code": "ZJE"
+    },
+    {
+      "station": "芷江",
+      "code": "ZPQ"
+    },
+    {
+      "station": "织金",
+      "code": "IZW"
+    },
+    {
+      "station": "仲恺",
+      "code": "KKQ"
+    },
+    {
+      "station": "曾口",
+      "code": "ZKE"
+    },
+    {
+      "station": "左岭",
+      "code": "ZSN"
+    },
+    {
+      "station": "樟木头东",
+      "code": "ZRQ"
+    },
+    {
+      "station": "驻马店西",
+      "code": "ZLN"
+    },
+    {
+      "station": "漳浦",
+      "code": "ZCS"
+    },
+    {
+      "station": "肇庆东",
+      "code": "FCQ"
+    },
+    {
+      "station": "庄桥",
+      "code": "ZQH"
+    },
+    {
+      "station": "昭山",
+      "code": "KWQ"
+    },
+    {
+      "station": "钟山西",
+      "code": "ZAZ"
+    },
+    {
+      "station": "漳县",
+      "code": "ZXJ"
+    },
+    {
+      "station": "资阳北",
+      "code": "FYW"
+    },
+    {
+      "station": "张掖西",
+      "code": "ZEJ"
+    },
+    {
+      "station": "资中北",
+      "code": "WZW"
+    },
+    {
+      "station": "涿州东",
+      "code": "ZAP"
+    },
+    {
+      "station": "枣庄东",
+      "code": "ZNK"
+    },
+    {
+      "station": "卓资东",
+      "code": "ZDC"
+    },
+    {
+      "station": "郑州东",
+      "code": "ZAF"
+    },
+    {
+      "station": "株洲南",
+      "code": "KVQ"
+    }
+  ],
+  "status": "ok"
+}
