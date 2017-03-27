@@ -147,7 +147,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                 finish();
                 break;
             case R.id.submit_btn:
-                readyToBuy();
+                doSubmit();
                 break;
             default:
                 break;
@@ -155,9 +155,11 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     }
 
     /**
-     * 准备购买
+     * 提交
      */
-    public void readyToBuy() {
+    @Override
+    public void doSubmit() {
+        ProgressDialogUtils.showProgress(this);
         OrderBean orderBean = new OrderBean();
         orderBean.setTrainNo(ticketInfo.getStation_train_code());
         orderBean.setFrom(ticketInfo.getFrom_station_name());
@@ -169,17 +171,6 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         orderBean.setCarriage(carriage + "");
         orderBean.setSeatNo(seatNo + "");
         orderBean.setMoney(money + "");
-        doSubmit(orderBean);
-    }
-
-    /**
-     * 提交
-     *
-     * @param orderBean
-     */
-    @Override
-    public void doSubmit(OrderBean orderBean) {
-        ProgressDialogUtils.showProgress(this);
         ticketDetailPresenter.doSubmit(orderBean);
     }
 

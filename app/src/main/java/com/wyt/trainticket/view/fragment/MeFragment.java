@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.love_cookies.cookie_library.fragment.BaseFragment;
+import com.love_cookies.cookie_library.utils.SharedPreferencesUtils;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.view.activity.AboutActivity;
 import com.wyt.trainticket.view.activity.LoginActivity;
@@ -63,6 +64,7 @@ public class MeFragment extends BaseFragment {
                 turn(AboutActivity.class);
                 break;
             case R.id.exit_btn:
+                SharedPreferencesUtils.put(getContext(), "auto_login", false);
                 turnThenFinish(LoginActivity.class);
                 break;
             default:

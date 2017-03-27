@@ -15,10 +15,14 @@
     <string name="real_name_hint">请输入真实姓名</string>
     <string name="id_number_text">身份证号</string>
     <string name="id_number_hint">请输入身份证号</string>
+    <string name="re_password_error_hint">两次输入的密码不一致</string>
 
     <string name="main_tab_one">购票</string>
     <string name="start_station_hint">出发地</string>
     <string name="end_station_hint">目的地</string>
+    <string name="start_station_in_hint">请输入出发地</string>
+    <string name="end_station_in_hint">请输入目的地</string>
+    <string name="start_end_same_error_hint">出发地不能和目的地相同</string>
     <string name="date_text">出发日期</string>
     <string name="student_text">学生票</string>
     <string name="model_all">全部</string>
@@ -53,6 +57,7 @@
     <string name="reset_password_new_password_hint">请输入新密码</string>
     <string name="reset_password_re_new_password_text">确认新密码</string>
     <string name="reset_password_re_new_password_hint">请再次输入新密码</string>
+    
 
     <string name="about">关于</string>
 

@@ -10,10 +10,8 @@ import com.wyt.trainticket.model.bean.OrderBean;
 public interface ITicketDetailView {
     /**
      * 提交
-     *
-     * @param orderBean
      */
-    void doSubmit(OrderBean orderBean);
+    void doSubmit();
 
     /**
      * 支付成功

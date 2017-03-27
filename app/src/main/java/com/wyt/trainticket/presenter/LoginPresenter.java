@@ -1,6 +1,7 @@
 package com.wyt.trainticket.presenter;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
+import com.wyt.trainticket.model.bean.UserBean;
 import com.wyt.trainticket.model.biz.LoginBiz;
 import com.wyt.trainticket.view.interfaces.ILoginView;
 
@@ -22,14 +23,13 @@ public class LoginPresenter {
     /**
      * 去登录
      *
-     * @param account  账号
-     * @param password 密码
+     * @param userBean
      */
-    public void doLogin(String account, String password) {
-        loginBiz.doLogin(account, password, new CallBack() {
+    public void doLogin(UserBean userBean) {
+        loginBiz.doLogin(userBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iLoginView.turnToMain();
+                iLoginView.loginSuccess((UserBean)result);
             }
 
             @Override
@@ -37,13 +37,6 @@ public class LoginPresenter {
                 iLoginView.loginFailed();
             }
         });
-    }
-
-    /**
-     * 自动登录
-     */
-    public void autoLogin() {
-        iLoginView.turnToMain();
     }
 
 }

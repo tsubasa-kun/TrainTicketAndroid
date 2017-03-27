@@ -1,5 +1,7 @@
 package com.wyt.trainticket.view.interfaces;
 
+import com.wyt.trainticket.model.bean.UserBean;
+
 /**
  * Created by cookie on 2017/3/17 0017.
  * <p>
@@ -12,9 +14,10 @@ public interface ILoginView {
     void doLogin();
 
     /**
-     * 跳转到主页
+     * 登录成功
+     * @param userBean
      */
-    void turnToMain();
+    void loginSuccess(UserBean userBean);
 
     /**
      * 登录失败

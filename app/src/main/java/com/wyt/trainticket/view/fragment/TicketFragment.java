@@ -1,6 +1,7 @@
 package com.wyt.trainticket.view.fragment;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.love_cookies.cookie_library.fragment.BaseFragment;
 import com.love_cookies.cookie_library.utils.KeyBoardUtils;
+import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.love_cookies.cookie_library.widget.DateAndTimePicker;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.config.AppConfig;
@@ -24,6 +26,8 @@ import org.xutils.view.annotation.ViewInject;
 
 import java.io.IOException;
 import java.io.InputStream;
+
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
  * Created by cookie on 2017/3/16 0016.
@@ -195,23 +199,33 @@ public class TicketFragment extends BaseFragment {
      * 查询车票
      */
     public void queryTicket() {
-        String startCode = getStationCode(startStationTv.getText().toString());
-        String endCode = getStationCode(endStationTv.getText().toString());
-        String startDate = dateBtn.getText().toString();
-        String type = AppConfig.ADULT;
-        if (studentCb.isChecked()) {
-            type = AppConfig.STUDENT;
+        String startText = startStationTv.getText().toString();
+        String endText = endStationTv.getText().toString();
+        if (TextUtils.isEmpty(startText)) {
+            ToastUtils.show(getContext(), R.string.start_station_in_hint);
+        } else if (TextUtils.isEmpty(endText)) {
+            ToastUtils.show(getContext(), R.string.end_station_in_hint);
+        } else if (endText.equals(startText)) {
+            ToastUtils.show(getContext(), R.string.start_end_same_error_hint);
+        } else {
+            String startCode = getStationCode(startText);
+            String endCode = getStationCode(endText);
+            String startDate = dateBtn.getText().toString();
+            String type = AppConfig.ADULT;
+            if (studentCb.isChecked()) {
+                type = AppConfig.STUDENT;
+            }
+            //传递参数到下一页面
+            Bundle bundle = new Bundle();
+            bundle.putString("startCode", startCode);
+            bundle.putString("endCode", endCode);
+            bundle.putString("startDate", startDate);
+            bundle.putString("type", type);
+            bundle.putInt("model", model);
+            turn(QueryTicketActivity.class, bundle);
+            //软键盘消失
+            KeyBoardUtils.closeKeybord(endStationTv, getContext());
         }
-        //传递参数到下一页面
-        Bundle bundle = new Bundle();
-        bundle.putString("startCode", startCode);
-        bundle.putString("endCode", endCode);
-        bundle.putString("startDate", startDate);
-        bundle.putString("type", type);
-        bundle.putInt("model", model);
-        turn(QueryTicketActivity.class, bundle);
-        //软键盘消失
-        KeyBoardUtils.closeKeybord(endStationTv, getContext());
     }
 
 }
