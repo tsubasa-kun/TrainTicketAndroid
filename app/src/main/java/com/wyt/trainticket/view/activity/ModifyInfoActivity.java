@@ -1,13 +1,20 @@
 package com.wyt.trainticket.view.activity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.love_cookies.cookie_library.activity.BaseActivity;
+import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
+import com.love_cookies.cookie_library.utils.SharedPreferencesUtils;
+import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.model.bean.UserBean;
+import com.wyt.trainticket.presenter.ModifyInfoPresenter;
+import com.wyt.trainticket.view.interfaces.IModifyInfoView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -18,7 +25,9 @@ import org.xutils.view.annotation.ViewInject;
  * 修改信息页
  */
 @ContentView(R.layout.activity_modify_info)
-public class ModifyInfoActivity extends BaseActivity {
+public class ModifyInfoActivity extends BaseActivity implements IModifyInfoView {
+
+    private ModifyInfoPresenter modifyInfoPresenter = new ModifyInfoPresenter(this);
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -59,9 +68,49 @@ public class ModifyInfoActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.submit_btn:
+                doModify();
                 break;
             default:
                 break;
         }
+    }
+
+    /**
+     * 修改信息
+     */
+    @Override
+    public void doModify() {
+        String account = (String) SharedPreferencesUtils.get(this, "account", "");
+        String realName = realNameEt.getText().toString();
+        String idNumber = idNumberEt.getText().toString();
+        if (TextUtils.isEmpty(realName)) {
+            ToastUtils.show(this, R.string.real_name_hint);
+        } else if (TextUtils.isEmpty(idNumber)) {
+            ToastUtils.show(this, R.string.id_number_hint);
+        } else {
+            ProgressDialogUtils.showProgress(this);
+            UserBean userBean = new UserBean();
+            userBean.setAccount(account);
+            userBean.setRealName(realName);
+            userBean.setIdNumber(idNumber);
+            modifyInfoPresenter.doModify(userBean);
+        }
+    }
+
+    /**
+     * 修改成功
+     */
+    @Override
+    public void modifySuccess() {
+        ProgressDialogUtils.hideProgress();
+        finish();
+    }
+
+    /**
+     * 修改失败
+     */
+    @Override
+    public void modifyFailed() {
+        ProgressDialogUtils.hideProgress();
     }
 }
