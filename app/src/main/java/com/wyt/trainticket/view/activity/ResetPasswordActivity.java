@@ -1,13 +1,21 @@
 package com.wyt.trainticket.view.activity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.love_cookies.cookie_library.activity.BaseActivity;
+import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
+import com.love_cookies.cookie_library.utils.SharedPreferencesUtils;
+import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.app.TrainTicketApplication;
+import com.wyt.trainticket.model.bean.UserBean;
+import com.wyt.trainticket.presenter.ResetPasswordPresenter;
+import com.wyt.trainticket.view.interfaces.IResetPasswordView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -18,7 +26,9 @@ import org.xutils.view.annotation.ViewInject;
  * 修改密码页
  */
 @ContentView(R.layout.activity_reset_password)
-public class ResetPasswordActivity extends BaseActivity {
+public class ResetPasswordActivity extends BaseActivity implements IResetPasswordView {
+
+    private ResetPasswordPresenter resetPasswordPresenter = new ResetPasswordPresenter(this);
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -61,9 +71,51 @@ public class ResetPasswordActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.submit_btn:
+                doReset();
                 break;
             default:
                 break;
         }
+    }
+
+    /**
+     * 修改密码
+     */
+    @Override
+    public void doReset() {
+        String oldPassword = oldPasswordEt.getText().toString();
+        String newPassword = newPasswordEt.getText().toString();
+        String reNewPassword = reNewPasswordEt.getText().toString();
+        if (TextUtils.isEmpty(oldPassword)) {
+            ToastUtils.show(this, R.string.reset_password_old_password_hint);
+        } else if (TextUtils.isEmpty(newPassword)) {
+            ToastUtils.show(this, R.string.reset_password_new_password_hint);
+        } else if (TextUtils.isEmpty(reNewPassword)) {
+            ToastUtils.show(this, R.string.reset_password_re_new_password_hint);
+        } else if (!reNewPassword.equals(newPassword)) {
+            ToastUtils.show(this, R.string.re_password_error_hint);
+        } else {
+            ProgressDialogUtils.showProgress(this);
+            UserBean userBean = new UserBean();
+            userBean.setAccount(TrainTicketApplication.getUser().getAccount());
+            userBean.setPassword(oldPassword);
+            resetPasswordPresenter.doReset(userBean, newPassword);
+        }
+    }
+
+    /**
+     * 修改成功
+     */
+    @Override
+    public void resetSuccess() {
+        ProgressDialogUtils.hideProgress();
+    }
+
+    /**
+     * 修改失败
+     */
+    @Override
+    public void resetFailed() {
+        ProgressDialogUtils.hideProgress();
     }
 }
