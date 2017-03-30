@@ -9,11 +9,11 @@ import android.os.Parcelable;
  * 用户实体类
  */
 public class UserBean implements Parcelable {
-    private String userId;
-    private String account;
-    private String password;
-    private String realName;
-    private String idNumber;
+    private String userId;//用户ID
+    private String account;//账号
+    private String password;//密码
+    private String realName;//真实姓名
+    private String idNumber;//身份证号码
 
     public String getAccount() {
         return account;
