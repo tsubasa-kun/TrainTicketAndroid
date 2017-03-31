@@ -6,8 +6,8 @@ package com.wyt.trainticket.config;
  * 设置，接口
  */
 public class AppConfig {
-    /*
-    https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2017-03-18&leftTicketDTO.from_station=VAP&leftTicketDTO.to_station=NKH&purpose_codes=ADULT
+    /**
+     * https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2017-03-18&leftTicketDTO.from_station=VAP&leftTicketDTO.to_station=NKH&purpose_codes=ADULT
      */
 
     /**
@@ -91,4 +91,28 @@ public class AppConfig {
      */
     public static final int ORDER_NOW = 0;
     public static final int ORDER_OLD = 1;
+
+    /**
+     * http://192.168.1.8:8080/TrainTicketServer/api/RegisterServlet
+     */
+
+    /**
+     * 域名
+     */
+    public static final String DOMAIN = "http://192.168.1.8:8080";
+
+    /**
+     * 服务器API地址
+     */
+    public static final String SERVER_URL = DOMAIN + "/TrainTicketServer/servlet/";
+
+    /**
+     * 注册
+     */
+    public static final String REGISTER = SERVER_URL + "RegisterServlet";
+
+    /**
+     * 登录
+     */
+    public static final String LOGIN = SERVER_URL + "LoginServlet";
 }

@@ -21,8 +21,10 @@ public interface ILoginView {
 
     /**
      * 登录失败
+     *
+     * @param msg
      */
-    void loginFailed();
+    void loginFailed(String msg);
 
     /**
      * 自动登录

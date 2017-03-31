@@ -8,7 +8,7 @@ import android.os.Parcelable;
  *
  * 用户实体类
  */
-public class UserBean implements Parcelable {
+public class UserBean extends ResultBean implements Parcelable {
     private String userId;//用户ID
     private String account;//账号
     private String password;//密码

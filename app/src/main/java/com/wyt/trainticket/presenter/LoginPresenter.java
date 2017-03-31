@@ -1,5 +1,6 @@
 package com.wyt.trainticket.presenter;
 
+import com.google.gson.internal.Streams;
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.model.bean.UserBean;
 import com.wyt.trainticket.model.biz.LoginBiz;
@@ -34,7 +35,7 @@ public class LoginPresenter {
 
             @Override
             public void onFailed(Object msg) {
-                iLoginView.loginFailed();
+                iLoginView.loginFailed((String)msg);
             }
         });
     }

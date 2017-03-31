@@ -8,7 +8,7 @@ import android.os.Parcelable;
  * <p>
  * 订单实体类
  */
-public class OrderBean implements Parcelable {
+public class OrderBean extends ResultBean implements Parcelable {
     private String orderId;//订单ID
     private String trainNo;//车次
     private String from;//出发地

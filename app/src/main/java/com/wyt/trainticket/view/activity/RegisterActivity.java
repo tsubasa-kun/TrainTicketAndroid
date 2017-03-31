@@ -121,16 +121,19 @@ public class RegisterActivity extends BaseActivity implements IRegisterView {
      * 注册成功
      */
     @Override
-    public void registerSuccess() {
+    public void registerSuccess(String msg) {
         ProgressDialogUtils.hideProgress();
-        turnThenFinish(LoginActivity.class);
+        ToastUtils.show(this, msg);
+        finish();
     }
 
     /**
      * 注册失败
+     * @param msg
      */
     @Override
-    public void registerFailed() {
+    public void registerFailed(String msg) {
         ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
     }
 }

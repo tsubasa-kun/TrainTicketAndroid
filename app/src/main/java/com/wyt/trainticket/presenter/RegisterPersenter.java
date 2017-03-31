@@ -30,12 +30,12 @@ public class RegisterPersenter {
         registerBiz.doRegister(userBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iRegisterView.registerSuccess();
+                iRegisterView.registerSuccess((String)result);
             }
 
             @Override
             public void onFailed(Object msg) {
-                iRegisterView.registerFailed();
+                iRegisterView.registerFailed((String)msg);
             }
         });
     }

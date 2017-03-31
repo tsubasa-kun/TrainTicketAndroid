@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.love_cookies.cookie_library.fragment.BaseFragment;
 import com.love_cookies.cookie_library.utils.SharedPreferencesUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.view.activity.AboutActivity;
 import com.wyt.trainticket.view.activity.LoginActivity;
 import com.wyt.trainticket.view.activity.ModifyInfoActivity;
@@ -23,6 +24,10 @@ import org.xutils.view.annotation.ViewInject;
 @ContentView(R.layout.fragment_me)
 public class MeFragment extends BaseFragment {
 
+    @ViewInject(R.id.real_name_tv)
+    private TextView realNameTv;
+    @ViewInject(R.id.id_number_tv)
+    private TextView idNumberTv;
     @ViewInject(R.id.modify_info_btn)
     private TextView modifyInfoBtn;
     @ViewInject(R.id.reset_password_btn)
@@ -44,6 +49,8 @@ public class MeFragment extends BaseFragment {
         resetPasswordBtn.setOnClickListener(this);
         aboutBtn.setOnClickListener(this);
         exitBtn.setOnClickListener(this);
+        realNameTv.setText(TrainTicketApplication.getUser().getRealName());
+        idNumberTv.setText(TrainTicketApplication.getUser().getIdNumber());
     }
 
     /**

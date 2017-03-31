@@ -133,10 +133,13 @@ public class LoginActivity extends BaseActivity implements ILoginView {
 
     /**
      * 登录失败
+     *
+     * @param msg
      */
     @Override
-    public void loginFailed() {
+    public void loginFailed(String msg) {
         ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
     }
 
     /**

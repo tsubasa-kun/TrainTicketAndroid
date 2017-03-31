@@ -14,11 +14,13 @@ public interface IRegisterView {
 
     /**
      * 注册成功
+     * @param msg
      */
-    void registerSuccess();
+    void registerSuccess(String msg);
 
     /**
      * 注册失败
+     * @param msg
      */
-    void registerFailed();
+    void registerFailed(String msg);
 }
