@@ -80,7 +80,7 @@ public class MeFragment extends BaseFragment {
                 turnForResult(ModifyInfoActivity.class, MODIFY_INFO);
                 break;
             case R.id.reset_password_btn:
-                turn(ResetPasswordActivity.class);
+                turnForResult(ResetPasswordActivity.class, RESET_PASSWORD);
                 break;
             case R.id.about_btn:
                 turn(AboutActivity.class);
@@ -109,6 +109,8 @@ public class MeFragment extends BaseFragment {
                     setUserInfo();
                     break;
                 case RESET_PASSWORD:
+                    SharedPreferencesUtils.put(getContext(), "auto_login", false);
+                    turnThenFinish(LoginActivity.class);
                     break;
                 default:
                     break;

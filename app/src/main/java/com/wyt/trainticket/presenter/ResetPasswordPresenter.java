@@ -29,12 +29,12 @@ public class ResetPasswordPresenter {
         resetPasswordBiz.doReset(userBean, newPassword, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iResetPasswordView.resetSuccess();
+                iResetPasswordView.resetSuccess((UserBean)result);
             }
 
             @Override
             public void onFailed(Object msg) {
-                iResetPasswordView.resetFailed();
+                iResetPasswordView.resetFailed((String)msg);
             }
         });
     }

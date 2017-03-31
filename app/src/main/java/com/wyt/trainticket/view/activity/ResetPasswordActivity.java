@@ -1,5 +1,6 @@
 package com.wyt.trainticket.view.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -105,17 +106,23 @@ public class ResetPasswordActivity extends BaseActivity implements IResetPasswor
 
     /**
      * 修改成功
+     * @param userBean
      */
     @Override
-    public void resetSuccess() {
+    public void resetSuccess(UserBean userBean) {
         ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, userBean.getResMsg());
+        setResult(Activity.RESULT_OK);
+        finish();
     }
 
     /**
      * 修改失败
+     * @param msg
      */
     @Override
-    public void resetFailed() {
+    public void resetFailed(String msg) {
         ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
     }
 }
