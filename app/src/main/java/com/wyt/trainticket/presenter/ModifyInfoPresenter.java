@@ -28,12 +28,12 @@ public class ModifyInfoPresenter {
         modifyInfoBiz.doModify(userBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iModifyInfoView.modifySuccess();
+                iModifyInfoView.modifySuccess((UserBean)result);
             }
 
             @Override
             public void onFailed(Object msg) {
-                iModifyInfoView.modifyFailed();
+                iModifyInfoView.modifyFailed((String)msg);
             }
         });
     }

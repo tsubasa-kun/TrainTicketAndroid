@@ -16,11 +16,13 @@ public interface IModifyInfoView {
 
     /**
      * 修改成功
+     * @param userBean
      */
-    void modifySuccess();
+    void modifySuccess(UserBean userBean);
 
     /**
      * 修改失败
+     * @param msg
      */
-    void modifyFailed();
+    void modifyFailed(String msg);
 }

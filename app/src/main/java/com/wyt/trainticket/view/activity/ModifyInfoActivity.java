@@ -1,5 +1,6 @@
 package com.wyt.trainticket.view.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +13,7 @@ import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.SharedPreferencesUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.model.bean.UserBean;
 import com.wyt.trainticket.presenter.ModifyInfoPresenter;
 import com.wyt.trainticket.view.interfaces.IModifyInfoView;
@@ -54,6 +56,9 @@ public class ModifyInfoActivity extends BaseActivity implements IModifyInfoView 
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
+        //设置默认值
+        realNameEt.setText(TrainTicketApplication.getUser().getRealName());
+        idNumberEt.setText(TrainTicketApplication.getUser().getIdNumber());
     }
 
     /**
@@ -87,6 +92,8 @@ public class ModifyInfoActivity extends BaseActivity implements IModifyInfoView 
             ToastUtils.show(this, R.string.real_name_hint);
         } else if (TextUtils.isEmpty(idNumber)) {
             ToastUtils.show(this, R.string.id_number_hint);
+        } else if (idNumber.length() != 18) {
+            ToastUtils.show(this, R.string.id_number_error_hint);
         } else {
             ProgressDialogUtils.showProgress(this);
             UserBean userBean = new UserBean();
@@ -99,18 +106,24 @@ public class ModifyInfoActivity extends BaseActivity implements IModifyInfoView 
 
     /**
      * 修改成功
+     * @param userBean
      */
     @Override
-    public void modifySuccess() {
+    public void modifySuccess(UserBean userBean) {
         ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, userBean.getResMsg());
+        TrainTicketApplication.setUser(userBean);
+        setResult(Activity.RESULT_OK);
         finish();
     }
 
     /**
      * 修改失败
+     * @param msg
      */
     @Override
-    public void modifyFailed() {
+    public void modifyFailed(String msg) {
         ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
     }
 }

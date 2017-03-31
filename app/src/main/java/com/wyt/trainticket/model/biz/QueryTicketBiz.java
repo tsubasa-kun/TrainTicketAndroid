@@ -31,7 +31,7 @@ public class QueryTicketBiz implements IQueryTicketBiz {
      */
     @Override
     public void doQuery(String from, String to, String date, String type, final int model, final CallBack callBack) {
-        RequestParams requestParams = new RequestParams(AppConfig.APIURL);
+        RequestParams requestParams = new RequestParams(AppConfig.API_URL);
         requestParams.addQueryStringParameter(AppConfig.DATE, date);
         requestParams.addQueryStringParameter(AppConfig.FROM, from);
         requestParams.addQueryStringParameter(AppConfig.TO, to);

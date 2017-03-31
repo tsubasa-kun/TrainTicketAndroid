@@ -155,7 +155,7 @@
             android:layout_weight="1"
             android:background="@drawable/square_et_bg"
             android:hint="@string/id_number_hint"
-            android:maxLength="20"
+            android:maxLength="18"
             android:padding="6dp"
             android:singleLine="true"
             android:textSize="16sp" />

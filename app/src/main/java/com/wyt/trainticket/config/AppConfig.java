@@ -1,5 +1,7 @@
 package com.wyt.trainticket.config;
 
+import java.net.URL;
+
 /**
  * Created by cookie on 2017/3/16 0016.
  * <p>
@@ -13,7 +15,7 @@ public class AppConfig {
     /**
      * 12306api地址
      */
-    public static final String APIURL = "https://kyfw.12306.cn/otn/leftTicket/query";
+    public static final String API_URL = "https://kyfw.12306.cn/otn/leftTicket/query";
 
     /**
      * 出发时间参数
@@ -115,4 +117,14 @@ public class AppConfig {
      * 登录
      */
     public static final String LOGIN = SERVER_URL + "LoginServlet";
+
+    /**
+     * 修改信息
+     */
+    public static final String MODIFY_INFO = SERVER_URL + "ModifyInfoServlet";
+
+    /**
+     * 修改密码
+     */
+    public static final String RESET_PASSWORD = SERVER_URL + "ResetPasswordServlet";
 }

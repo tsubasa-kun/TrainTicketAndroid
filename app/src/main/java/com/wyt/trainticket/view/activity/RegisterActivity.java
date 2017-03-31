@@ -19,6 +19,8 @@ import com.wyt.trainticket.view.interfaces.IRegisterView;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+
 /**
  * Created by cookie on 2017/3/16 0016.
  * <p>
@@ -106,6 +108,8 @@ public class RegisterActivity extends BaseActivity implements IRegisterView {
             ToastUtils.show(this, R.string.real_name_hint);
         } else if (TextUtils.isEmpty(idNumber)) {
             ToastUtils.show(this, R.string.id_number_hint);
+        } else if (idNumber.length() != 18) {
+            ToastUtils.show(this, R.string.id_number_error_hint);
         } else {
             ProgressDialogUtils.showProgress(this);
             UserBean userBean = new UserBean();

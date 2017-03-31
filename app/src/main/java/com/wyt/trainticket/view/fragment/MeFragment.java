@@ -1,5 +1,7 @@
 package com.wyt.trainticket.view.fragment;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -23,6 +25,9 @@ import org.xutils.view.annotation.ViewInject;
  */
 @ContentView(R.layout.fragment_me)
 public class MeFragment extends BaseFragment {
+
+    public static final int MODIFY_INFO = 0;
+    public static final int RESET_PASSWORD = 1;
 
     @ViewInject(R.id.real_name_tv)
     private TextView realNameTv;
@@ -49,8 +54,18 @@ public class MeFragment extends BaseFragment {
         resetPasswordBtn.setOnClickListener(this);
         aboutBtn.setOnClickListener(this);
         exitBtn.setOnClickListener(this);
+        //设置基本信息
+        setUserInfo();
+    }
+
+    /**
+     * 设置基本信息
+     */
+    public void setUserInfo() {
         realNameTv.setText(TrainTicketApplication.getUser().getRealName());
-        idNumberTv.setText(TrainTicketApplication.getUser().getIdNumber());
+        String idNumber = TrainTicketApplication.getUser().getIdNumber();
+        idNumber = idNumber.substring(0, 4) + "**********" + idNumber.substring(14, 18);
+        idNumberTv.setText(idNumber);
     }
 
     /**
@@ -62,7 +77,7 @@ public class MeFragment extends BaseFragment {
     public void widgetClick(View view) {
         switch (view.getId()) {
             case R.id.modify_info_btn:
-                turn(ModifyInfoActivity.class);
+                turnForResult(ModifyInfoActivity.class, MODIFY_INFO);
                 break;
             case R.id.reset_password_btn:
                 turn(ResetPasswordActivity.class);
@@ -76,6 +91,28 @@ public class MeFragment extends BaseFragment {
                 break;
             default:
                 break;
+        }
+    }
+
+    /**
+     * 从上个页面返回执行
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            switch (requestCode) {
+                case MODIFY_INFO:
+                    setUserInfo();
+                    break;
+                case RESET_PASSWORD:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
