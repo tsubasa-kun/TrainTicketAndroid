@@ -41,9 +41,7 @@
     <string name="yw_num_text">硬卧\n%s</string>
     <string name="wz_num_text">无座\n%s</string>
     <string name="submit_text">提交</string>
-    <string name="pay_success_text">支付成功！</string>
-    <string name="pay_failed_text">支付失败！</string>
-    <string name="tip">提示</string>
+    <string name="seat_none_tip">该座次已无余票</string>
 
     <string name="main_tab_two">订单</string>
     <string name="order_now">未出行订单</string>
@@ -63,4 +61,8 @@
     <string name="about">关于</string>
 
     <string name="exit_text">注销</string>
+
+    <string name="tip">提示</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
 </resources>

@@ -127,4 +127,9 @@ public class AppConfig {
      * 修改密码
      */
     public static final String RESET_PASSWORD = SERVER_URL + "ResetPasswordServlet";
+
+    /**
+     * 购买车票
+     */
+    public static final String BUY_TIVKET = SERVER_URL + "BuyTicketServlet";
 }

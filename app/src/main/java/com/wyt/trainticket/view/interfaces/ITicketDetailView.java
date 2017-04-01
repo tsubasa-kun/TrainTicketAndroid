@@ -22,6 +22,8 @@ public interface ITicketDetailView {
 
     /**
      * 支付失败
+     *
+     * @param msg
      */
-    void payFailed();
+    void payFailed(String msg);
 }

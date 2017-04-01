@@ -34,7 +34,7 @@ public class TicketDetailPresenter {
 
             @Override
             public void onFailed(Object msg) {
-                iTicketDetailView.payFailed();
+                iTicketDetailView.payFailed((String)msg);
             }
         });
     }
