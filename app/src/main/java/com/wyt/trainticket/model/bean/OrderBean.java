@@ -11,9 +11,9 @@ import android.os.Parcelable;
 public class OrderBean extends ResultBean implements Parcelable {
     private String orderId;//订单ID
     private String trainNo;//车次
-    private String from;//出发地
+    private String fromStation;//出发地
     private String startTime;//出发时间
-    private String to;//目的地
+    private String toStation;//目的地
     private String endTime;//到站时间
     private String date;//日期
     private String seat;//席别
@@ -45,12 +45,12 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.endTime = endTime;
     }
 
-    public String getFrom() {
-        return from;
+    public String getFromStation() {
+        return fromStation;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setFromStation(String fromStation) {
+        this.fromStation = fromStation;
     }
 
     public String getMoney() {
@@ -101,12 +101,12 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.startTime = startTime;
     }
 
-    public String getTo() {
-        return to;
+    public String getToStation() {
+        return toStation;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setToStation(String toStation) {
+        this.toStation = toStation;
     }
 
     @Override
@@ -118,9 +118,9 @@ public class OrderBean extends ResultBean implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.orderId);
         dest.writeString(this.trainNo);
-        dest.writeString(this.from);
+        dest.writeString(this.fromStation);
         dest.writeString(this.startTime);
-        dest.writeString(this.to);
+        dest.writeString(this.toStation);
         dest.writeString(this.endTime);
         dest.writeString(this.date);
         dest.writeString(this.seat);
@@ -135,9 +135,9 @@ public class OrderBean extends ResultBean implements Parcelable {
     protected OrderBean(Parcel in) {
         this.orderId = in.readString();
         this.trainNo = in.readString();
-        this.from = in.readString();
+        this.fromStation = in.readString();
         this.startTime = in.readString();
-        this.to = in.readString();
+        this.toStation = in.readString();
         this.endTime = in.readString();
         this.date = in.readString();
         this.seat = in.readString();

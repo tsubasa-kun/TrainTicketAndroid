@@ -40,7 +40,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     private String startDate;
     private TicketBean.DataEntity.QueryLeftNewDTOEntity ticketInfo;
     private String seat = AppConfig.SWZ;//席别
-    private String seatCount = "-";//席别车票数
+    private String seatCount = "--";//席别车票数
     private int money;//票价
     private int carriage;//车厢
     private int seatNo;//座位号
@@ -172,7 +172,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
      */
     @Override
     public void doSubmit() {
-        if (!seatCount.equals("-")) {
+        if (!seatCount.equals("--") && !seatCount.equals("无")) {
             //拼装车票信息提示
             String message = "当前所选车次为" + startDate + " " + ticketInfo.getStart_time() + "发出的"
                     + ticketInfo.getStation_train_code() + "次列车，您的座位为" + carriage
@@ -186,9 +186,9 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                     ProgressDialogUtils.showProgress(TicketDetailActivity.this, "支付中...");
                     OrderBean orderBean = new OrderBean();
                     orderBean.setTrainNo(ticketInfo.getStation_train_code());
-                    orderBean.setFrom(ticketInfo.getFrom_station_name());
+                    orderBean.setFromStation(ticketInfo.getFrom_station_name());
                     orderBean.setStartTime(ticketInfo.getStart_time());
-                    orderBean.setTo(ticketInfo.getTo_station_name());
+                    orderBean.setToStation(ticketInfo.getTo_station_name());
                     orderBean.setEndTime(ticketInfo.getArrive_time());
                     orderBean.setDate(startDate);
                     orderBean.setSeat(seat);
@@ -227,7 +227,6 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     @Override
     public void paySuccess(OrderBean orderBean) {
         ProgressDialogUtils.hideProgress();
-        ToastUtils.show(this, orderBean.getResMsg());
         Bundle bundle = new Bundle();
         bundle.putParcelable("order", orderBean);
         turnThenFinish(OutTicketActivity.class, bundle);

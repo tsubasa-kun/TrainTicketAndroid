@@ -9,13 +9,13 @@ import java.net.URL;
  */
 public class AppConfig {
     /**
-     * https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2017-03-18&leftTicketDTO.from_station=VAP&leftTicketDTO.to_station=NKH&purpose_codes=ADULT
+     * https://kyfw.12306.cn/otn/leftTicket/queryX?leftTicketDTO.train_date=2017-03-18&leftTicketDTO.from_station=VAP&leftTicketDTO.to_station=NKH&purpose_codes=ADULT
      */
 
     /**
      * 12306api地址
      */
-    public static final String API_URL = "https://kyfw.12306.cn/otn/leftTicket/query";
+    public static final String API_URL = "https://kyfw.12306.cn/otn/leftTicket/queryX";
 
     /**
      * 出发时间参数

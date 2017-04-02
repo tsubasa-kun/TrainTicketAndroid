@@ -1,7 +1,8 @@
 package com.wyt.trainticket.utils;
 
-import java.sql.Date;
+import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 /**
  * Created by cookie on 2017/3/17 0017.
@@ -28,8 +29,28 @@ public class DateTimeUtils {
      */
     public String getCurrentTime() {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        Date curDate = new Date(System.currentTimeMillis());
-        return formatter.format(curDate);
+        Date currentDate = new Date(System.currentTimeMillis());
+        return formatter.format(currentDate);
+    }
+
+    /**
+     * 时间转为时间戳
+     * @param time
+     * @return
+     */
+    public String dataToTimestamp(String time) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.CHINA);
+        Date date;
+        String timestamp = null;
+        try {
+            date = formatter.parse(time);
+            long l = date.getTime();
+            String stf = String.valueOf(l);
+            timestamp = stf.substring(0, 10);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return timestamp;
     }
 
 }

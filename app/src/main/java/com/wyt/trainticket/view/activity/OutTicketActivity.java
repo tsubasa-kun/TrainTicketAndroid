@@ -66,12 +66,12 @@ public class OutTicketActivity extends BaseActivity {
         //为每个字段设置值
         dataTv.setText(orderBean.getDate());
         startTimeTv.setText(orderBean.getStartTime());
-        fromTv.setText(orderBean.getFrom());
-        endTv.setText(orderBean.getTo());
-        carriageTv.setText(orderBean.getCarriage());
-        seatNoTv.setText(orderBean.getSeatNo());
+        fromTv.setText(orderBean.getFromStation());
+        endTv.setText(orderBean.getToStation());
+        carriageTv.setText(String.format(getResources().getString(R.string.carriage_text), orderBean.getCarriage()));
+        seatNoTv.setText(String.format(getResources().getString(R.string.seat_no_text), orderBean.getSeatNo()));
         seatTv.setText(orderBean.getSeat());
-        moneyTv.setText(orderBean.getMoney());
+        moneyTv.setText(String.format(getResources().getString(R.string.money_text), orderBean.getMoney()));
         orderIdTv.setText(orderBean.getOrderId());
         //开始出票动画
         startAnimation();

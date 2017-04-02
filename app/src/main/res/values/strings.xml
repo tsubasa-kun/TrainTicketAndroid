@@ -42,6 +42,10 @@
     <string name="wz_num_text">无座\n%s</string>
     <string name="submit_text">提交</string>
     <string name="seat_none_tip">该座次已无余票</string>
+    <string name="pay_success_text">支付成功</string>
+    <string name="carriage_text">%s车厢</string>
+    <string name="seat_no_text">%s座</string>
+    <string name="money_text">￥%s</string>
 
     <string name="main_tab_two">订单</string>
     <string name="order_now">未出行订单</string>

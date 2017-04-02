@@ -6,6 +6,7 @@ import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.OrderBean;
 import com.wyt.trainticket.model.bean.ResultBean;
 import com.wyt.trainticket.model.biz.interfaces.ITicketDetailBiz;
+import com.wyt.trainticket.utils.DateTimeUtils;
 
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
@@ -26,16 +27,16 @@ public class TicketDetailBiz implements ITicketDetailBiz {
      */
     @Override
     public void doSubmit(final OrderBean orderBean, final CallBack callBack) {
-        long timestamp = System.currentTimeMillis();
-        orderBean.setOrderId(timestamp + "");
-        orderBean.setResMsg("支付成功");
+        String dateTime = orderBean.getDate() + " " + orderBean.getStartTime();
+        String timestamp = DateTimeUtils.getInstance().dataToTimestamp(dateTime);
+        orderBean.setOrderId(timestamp);
         //组装请求参数
         RequestParams requestParams = new RequestParams(AppConfig.BUY_TIVKET);
         requestParams.addParameter("orderId", orderBean.getOrderId());
         requestParams.addParameter("trainNo", orderBean.getTrainNo());
-        requestParams.addParameter("from", orderBean.getFrom());
+        requestParams.addParameter("fromStation", orderBean.getFromStation());
         requestParams.addParameter("startTime", orderBean.getStartTime());
-        requestParams.addParameter("to", orderBean.getTo());
+        requestParams.addParameter("toStation", orderBean.getToStation());
         requestParams.addParameter("endTime", orderBean.getEndTime());
         requestParams.addParameter("date", orderBean.getDate());
         requestParams.addParameter("seat", orderBean.getSeat());
@@ -75,9 +76,5 @@ public class TicketDetailBiz implements ITicketDetailBiz {
                 return false;
             }
         });
-
-
-
-        callBack.onSuccess(orderBean);
     }
 }
