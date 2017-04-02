@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.love_cookies.cookie_library.fragment.BaseFragment;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.utils.DateTimeUtils;
 import com.wyt.trainticket.view.activity.OrderActivity;
 
 import org.xutils.view.annotation.ContentView;
@@ -20,6 +21,8 @@ import org.xutils.view.annotation.ViewInject;
 @ContentView(R.layout.fragment_order)
 public class OrderFragment extends BaseFragment {
 
+    @ViewInject(R.id.date_tv)
+    private TextView dateTv;
     @ViewInject(R.id.now_order_btn)
     private TextView nowOrderBtn;
     @ViewInject(R.id.old_order_btn)
@@ -32,6 +35,8 @@ public class OrderFragment extends BaseFragment {
      */
     @Override
     public void initWidget(Bundle savedInstanceState) {
+        //设置日期
+        dateTv.setText(DateTimeUtils.getInstance().getCurrentDate());
         //设置按钮点击事件
         nowOrderBtn.setOnClickListener(this);
         oldOrderBtn.setOnClickListener(this);

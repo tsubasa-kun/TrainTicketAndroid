@@ -136,6 +136,7 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Bundle bundle = new Bundle();
                 bundle.putString("startDate", startDate);
+                bundle.putString("type", type);
                 bundle.putParcelable("ticket_info", ticketBean.getData().get(position).getQueryLeftNewDTO());
                 turn(TicketDetailActivity.class, bundle);
             }

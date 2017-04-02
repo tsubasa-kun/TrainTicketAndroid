@@ -31,7 +31,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         String timestamp = DateTimeUtils.getInstance().dataToTimestamp(dateTime);
         orderBean.setOrderId(timestamp);
         //组装请求参数
-        RequestParams requestParams = new RequestParams(AppConfig.BUY_TIVKET);
+        RequestParams requestParams = new RequestParams(AppConfig.BUY_TICKET);
         requestParams.addParameter("orderId", orderBean.getOrderId());
         requestParams.addParameter("account", orderBean.getAccount());
         requestParams.addParameter("trainNo", orderBean.getTrainNo());
@@ -44,6 +44,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         requestParams.addParameter("carriage", orderBean.getCarriage());
         requestParams.addParameter("seatNo", orderBean.getSeatNo());
         requestParams.addParameter("money", orderBean.getMoney());
+        requestParams.addParameter("type", orderBean.getType());
         //发送请求
         x.http().post(requestParams, new Callback.CacheCallback<String>() {
             @Override

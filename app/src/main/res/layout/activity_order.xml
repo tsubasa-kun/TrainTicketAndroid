@@ -3,9 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <include layout="@layout/view_title_bar"/>
+    <include layout="@layout/view_title_bar" />
+
+    <com.love_cookies.cookie_library.widget.LoadAndRefreshView
+        android:id="@+id/load_and_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- 订单列表 -->
+        <ListView
+            android:id="@+id/order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@color/white"
+            android:divider="@color/theme_color"
+            android:dividerHeight="1px"
+            android:listSelector="@color/white" />
+
+    </com.love_cookies.cookie_library.widget.LoadAndRefreshView>
 
 </LinearLayout>

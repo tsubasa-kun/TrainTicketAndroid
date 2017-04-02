@@ -34,6 +34,15 @@ public class DateTimeUtils {
     }
 
     /**
+     * 获取当前日期
+     */
+    public String getCurrentDate() {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy年MM月dd日");
+        Date currentDate = new Date(System.currentTimeMillis());
+        return formatter.format(currentDate);
+    }
+
+    /**
      * 时间转为时间戳
      * @param time
      * @return

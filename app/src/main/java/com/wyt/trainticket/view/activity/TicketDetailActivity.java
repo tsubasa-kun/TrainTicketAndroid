@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.love_cookies.cookie_library.activity.BaseActivity;
 import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
@@ -27,9 +26,6 @@ import org.xutils.view.annotation.ViewInject;
 
 import java.util.Random;
 
-import static android.R.id.message;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-
 /**
  * Created by cookie on 2017/3/20 0020.
  * <p>
@@ -44,7 +40,8 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     private String seatCount = "--";//席别车票数
     private int money;//票价
     private int carriage;//车厢
-    private int seatNo;//座位号
+    private String seatNo;//座位号
+    private String type;//车票类型
     private TicketDetailPresenter ticketDetailPresenter = new TicketDetailPresenter(this);
 
     @ViewInject(R.id.title_tv)
@@ -90,11 +87,21 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         //获取前面页面传递过来的参数
         startDate = getIntent().getStringExtra("startDate");
         ticketInfo = getIntent().getParcelableExtra("ticket_info");
+        type = getIntent().getStringExtra("type");
+        switch (type) {
+            default:
+            case AppConfig.ADULT:
+                type = "成人票";
+                break;
+            case AppConfig.STUDENT:
+                type = "学生票";
+                break;
+        }
         //随机生成票价，车厢和座位号
         Random random = new Random();
         money = random.nextInt(500) + 50;
         carriage = random.nextInt(16) + 1;
-        seatNo = random.nextInt(100) + 1;
+        seatNo = (random.nextInt(100) + 1) + "";
         //设置Title
         titleTv.setText(startDate);
         //设置Title左按钮
@@ -175,6 +182,9 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     @Override
     public void doSubmit() {
         if (!seatCount.equals("--") && !seatCount.equals("无")) {
+            if (seat.equals("无座")) {
+                seatNo = "无";
+            }
             //拼装车票信息提示
             String message = "当前所选车次为" + startDate + " " + ticketInfo.getStart_time() + "发出的"
                     + ticketInfo.getStation_train_code() + "次列车，您的座位为" + carriage
@@ -196,8 +206,9 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                     orderBean.setDate(startDate);
                     orderBean.setSeat(seat);
                     orderBean.setCarriage(carriage + "");
-                    orderBean.setSeatNo(seatNo + "");
+                    orderBean.setSeatNo(seatNo);
                     orderBean.setMoney(money + "");
+                    orderBean.setType(type);
                     ticketDetailPresenter.doSubmit(orderBean);
                     dialog.dismiss();
                 }

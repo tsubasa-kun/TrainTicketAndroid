@@ -21,6 +21,7 @@ public class OrderBean extends ResultBean implements Parcelable {
     private String carriage;//车厢
     private String seatNo;// 座位号
     private String money;//票价
+    private String type;//车票类型
 
     public String getCarriage() {
         return carriage;
@@ -118,6 +119,14 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.account = account;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -137,6 +146,7 @@ public class OrderBean extends ResultBean implements Parcelable {
         dest.writeString(this.carriage);
         dest.writeString(this.seatNo);
         dest.writeString(this.money);
+        dest.writeString(this.type);
     }
 
     public OrderBean() {
@@ -155,6 +165,7 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.carriage = in.readString();
         this.seatNo = in.readString();
         this.money = in.readString();
+        this.type = in.readString();
     }
 
     public static final Parcelable.Creator<OrderBean> CREATOR = new Parcelable.Creator<OrderBean>() {
