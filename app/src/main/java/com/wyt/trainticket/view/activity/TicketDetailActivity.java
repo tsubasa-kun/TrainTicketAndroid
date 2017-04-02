@@ -112,6 +112,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         yzRb.setText(String.format(getResources().getString(R.string.yz_num_text), ticketInfo.getYz_num()));
         ywRb.setText(String.format(getResources().getString(R.string.yw_num_text), ticketInfo.getYw_num()));
         wzRb.setText(String.format(getResources().getString(R.string.wz_num_text), ticketInfo.getWz_num()));
+        seatCount = ticketInfo.getSwz_num();
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
