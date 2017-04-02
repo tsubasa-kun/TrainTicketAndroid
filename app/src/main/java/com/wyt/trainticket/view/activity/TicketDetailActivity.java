@@ -14,6 +14,7 @@ import com.love_cookies.cookie_library.activity.BaseActivity;
 import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.OrderBean;
 import com.wyt.trainticket.model.bean.TicketBean;
@@ -185,6 +186,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                 public void onClick(DialogInterface dialog, int which) {
                     ProgressDialogUtils.showProgress(TicketDetailActivity.this, "支付中...");
                     OrderBean orderBean = new OrderBean();
+                    orderBean.setAccount(TrainTicketApplication.getUser().getAccount());
                     orderBean.setTrainNo(ticketInfo.getStation_train_code());
                     orderBean.setFromStation(ticketInfo.getFrom_station_name());
                     orderBean.setStartTime(ticketInfo.getStart_time());

@@ -10,6 +10,7 @@ import android.os.Parcelable;
  */
 public class OrderBean extends ResultBean implements Parcelable {
     private String orderId;//订单ID
+    private String account;//账户
     private String trainNo;//车次
     private String fromStation;//出发地
     private String startTime;//出发时间
@@ -109,6 +110,14 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.toStation = toStation;
     }
 
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -117,6 +126,7 @@ public class OrderBean extends ResultBean implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.orderId);
+        dest.writeString(this.account);
         dest.writeString(this.trainNo);
         dest.writeString(this.fromStation);
         dest.writeString(this.startTime);
@@ -134,6 +144,7 @@ public class OrderBean extends ResultBean implements Parcelable {
 
     protected OrderBean(Parcel in) {
         this.orderId = in.readString();
+        this.account = in.readString();
         this.trainNo = in.readString();
         this.fromStation = in.readString();
         this.startTime = in.readString();

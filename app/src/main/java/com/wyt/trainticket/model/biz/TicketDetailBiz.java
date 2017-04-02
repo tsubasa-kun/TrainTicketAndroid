@@ -33,6 +33,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         //组装请求参数
         RequestParams requestParams = new RequestParams(AppConfig.BUY_TIVKET);
         requestParams.addParameter("orderId", orderBean.getOrderId());
+        requestParams.addParameter("account", orderBean.getAccount());
         requestParams.addParameter("trainNo", orderBean.getTrainNo());
         requestParams.addParameter("fromStation", orderBean.getFromStation());
         requestParams.addParameter("startTime", orderBean.getStartTime());
