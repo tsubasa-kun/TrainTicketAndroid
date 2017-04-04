@@ -13,7 +13,7 @@ public class AppConfig {
     /**
      * 12306api地址
      */
-    public static final String API_URL = "https://kyfw.12306.cn/otn/leftTicket/queryX";
+    public static final String API_URL = "https://kyfw.12306.cn/otn/leftTicket/query";
 
     /**
      * 出发时间参数
