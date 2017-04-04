@@ -29,7 +29,11 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return mDatas.size();
+        if (mDatas != null) {
+            return mDatas.size();
+        }else {
+            return 0;
+        }
     }
 
     @Override
