@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.TicketBean;
+import com.wyt.trainticket.model.bean.TicketListBean;
 import com.wyt.trainticket.model.biz.interfaces.IQueryTicketBiz;
 
 import org.xutils.common.Callback;
@@ -31,17 +32,17 @@ public class QueryTicketBiz implements IQueryTicketBiz {
      */
     @Override
     public void doQuery(String from, String to, String date, String type, final int model, final CallBack callBack) {
-        RequestParams requestParams = new RequestParams(AppConfig.API_URL);
-        requestParams.addQueryStringParameter(AppConfig.DATE, date);
-        requestParams.addQueryStringParameter(AppConfig.FROM, from);
-        requestParams.addQueryStringParameter(AppConfig.TO, to);
-        requestParams.addQueryStringParameter(AppConfig.TYPE, type);
-        x.http().get(requestParams, new Callback.CommonCallback<String>() {
+        RequestParams requestParams = new RequestParams(AppConfig.QUERY_TICKET);
+        requestParams.addParameter(AppConfig.DATE, date);
+        requestParams.addParameter("startStationName", from);
+        requestParams.addParameter("toStationName", to);
+        requestParams.addParameter(AppConfig.TYPE, type);
+        x.http().post(requestParams, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
                 Gson gson = new Gson();
-                TicketBean ticketBean = gson.fromJson(result, TicketBean.class);
-                callBack.onSuccess(filterModel(ticketBean, model));
+                TicketListBean ticketListBean = gson.fromJson(result, TicketListBean.class);
+                callBack.onSuccess(filterModel(ticketListBean, model));
             }
 
             @Override
@@ -67,68 +68,68 @@ public class QueryTicketBiz implements IQueryTicketBiz {
      * @param data
      * @return
      */
-    public TicketBean filterModel(TicketBean data, int model) {
-        TicketBean ticketBean = new TicketBean();
-        List<TicketBean.DataEntity> dataEntities = new ArrayList<>();
+    public TicketListBean filterModel(TicketListBean data, int model) {
+        TicketListBean ticketListBean = new TicketListBean();
+        List<TicketBean> ticketList = new ArrayList<>();
         switch (model) {
             default:
             case AppConfig.MODEL_ALL:
-                ticketBean = data;
+                ticketListBean = data;
                 break;
             case AppConfig.MODEL_GDC:
                 //根据关键字筛选
-                for (TicketBean.DataEntity entity : data.getData()) {
-                    if (entity.getQueryLeftNewDTO().getStation_train_code().contains("G") ||
-                            entity.getQueryLeftNewDTO().getStation_train_code().contains("D") ||
-                            entity.getQueryLeftNewDTO().getStation_train_code().contains("C")) {
-                        dataEntities.add(entity);
+                for (TicketBean tickets : data.getTickets()) {
+                    if (tickets.getTrainCode().contains("G") ||
+                            tickets.getTrainCode().contains("D") ||
+                            tickets.getTrainCode().contains("C")) {
+                        ticketList.add(tickets);
                     }
                 }
-                ticketBean.setData(dataEntities);
+                ticketListBean.setTickets(ticketList);
                 break;
             case AppConfig.MODEL_Z:
                 //根据关键字筛选
-                for (TicketBean.DataEntity entity : data.getData()) {
-                    if (entity.getQueryLeftNewDTO().getStation_train_code().contains("Z")) {
-                        dataEntities.add(entity);
+                for (TicketBean tickets : data.getTickets()) {
+                    if (tickets.getTrainCode().contains("Z")) {
+                        ticketList.add(tickets);
                     }
                 }
-                ticketBean.setData(dataEntities);
+                ticketListBean.setTickets(ticketList);
                 break;
             case AppConfig.MODEL_T:
                 //根据关键字筛选
-                for (TicketBean.DataEntity entity : data.getData()) {
-                    if (entity.getQueryLeftNewDTO().getStation_train_code().contains("T")) {
-                        dataEntities.add(entity);
+                for (TicketBean tickets : data.getTickets()) {
+                    if (tickets.getTrainCode().contains("T")) {
+                        ticketList.add(tickets);
                     }
                 }
-                ticketBean.setData(dataEntities);
+                ticketListBean.setTickets(ticketList);
                 break;
             case AppConfig.MODEL_K:
                 //根据关键字筛选
-                for (TicketBean.DataEntity entity : data.getData()) {
-                    if (entity.getQueryLeftNewDTO().getStation_train_code().contains("K")) {
-                        dataEntities.add(entity);
+                for (TicketBean tickets : data.getTickets()) {
+                    if (tickets.getTrainCode().contains("K")) {
+                        ticketList.add(tickets);
                     }
                 }
-                ticketBean.setData(dataEntities);
+                ticketListBean.setTickets(ticketList);
                 break;
             case AppConfig.MODEL_OTHER:
                 //根据关键字筛选
-                for (TicketBean.DataEntity entity : data.getData()) {
-                    if (!entity.getQueryLeftNewDTO().getStation_train_code().contains("G") &&
-                            !entity.getQueryLeftNewDTO().getStation_train_code().contains("D") &&
-                            !entity.getQueryLeftNewDTO().getStation_train_code().contains("C") &&
-                            !entity.getQueryLeftNewDTO().getStation_train_code().contains("Z") &&
-                            !entity.getQueryLeftNewDTO().getStation_train_code().contains("T") &&
-                            !entity.getQueryLeftNewDTO().getStation_train_code().contains("K")) {
-                        dataEntities.add(entity);
+                for (TicketBean tickets : data.getTickets()) {
+                    if (!tickets.getTrainCode().contains("G") &&
+                            !tickets.getTrainCode().contains("D") &&
+                            !tickets.getTrainCode().contains("C") &&
+                            !tickets.getTrainCode().contains("Z") &&
+                            !tickets.getTrainCode().contains("T") &&
+                            !tickets.getTrainCode().contains("K")) {
+                        ticketList.add(tickets);
                     }
                 }
-                ticketBean.setData(dataEntities);
+                ticketListBean.setTickets(ticketList);
                 break;
         }
-        return ticketBean;
+        return ticketListBean;
     }
 
 }

@@ -15,6 +15,7 @@ import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.TicketBean;
+import com.wyt.trainticket.model.bean.TicketListBean;
 import com.wyt.trainticket.presenter.QueryTicketPresenter;
 import com.wyt.trainticket.view.interfaces.IQueryTicketView;
 
@@ -29,8 +30,8 @@ import org.xutils.view.annotation.ViewInject;
 @ContentView(R.layout.activity_query_ticket)
 public class QueryTicketActivity extends BaseActivity implements IQueryTicketView {
 
-    private String startCode;
-    private String endCode;
+    private String startStation;
+    private String endStation;
     private String startDate;
     private String type;
     private int model;
@@ -53,8 +54,8 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
     @Override
     public void initWidget(Bundle savedInstanceState) {
         //获取前面页面传递过来的参数
-        startCode = getIntent().getStringExtra("startCode");
-        endCode = getIntent().getStringExtra("endCode");
+        startStation = getIntent().getStringExtra("startStation");
+        endStation = getIntent().getStringExtra("endStation");
         startDate = getIntent().getStringExtra("startDate");
         type = getIntent().getStringExtra("type");
         model = getIntent().getIntExtra("model", AppConfig.MODEL_ALL);
@@ -68,7 +69,7 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
         leftBtn.setOnClickListener(this);
         rightBtn.setOnClickListener(this);
         //车票查询
-        doQuery(startCode, endCode, startDate, type, model);
+        doQuery(startStation, endStation, startDate, type, model);
     }
 
     /**
@@ -84,7 +85,7 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
                 break;
             case R.id.right_btn:
                 //车票查询
-                doQuery(startCode, endCode, startDate, type, model);
+                doQuery(startStation, endStation, startDate, type, model);
                 break;
             default:
                 break;
@@ -112,20 +113,20 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
      * 查询成功
      */
     @Override
-    public void querySuccess(final TicketBean ticketBean) {
+    public void querySuccess(final TicketListBean ticketListBean) {
         //关闭进度条
         ProgressDialogUtils.hideProgress();
         //配置数据到Adapter
-        CommonAdapter<TicketBean.DataEntity> ticketAdapter = new CommonAdapter<TicketBean.DataEntity>(this, R.layout.view_ticket_list_item, ticketBean.getData()) {
+        CommonAdapter<TicketBean> ticketAdapter = new CommonAdapter<TicketBean>(this, R.layout.view_ticket_list_item, ticketListBean.getTickets()) {
             @Override
-            public void convert(CommonViewHolder holder, TicketBean.DataEntity dataEntity) {
+            public void convert(CommonViewHolder holder, TicketBean ticketBean) {
                 //为每一个字段设置值
-                holder.setText(R.id.train_no_tv, dataEntity.getQueryLeftNewDTO().getStation_train_code());
-                holder.setText(R.id.start_station_tv, dataEntity.getQueryLeftNewDTO().getFrom_station_name());
-                holder.setText(R.id.start_time_tv, dataEntity.getQueryLeftNewDTO().getStart_time());
-                holder.setText(R.id.take_time_tv, dataEntity.getQueryLeftNewDTO().getLishi());
-                holder.setText(R.id.end_station_tv, dataEntity.getQueryLeftNewDTO().getTo_station_name());
-                holder.setText(R.id.end_time_tv, dataEntity.getQueryLeftNewDTO().getArrive_time());
+                holder.setText(R.id.train_no_tv, ticketBean.getTrainCode());
+                holder.setText(R.id.start_station_tv, ticketBean.getStartStationName());
+                holder.setText(R.id.start_time_tv, ticketBean.getStartTime());
+                holder.setText(R.id.take_time_tv, ticketBean.getLishi());
+                holder.setText(R.id.end_station_tv, ticketBean.getToStationName());
+                holder.setText(R.id.end_time_tv, ticketBean.getArriveTime());
             }
         };
         //ListView设置Adapter
@@ -137,7 +138,7 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
                 Bundle bundle = new Bundle();
                 bundle.putString("startDate", startDate);
                 bundle.putString("type", type);
-                bundle.putParcelable("ticket_info", ticketBean.getData().get(position).getQueryLeftNewDTO());
+                bundle.putParcelable("ticket_info", ticketListBean.getTickets().get(position));
                 turn(TicketDetailActivity.class, bundle);
             }
         });

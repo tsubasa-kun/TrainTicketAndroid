@@ -1,6 +1,6 @@
 package com.wyt.trainticket.view.interfaces;
 
-import com.wyt.trainticket.model.bean.TicketBean;
+import com.wyt.trainticket.model.bean.TicketListBean;
 
 /**
  * Created by cookie on 2017/3/17 0017.
@@ -22,7 +22,7 @@ public interface IQueryTicketView {
     /**
      * 查询成功
      */
-    void querySuccess(TicketBean ticketBean);
+    void querySuccess(TicketListBean ticketListBean);
 
     /**
      * 查询失败

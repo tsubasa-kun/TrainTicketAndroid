@@ -33,6 +33,9 @@ public class ResultBean implements Parcelable {
         this.resMsg = resMsg;
     }
 
+    public ResultBean() {
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -44,23 +47,9 @@ public class ResultBean implements Parcelable {
         dest.writeString(this.resMsg);
     }
 
-    public ResultBean() {
-    }
-
     protected ResultBean(Parcel in) {
         this.resStatus = in.readString();
         this.resMsg = in.readString();
     }
 
-    public static final Parcelable.Creator<ResultBean> CREATOR = new Parcelable.Creator<ResultBean>() {
-        @Override
-        public ResultBean createFromParcel(Parcel source) {
-            return new ResultBean(source);
-        }
-
-        @Override
-        public ResultBean[] newArray(int size) {
-            return new ResultBean[size];
-        }
-    };
 }

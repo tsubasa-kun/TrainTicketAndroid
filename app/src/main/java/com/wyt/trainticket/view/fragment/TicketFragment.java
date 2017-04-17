@@ -179,37 +179,18 @@ public class TicketFragment extends BaseFragment {
     }
 
     /**
-     * 获取站点的Code
-     *
-     * @param stationName
-     * @return
-     */
-    public String getStationCode(String stationName) {
-        String stationCode = "";
-        //遍历站点信息，根据站点名匹配Code并返回
-        for (StationBean.StationInfoEntity stationInfoEntity : stationBean.getStation_info()) {
-            if (stationInfoEntity.getStation().equals(stationName)) {
-                stationCode = stationInfoEntity.getCode();
-            }
-        }
-        return stationCode;
-    }
-
-    /**
      * 查询车票
      */
     public void queryTicket() {
-        String startText = startStationTv.getText().toString();
-        String endText = endStationTv.getText().toString();
-        if (TextUtils.isEmpty(startText)) {
+        String startStation = startStationTv.getText().toString();
+        String endStation = endStationTv.getText().toString();
+        if (TextUtils.isEmpty(startStation)) {
             ToastUtils.show(getContext(), R.string.start_station_in_hint);
-        } else if (TextUtils.isEmpty(endText)) {
+        } else if (TextUtils.isEmpty(endStation)) {
             ToastUtils.show(getContext(), R.string.end_station_in_hint);
-        } else if (endText.equals(startText)) {
+        } else if (endStation.equals(startStation)) {
             ToastUtils.show(getContext(), R.string.start_end_same_error_hint);
         } else {
-            String startCode = getStationCode(startText);
-            String endCode = getStationCode(endText);
             String startDate = dateBtn.getText().toString();
             String type = AppConfig.ADULT;
             if (studentCb.isChecked()) {
@@ -217,8 +198,8 @@ public class TicketFragment extends BaseFragment {
             }
             //传递参数到下一页面
             Bundle bundle = new Bundle();
-            bundle.putString("startCode", startCode);
-            bundle.putString("endCode", endCode);
+            bundle.putString("startStation", startStation);
+            bundle.putString("endStation", endStation);
             bundle.putString("startDate", startDate);
             bundle.putString("type", type);
             bundle.putInt("model", model);

@@ -35,7 +35,7 @@ import java.util.Random;
 public class TicketDetailActivity extends BaseActivity implements ITicketDetailView {
 
     private String startDate;
-    private TicketBean.DataEntity.QueryLeftNewDTOEntity ticketInfo;
+    private TicketBean ticketInfo;
     private String seat = AppConfig.SWZ;//席别
     private String seatCount = "--";//席别车票数
     private int money;//票价
@@ -107,19 +107,19 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         //设置Title左按钮
         leftBtn.setImageResource(R.drawable.ic_keyboard_backspace_white);
         //设置车票信息
-        startStationTv.setText(ticketInfo.getFrom_station_name());
-        startTimeTv.setText(ticketInfo.getStart_time());
-        trainNoTv.setText(ticketInfo.getStation_train_code());
+        startStationTv.setText(ticketInfo.getStartStationName());
+        startTimeTv.setText(ticketInfo.getStartTime());
+        trainNoTv.setText(ticketInfo.getTrainCode());
         takeTimeTv.setText(ticketInfo.getLishi());
-        endStationTv.setText(ticketInfo.getTo_station_name());
-        endTimeTv.setText(ticketInfo.getArrive_time());
-        swzRb.setText(String.format(getResources().getString(R.string.swz_num_text), ticketInfo.getSwz_num()));
-        zyRb.setText(String.format(getResources().getString(R.string.zy_num_text), ticketInfo.getZy_num()));
-        zeRb.setText(String.format(getResources().getString(R.string.ze_num_text), ticketInfo.getZe_num()));
-        yzRb.setText(String.format(getResources().getString(R.string.yz_num_text), ticketInfo.getYz_num()));
-        ywRb.setText(String.format(getResources().getString(R.string.yw_num_text), ticketInfo.getYw_num()));
-        wzRb.setText(String.format(getResources().getString(R.string.wz_num_text), ticketInfo.getWz_num()));
-        seatCount = ticketInfo.getSwz_num();
+        endStationTv.setText(ticketInfo.getToStationName());
+        endTimeTv.setText(ticketInfo.getArriveTime());
+        swzRb.setText(String.format(getResources().getString(R.string.swz_num_text), ticketInfo.getSwzNum()));
+        zyRb.setText(String.format(getResources().getString(R.string.zy_num_text), ticketInfo.getZyNum()));
+        zeRb.setText(String.format(getResources().getString(R.string.ze_num_text), ticketInfo.getZeNum()));
+        yzRb.setText(String.format(getResources().getString(R.string.yz_num_text), ticketInfo.getYzNum()));
+        ywRb.setText(String.format(getResources().getString(R.string.yw_num_text), ticketInfo.getYwNum()));
+        wzRb.setText(String.format(getResources().getString(R.string.wz_num_text), ticketInfo.getWzNum()));
+        seatCount = ticketInfo.getSwzNum();
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
@@ -130,27 +130,27 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                     default:
                     case R.id.swz_rb:
                         seat = AppConfig.SWZ;
-                        seatCount = ticketInfo.getSwz_num();
+                        seatCount = ticketInfo.getSwzNum();
                         break;
                     case R.id.zy_rb:
                         seat = AppConfig.YDZ;
-                        seatCount = ticketInfo.getZy_num();
+                        seatCount = ticketInfo.getZyNum();
                         break;
                     case R.id.ze_rb:
                         seat = AppConfig.EDZ;
-                        seatCount = ticketInfo.getZe_num();
+                        seatCount = ticketInfo.getZeNum();
                         break;
                     case R.id.yz_rb:
                         seat = AppConfig.YZ;
-                        seatCount = ticketInfo.getYz_num();
+                        seatCount = ticketInfo.getYzNum();
                         break;
                     case R.id.yw_rb:
                         seat = AppConfig.YW;
-                        seatCount = ticketInfo.getYw_num();
+                        seatCount = ticketInfo.getYwNum();
                         break;
                     case R.id.wz_rb:
                         seat = AppConfig.WZ;
-                        seatCount = ticketInfo.getWz_num();
+                        seatCount = ticketInfo.getWzNum();
                         break;
                 }
             }
@@ -186,8 +186,8 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                 seatNo = "无";
             }
             //拼装车票信息提示
-            String message = "当前所选车次为" + startDate + " " + ticketInfo.getStart_time() + "发出的"
-                    + ticketInfo.getStation_train_code() + "次列车，您的座位为" + carriage
+            String message = "当前所选车次为" + startDate + " " + ticketInfo.getStartTime() + "发出的"
+                    + ticketInfo.getTrainCode() + "次列车，您的座位为" + carriage
                     + "车" + seatNo + "座。\n车票价格为" + money + "元，是否确认支付购票？";
             //弹出确认框
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -198,11 +198,11 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                     ProgressDialogUtils.showProgress(TicketDetailActivity.this, "支付中...");
                     OrderBean orderBean = new OrderBean();
                     orderBean.setAccount(TrainTicketApplication.getUser().getAccount());
-                    orderBean.setTrainNo(ticketInfo.getStation_train_code());
-                    orderBean.setFromStation(ticketInfo.getFrom_station_name());
-                    orderBean.setStartTime(ticketInfo.getStart_time());
-                    orderBean.setToStation(ticketInfo.getTo_station_name());
-                    orderBean.setEndTime(ticketInfo.getArrive_time());
+                    orderBean.setTrainNo(ticketInfo.getTrainCode());
+                    orderBean.setFromStation(ticketInfo.getStartStationName());
+                    orderBean.setStartTime(ticketInfo.getStartTime());
+                    orderBean.setToStation(ticketInfo.getToStationName());
+                    orderBean.setEndTime(ticketInfo.getArriveTime());
                     orderBean.setDate(startDate);
                     orderBean.setSeat(seat);
                     orderBean.setCarriage(carriage + "");

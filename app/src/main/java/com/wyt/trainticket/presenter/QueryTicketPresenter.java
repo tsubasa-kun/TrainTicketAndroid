@@ -2,6 +2,7 @@ package com.wyt.trainticket.presenter;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.model.bean.TicketBean;
+import com.wyt.trainticket.model.bean.TicketListBean;
 import com.wyt.trainticket.model.biz.QueryTicketBiz;
 import com.wyt.trainticket.view.interfaces.IQueryTicketView;
 
@@ -33,7 +34,7 @@ public class QueryTicketPresenter {
         queryTicketBiz.doQuery(from, to, date, type, model, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iQueryTicketView.querySuccess((TicketBean) result);
+                iQueryTicketView.querySuccess((TicketListBean) result);
             }
 
             @Override
