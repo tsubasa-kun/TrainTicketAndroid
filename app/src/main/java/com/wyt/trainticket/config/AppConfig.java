@@ -89,6 +89,7 @@ public class AppConfig {
     /**
      * 订单状态
      */
+    public static final int ORDER_UNFINISHED = 2;
     public static final int ORDER_NOW = 0;
     public static final int ORDER_OLD = 1;
 

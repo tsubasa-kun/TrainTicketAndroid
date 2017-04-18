@@ -50,6 +50,7 @@
     <string name="main_tab_two">订单</string>
     <string name="order_now">未出行订单</string>
     <string name="order_old">历史订单</string>
+    <string name="order_unfinished">未完成订单</string>
     <string name="ticket_id_type">二代身份证</string>
 
     <string name="main_tab_three">我</string>

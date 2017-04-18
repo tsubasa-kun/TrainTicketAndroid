@@ -96,6 +96,8 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
      */
     public void setTitle() {
         switch (ORDER_STATUS) {
+            case AppConfig.ORDER_UNFINISHED:
+                titleTv.setText(R.string.order_unfinished);
             default:
             case AppConfig.ORDER_NOW:
                 titleTv.setText(R.string.order_now);

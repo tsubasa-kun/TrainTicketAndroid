@@ -23,6 +23,8 @@ public class OrderFragment extends BaseFragment {
 
     @ViewInject(R.id.date_tv)
     private TextView dateTv;
+    @ViewInject(R.id.unfinished_order_btn)
+    private TextView unfinishedOrderBtn;
     @ViewInject(R.id.now_order_btn)
     private TextView nowOrderBtn;
     @ViewInject(R.id.old_order_btn)
@@ -38,6 +40,7 @@ public class OrderFragment extends BaseFragment {
         //设置日期
         dateTv.setText(DateTimeUtils.getInstance().getCurrentDate());
         //设置按钮点击事件
+        unfinishedOrderBtn.setOnClickListener(this);
         nowOrderBtn.setOnClickListener(this);
         oldOrderBtn.setOnClickListener(this);
     }
@@ -51,6 +54,8 @@ public class OrderFragment extends BaseFragment {
     public void widgetClick(View view) {
         Bundle bundle = new Bundle();
         switch (view.getId()) {
+            case R.id.unfinished_order_btn:
+                bundle.putInt("order_status", AppConfig.ORDER_UNFINISHED);
             case R.id.now_order_btn:
                 bundle.putInt("order_status", AppConfig.ORDER_NOW);
                 break;
