@@ -56,6 +56,7 @@ public class OrderFragment extends BaseFragment {
         switch (view.getId()) {
             case R.id.unfinished_order_btn:
                 bundle.putInt("order_status", AppConfig.ORDER_UNFINISHED);
+                break;
             case R.id.now_order_btn:
                 bundle.putInt("order_status", AppConfig.ORDER_NOW);
                 break;
