@@ -53,6 +53,8 @@
     <string name="order_unfinished">未完成订单</string>
     <string name="ticket_id_type">二代身份证</string>
 
+    <string name="pay_ticket">支付页面</string>
+
     <string name="main_tab_three">我</string>
     <string name="modify_info">修改信息</string>
     <string name="reset_password">修改密码</string>
@@ -62,7 +64,7 @@
     <string name="reset_password_new_password_hint">请输入新密码</string>
     <string name="reset_password_re_new_password_text">确认新密码</string>
     <string name="reset_password_re_new_password_hint">请再次输入新密码</string>
-    
+
 
     <string name="about">关于</string>
 

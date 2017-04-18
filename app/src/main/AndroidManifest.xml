@@ -30,7 +30,8 @@
         <activity android:name=".view.activity.OrderActivity" />
         <activity android:name=".view.activity.ModifyInfoActivity" />
         <activity android:name=".view.activity.ResetPasswordActivity" />
-        <activity android:name=".view.activity.AboutActivity"></activity>
+        <activity android:name=".view.activity.AboutActivity" />
+        <activity android:name=".view.activity.PayTicketActivity"></activity>
     </application>
 
 </manifest>

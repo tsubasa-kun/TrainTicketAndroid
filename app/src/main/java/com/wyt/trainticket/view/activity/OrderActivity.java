@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -71,6 +72,19 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
         //设置订单列表数据
         orderAdapter = new OrderAdapter(this, orderData);
         orderList.setAdapter(orderAdapter);
+        //如果是未完成订单，则可以点击支付
+        if (ORDER_STATUS == AppConfig.ORDER_UNFINISHED) {
+            orderList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    OrderBean orderBean = orderData.get(i);
+                    ProgressDialogUtils.hideProgress();
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("order", orderBean);
+                    turn(PayTicketActivity.class, bundle);
+                }
+            });
+        }
         //获取订单列表
         getOrder(offset);
     }

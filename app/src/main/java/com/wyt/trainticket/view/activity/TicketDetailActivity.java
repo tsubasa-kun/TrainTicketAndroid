@@ -243,7 +243,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         ProgressDialogUtils.hideProgress();
         Bundle bundle = new Bundle();
         bundle.putParcelable("order", orderBean);
-        turnThenFinish(OutTicketActivity.class, bundle);
+        turnThenFinish(PayTicketActivity.class, bundle);
     }
 
     /**
