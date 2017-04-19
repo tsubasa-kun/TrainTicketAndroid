@@ -9,6 +9,7 @@ import android.os.Parcelable;
  * 订单实体类
  */
 public class OrderBean extends ResultBean implements Parcelable {
+    private int id;//ID
     private String orderId;//订单ID
     private String account;//账户
     private String trainNo;//车次
@@ -22,6 +23,14 @@ public class OrderBean extends ResultBean implements Parcelable {
     private String seatNo;// 座位号
     private String money;//票价
     private String type;//车票类型
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getCarriage() {
         return carriage;
@@ -134,6 +143,7 @@ public class OrderBean extends ResultBean implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.id);
         dest.writeString(this.orderId);
         dest.writeString(this.account);
         dest.writeString(this.trainNo);
@@ -153,6 +163,7 @@ public class OrderBean extends ResultBean implements Parcelable {
     }
 
     protected OrderBean(Parcel in) {
+        this.id = in.readInt();
         this.orderId = in.readString();
         this.account = in.readString();
         this.trainNo = in.readString();

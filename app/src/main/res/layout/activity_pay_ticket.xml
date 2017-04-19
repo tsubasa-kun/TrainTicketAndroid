@@ -3,30 +3,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <include layout="@layout/view_title_bar" />
 
+    <TextView
+        android:id="@+id/should_pay_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/tomato"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="应付金额：37.5元" />
+
     <RadioGroup
+        android:id="@+id/pay_typ_rg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
 
         <RadioButton
+            android:id="@+id/gsyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="支付宝"/>
+            android:text="工商银行"/>
 
         <RadioButton
+            android:id="@+id/nyyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="微信"/>
+            android:text="农业银行" />
 
         <RadioButton
+            android:id="@+id/zgyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="银行卡"/>
+            android:text="中国银行" />
+
+        <RadioButton
+            android:id="@+id/jsyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建设银行" />
+
+        <RadioButton
+            android:id="@+id/zsyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招商银行" />
+
+        <RadioButton
+            android:id="@+id/ycyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮储银行" />
+
+        <RadioButton
+            android:id="@+id/zgyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国银联" />
+
+        <RadioButton
+            android:id="@+id/ztytk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中铁银通卡" />
+
+        <RadioButton
+            android:id="@+id/zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝" />
 
     </RadioGroup>
 
@@ -46,7 +97,7 @@
             android:background="@drawable/common_btn_bg"
             android:gravity="center"
             android:padding="8dp"
-            android:text="@string/submit_text"
+            android:text="@string/submit_pay_text"
             android:textColor="@color/white"
             android:textSize="18sp" />
 

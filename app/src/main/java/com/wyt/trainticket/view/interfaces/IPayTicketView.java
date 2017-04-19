@@ -3,27 +3,28 @@ package com.wyt.trainticket.view.interfaces;
 import com.wyt.trainticket.model.bean.OrderBean;
 
 /**
- * Created by cookie on 2017/3/21 0021.
+ * Created by Cookie on 2017/4/19.
  * <p>
- * 车票详情View接口
+ * description：支付车票View接口
  */
-public interface ITicketDetailView {
+
+public interface IPayTicketView {
     /**
      * 提交
      */
     void doSubmit();
 
     /**
-     * 生成订单成功
+     * 支付成功
      *
      * @param orderBean
      */
-    void orderSuccess(OrderBean orderBean);
+    void paySuccess(OrderBean orderBean);
 
     /**
-     * 生成订单失败
+     * 支付失败
      *
      * @param msg
      */
-    void orderFailed(String msg);
+    void payFailed(String msg);
 }

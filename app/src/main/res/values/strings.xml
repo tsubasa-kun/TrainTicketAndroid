@@ -54,6 +54,8 @@
     <string name="ticket_id_type">二代身份证</string>
 
     <string name="pay_ticket">支付页面</string>
+    <string name="should_pay_money">应付金额：%s元</string>
+    <string name="submit_pay_text">提交支付</string>
 
     <string name="main_tab_three">我</string>
     <string name="modify_info">修改信息</string>

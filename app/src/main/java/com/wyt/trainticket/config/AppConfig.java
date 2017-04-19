@@ -100,7 +100,7 @@ public class AppConfig {
     /**
      * 域名
      */
-    public static final String DOMAIN = "http://192.168.1.8:8080";
+    public static final String DOMAIN = "http://192.168.1.3:8080";
 
     /**
      * 服务器API地址
@@ -133,9 +133,14 @@ public class AppConfig {
     public static final String QUERY_TICKET = SERVER_URL + "QueryTicketServlet";
 
     /**
-     * 购买车票
+     * 生成订单
      */
-    public static final String BUY_TICKET = SERVER_URL + "BuyTicketServlet";
+    public static final String ORDER_TICKET = SERVER_URL + "OrderTicketServlet";
+
+    /**
+     * 支付车票
+     */
+    public static final String PAY_TICKET = SERVER_URL + "PayTicketServlet";
 
     /**
      * 查询订单

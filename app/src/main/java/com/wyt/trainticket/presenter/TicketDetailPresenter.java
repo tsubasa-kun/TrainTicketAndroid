@@ -29,12 +29,12 @@ public class TicketDetailPresenter {
         ticketDetailBiz.doSubmit(orderBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iTicketDetailView.paySuccess((OrderBean)result);
+                iTicketDetailView.orderSuccess((OrderBean)result);
             }
 
             @Override
             public void onFailed(Object msg) {
-                iTicketDetailView.payFailed((String)msg);
+                iTicketDetailView.orderFailed((String)msg);
             }
         });
     }

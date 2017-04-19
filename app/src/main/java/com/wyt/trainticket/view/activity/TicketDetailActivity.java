@@ -99,7 +99,6 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         }
         //随机生成票价，车厢和座位号
         Random random = new Random();
-        money = random.nextInt(500) + 50;
         carriage = random.nextInt(16) + 1;
         seatNo = (random.nextInt(100) + 1) + "";
         //设置Title
@@ -119,7 +118,9 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         yzRb.setText(String.format(getResources().getString(R.string.yz_num_text), ticketInfo.getYzNum()));
         ywRb.setText(String.format(getResources().getString(R.string.yw_num_text), ticketInfo.getYwNum()));
         wzRb.setText(String.format(getResources().getString(R.string.wz_num_text), ticketInfo.getWzNum()));
+        //默认选中商务座
         seatCount = ticketInfo.getSwzNum();
+        money = Integer.parseInt(ticketInfo.getSwzMoney());
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
@@ -131,26 +132,32 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                     case R.id.swz_rb:
                         seat = AppConfig.SWZ;
                         seatCount = ticketInfo.getSwzNum();
+                        money = Integer.parseInt(ticketInfo.getSwzMoney());
                         break;
                     case R.id.zy_rb:
                         seat = AppConfig.YDZ;
                         seatCount = ticketInfo.getZyNum();
+                        money = Integer.parseInt(ticketInfo.getZyMoney());
                         break;
                     case R.id.ze_rb:
                         seat = AppConfig.EDZ;
                         seatCount = ticketInfo.getZeNum();
+                        money = Integer.parseInt(ticketInfo.getZeMoney());
                         break;
                     case R.id.yz_rb:
                         seat = AppConfig.YZ;
                         seatCount = ticketInfo.getYzNum();
+                        money = Integer.parseInt(ticketInfo.getYzMoney());
                         break;
                     case R.id.yw_rb:
                         seat = AppConfig.YW;
                         seatCount = ticketInfo.getYwNum();
+                        money = Integer.parseInt(ticketInfo.getYwMoney());
                         break;
                     case R.id.wz_rb:
                         seat = AppConfig.WZ;
                         seatCount = ticketInfo.getWzNum();
+                        money = Integer.parseInt(ticketInfo.getWzMoney());
                         break;
                 }
             }
@@ -187,15 +194,15 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
             }
             //拼装车票信息提示
             String message = "当前所选车次为" + startDate + " " + ticketInfo.getStartTime() + "发出的"
-                    + ticketInfo.getTrainCode() + "次列车，您的座位为" + carriage
-                    + "车" + seatNo + "座。\n车票价格为" + money + "元，是否确认支付购票？";
+                    + ticketInfo.getTrainCode() + "次列车，您的座位为" + carriage + "车" + seatNo
+                    + "座。车票价格为" + money + "元";
             //弹出确认框
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage(message);
             builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    ProgressDialogUtils.showProgress(TicketDetailActivity.this, "支付中...");
+                    ProgressDialogUtils.showProgress(TicketDetailActivity.this, "正在生成订单...");
                     OrderBean orderBean = new OrderBean();
                     orderBean.setAccount(TrainTicketApplication.getUser().getAccount());
                     orderBean.setTrainNo(ticketInfo.getTrainCode());
@@ -234,12 +241,12 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     }
 
     /**
-     * 支付成功
+     * 生成订单成功
      *
      * @param orderBean
      */
     @Override
-    public void paySuccess(OrderBean orderBean) {
+    public void orderSuccess(OrderBean orderBean) {
         ProgressDialogUtils.hideProgress();
         Bundle bundle = new Bundle();
         bundle.putParcelable("order", orderBean);
@@ -247,12 +254,12 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     }
 
     /**
-     * 支付失败
+     * 生成订单失败
      *
      * @param msg
      */
     @Override
-    public void payFailed(String msg) {
+    public void orderFailed(String msg) {
         ProgressDialogUtils.hideProgress();
         ToastUtils.show(this, msg);
     }

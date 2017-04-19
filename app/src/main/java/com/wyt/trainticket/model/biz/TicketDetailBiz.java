@@ -31,7 +31,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         String timestamp = DateTimeUtils.getInstance().dataToTimestamp(dateTime);
         orderBean.setOrderId(timestamp);
         //组装请求参数
-        RequestParams requestParams = new RequestParams(AppConfig.BUY_TICKET);
+        RequestParams requestParams = new RequestParams(AppConfig.ORDER_TICKET);
         requestParams.addParameter("orderId", orderBean.getOrderId());
         requestParams.addParameter("account", orderBean.getAccount());
         requestParams.addParameter("trainNo", orderBean.getTrainNo());
@@ -50,11 +50,12 @@ public class TicketDetailBiz implements ITicketDetailBiz {
             @Override
             public void onSuccess(String result) {
                 Gson gson = new Gson();
-                ResultBean resultBean = gson.fromJson(result, ResultBean.class);
-                if (resultBean.getResStatus().equals("success")) {
+                OrderBean resultOrder = gson.fromJson(result, OrderBean.class);
+                if (resultOrder.getResStatus().equals("success")) {
+                    orderBean.setId(resultOrder.getId());
                     callBack.onSuccess(orderBean);
                 } else {
-                    callBack.onFailed(resultBean.getResMsg());
+                    callBack.onFailed(resultOrder.getResMsg());
                 }
             }
 
