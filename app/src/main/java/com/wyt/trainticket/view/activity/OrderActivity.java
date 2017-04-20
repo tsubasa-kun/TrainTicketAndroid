@@ -1,6 +1,5 @@
 package com.wyt.trainticket.view.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +17,7 @@ import com.love_cookies.cookie_library.widget.LoadAndRefreshView;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.event.PayTicketEvent;
 import com.wyt.trainticket.model.bean.OrderBean;
 import com.wyt.trainticket.presenter.OrderPresenter;
 import com.wyt.trainticket.view.interfaces.IOrderView;
@@ -27,6 +27,10 @@ import org.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import de.greenrobot.event.EventBus;
+
+import static android.media.CamcorderProfile.get;
 
 /**
  * Created by cookie on 2017/3/21 0021.
@@ -58,6 +62,8 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
      */
     @Override
     public void initWidget(Bundle savedInstanceState) {
+        //注册EventBus
+        EventBus.getDefault().register(this);
         //获取前面页面传递过来的参数
         ORDER_STATUS = getIntent().getIntExtra("order_status", AppConfig.ORDER_NOW);
         //设置Title
@@ -210,6 +216,16 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
             holder.setText(R.id.type_tv, orderBean.getType());
             holder.setText(R.id.money_tv, orderBean.getMoney() + "元");
         }
+    }
+
+    /**
+     * 支付车票事件
+     * from {@link PayTicketActivity#paySuccess(OrderBean)} ()}
+     * @param payTicketEvent
+     */
+    public void onEvent(PayTicketEvent payTicketEvent) {
+        offset = 0;
+        getOrder(offset);
     }
 
 }

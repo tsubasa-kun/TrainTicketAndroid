@@ -14,13 +14,15 @@ import com.love_cookies.cookie_library.activity.BaseActivity;
 import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
-import com.wyt.trainticket.app.TrainTicketApplication;
+import com.wyt.trainticket.event.PayTicketEvent;
 import com.wyt.trainticket.model.bean.OrderBean;
 import com.wyt.trainticket.presenter.PayTicketPresenter;
 import com.wyt.trainticket.view.interfaces.IPayTicketView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
+
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by cookie on 2017/4/18 0018.
@@ -133,6 +135,7 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
         Bundle bundle = new Bundle();
         bundle.putParcelable("order", orderBean);
         turnThenFinish(OutTicketActivity.class, bundle);
+        EventBus.getDefault().post(new PayTicketEvent());
     }
 
     /**
