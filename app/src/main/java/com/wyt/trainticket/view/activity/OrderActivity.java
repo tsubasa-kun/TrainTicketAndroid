@@ -30,8 +30,6 @@ import java.util.List;
 
 import de.greenrobot.event.EventBus;
 
-import static android.media.CamcorderProfile.get;
-
 /**
  * Created by cookie on 2017/3/21 0021.
  * <p>

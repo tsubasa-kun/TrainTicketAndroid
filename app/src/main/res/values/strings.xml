@@ -55,10 +55,20 @@
 
     <string name="pay_ticket">支付页面</string>
     <string name="should_pay_money">应付金额：%s元</string>
+    <string name="gsyh">工商银行</string>
+    <string name="nyyh">农业银行</string>
+    <string name="zgyh">中国银行</string>
+    <string name="jsyh">建设银行</string>
+    <string name="zsyh">招商银行</string>
+    <string name="ycyh">邮储银行</string>
+    <string name="zgyl">中国银联</string>
+    <string name="ztytk">中铁银通卡</string>
+    <string name="zfb">支付宝</string>
     <string name="submit_pay_text">提交支付</string>
 
     <string name="main_tab_three">我</string>
     <string name="modify_info">修改信息</string>
+    <string name="modify_member">管理联系人</string>
     <string name="reset_password">修改密码</string>
     <string name="reset_password_old_password_text">原密码</string>
     <string name="reset_password_old_password_hint">请输入原密码</string>
@@ -66,7 +76,6 @@
     <string name="reset_password_new_password_hint">请输入新密码</string>
     <string name="reset_password_re_new_password_text">确认新密码</string>
     <string name="reset_password_re_new_password_hint">请再次输入新密码</string>
-
 
     <string name="about">关于</string>
 

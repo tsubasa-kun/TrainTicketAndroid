@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:text="Cookie"/>
+                tools:text="Cookie"/>
 
             <TextView
                 android:id="@+id/id_number_tv"
@@ -41,7 +41,7 @@
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white"
                 android:textSize="14sp"
-                android:text="201***********1234"/>
+                tools:text="201***********1234"/>
 
         </LinearLayout>
 
@@ -55,7 +55,23 @@
         android:paddingLeft="20dp"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:text="修改信息"
+        android:text="@string/modify_info"
+        android:background="@drawable/common_list_item_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_color" />
+
+    <TextView
+        android:id="@+id/modify_member_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/modify_member"
         android:background="@drawable/common_list_item_bg"/>
 
     <View
@@ -67,12 +83,12 @@
         android:id="@+id/reset_password_btn"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:background="@drawable/common_list_item_bg"
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
+        android:text="@string/reset_password"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        android:text="修改密码"
-        android:background="@drawable/common_list_item_bg"/>
+        android:textSize="14sp" />
 
     <View
         android:layout_width="match_parent"
@@ -87,7 +103,7 @@
         android:paddingLeft="20dp"
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:text="关于"
+        android:text="@string/about"
         android:background="@drawable/common_list_item_bg"/>
 
     <View

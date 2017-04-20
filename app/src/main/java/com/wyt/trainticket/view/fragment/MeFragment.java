@@ -12,6 +12,7 @@ import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.view.activity.AboutActivity;
 import com.wyt.trainticket.view.activity.LoginActivity;
+import com.wyt.trainticket.view.activity.MemberActivity;
 import com.wyt.trainticket.view.activity.ModifyInfoActivity;
 import com.wyt.trainticket.view.activity.ResetPasswordActivity;
 
@@ -35,6 +36,8 @@ public class MeFragment extends BaseFragment {
     private TextView idNumberTv;
     @ViewInject(R.id.modify_info_btn)
     private TextView modifyInfoBtn;
+    @ViewInject(R.id.modify_member_btn)
+    private TextView modifyMemberBtn;
     @ViewInject(R.id.reset_password_btn)
     private TextView resetPasswordBtn;
     @ViewInject(R.id.about_btn)
@@ -51,6 +54,7 @@ public class MeFragment extends BaseFragment {
     public void initWidget(Bundle savedInstanceState) {
         //设置按钮点击事件
         modifyInfoBtn.setOnClickListener(this);
+        modifyMemberBtn.setOnClickListener(this);
         resetPasswordBtn.setOnClickListener(this);
         aboutBtn.setOnClickListener(this);
         exitBtn.setOnClickListener(this);
@@ -78,6 +82,9 @@ public class MeFragment extends BaseFragment {
         switch (view.getId()) {
             case R.id.modify_info_btn:
                 turnForResult(ModifyInfoActivity.class, MODIFY_INFO);
+                break;
+            case R.id.modify_member_btn:
+                turn(MemberActivity.class);
                 break;
             case R.id.reset_password_btn:
                 turnForResult(ResetPasswordActivity.class, RESET_PASSWORD);

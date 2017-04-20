@@ -151,7 +151,6 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
     public void queryFailed() {
         ProgressDialogUtils.hideProgress();
         ToastUtils.show(this, R.string.query_ticket_failed);
-        finish();
     }
 
 }

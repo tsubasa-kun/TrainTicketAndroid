@@ -1,5 +1,7 @@
 package com.wyt.trainticket.config;
 
+import com.wyt.trainticket.model.bean.UserBean;
+
 /**
  * Created by cookie on 2017/3/16 0016.
  * <p>
@@ -146,4 +148,9 @@ public class AppConfig {
      * 查询订单
      */
     public static final String QUERY_ORDER = SERVER_URL + "QueryOrderServlet";
+
+    /**
+     * 查询联系人
+     */
+    public static final String QUERY_MEMBER = SERVER_URL + "QueryMemberServlet";
 }

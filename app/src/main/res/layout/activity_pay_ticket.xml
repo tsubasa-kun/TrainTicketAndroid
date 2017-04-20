@@ -29,55 +29,55 @@
             android:id="@+id/gsyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="工商银行"/>
+            android:text="@string/gsyh"/>
 
         <RadioButton
             android:id="@+id/nyyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="农业银行" />
+            android:text="@string/nyyh" />
 
         <RadioButton
             android:id="@+id/zgyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="中国银行" />
+            android:text="@string/zgyh" />
 
         <RadioButton
             android:id="@+id/jsyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="建设银行" />
+            android:text="@string/jsyh" />
 
         <RadioButton
             android:id="@+id/zsyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="招商银行" />
+            android:text="@string/zsyh" />
 
         <RadioButton
             android:id="@+id/ycyh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="邮储银行" />
+            android:text="@string/ycyh" />
 
         <RadioButton
             android:id="@+id/zgyl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="中国银联" />
+            android:text="@string/zgyl" />
 
         <RadioButton
             android:id="@+id/ztytk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="中铁银通卡" />
+            android:text="@string/ztytk" />
 
         <RadioButton
             android:id="@+id/zfb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="支付宝" />
+            android:text="@string/zfb" />
 
     </RadioGroup>
 
