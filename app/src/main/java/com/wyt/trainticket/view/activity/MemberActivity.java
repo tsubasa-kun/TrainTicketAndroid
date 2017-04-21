@@ -74,6 +74,7 @@ public class MemberActivity extends BaseActivity implements IMemberView {
                 finish();
                 break;
             case R.id.right_btn:
+                turn(AddMemberActivity.class);
                 break;
             default:
                 break;
@@ -118,7 +119,7 @@ public class MemberActivity extends BaseActivity implements IMemberView {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Bundle bundle = new Bundle();
                 bundle.putParcelable("member", members.get(position));
-//                turn(TicketDetailActivity.class, bundle);
+                turn(EditMemberActivity.class, bundle);
             }
         });
     }

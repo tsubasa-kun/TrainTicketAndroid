@@ -32,7 +32,9 @@
         <activity android:name=".view.activity.ResetPasswordActivity" />
         <activity android:name=".view.activity.AboutActivity" />
         <activity android:name=".view.activity.PayTicketActivity" />
-        <activity android:name=".view.activity.MemberActivity"></activity>
+        <activity android:name=".view.activity.MemberActivity" />
+        <activity android:name=".view.activity.AddMemberActivity" />
+        <activity android:name=".view.activity.EditMemberActivity"></activity>
     </application>
 
 </manifest>
