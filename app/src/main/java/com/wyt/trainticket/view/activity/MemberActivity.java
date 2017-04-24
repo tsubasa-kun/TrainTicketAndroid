@@ -14,6 +14,7 @@ import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
+import com.wyt.trainticket.event.ModifyMemberEvent;
 import com.wyt.trainticket.model.bean.MemberBean;
 import com.wyt.trainticket.presenter.MemberPresenter;
 import com.wyt.trainticket.view.interfaces.IMemberView;
@@ -21,8 +22,9 @@ import com.wyt.trainticket.view.interfaces.IMemberView;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by cookie on 2017/4/20 0020.
@@ -50,6 +52,8 @@ public class MemberActivity extends BaseActivity implements IMemberView {
      */
     @Override
     public void initWidget(Bundle savedInstanceState) {
+        //注册EventBus
+        EventBus.getDefault().register(this);
         //设置Title
         titleTv.setText(R.string.modify_member);
         //设置Title左右按钮
@@ -134,5 +138,14 @@ public class MemberActivity extends BaseActivity implements IMemberView {
         ProgressDialogUtils.hideProgress();
         //弹出提示
         ToastUtils.show(this, msg);
+    }
+
+    /**
+     * 修改联系人事件
+     * from {@link AddMemberActivity#addSuccess()}
+     * @param modifyMemberEvent
+     */
+    public void onEvent(ModifyMemberEvent modifyMemberEvent) {
+        getMember(TrainTicketApplication.getUser().getUserId());
     }
 }

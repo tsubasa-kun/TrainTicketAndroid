@@ -69,6 +69,9 @@
     <string name="main_tab_three">我</string>
     <string name="modify_info">修改信息</string>
     <string name="modify_member">管理联系人</string>
+    <string name="add_btn_text">添加</string>
+    <string name="add_member_title">添加联系人</string>
+    <string name="add_member_success">添加成功</string>
     <string name="reset_password">修改密码</string>
     <string name="reset_password_old_password_text">原密码</string>
     <string name="reset_password_old_password_hint">请输入原密码</string>

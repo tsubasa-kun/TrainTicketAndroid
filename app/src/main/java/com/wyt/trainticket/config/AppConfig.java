@@ -153,4 +153,9 @@ public class AppConfig {
      * 查询联系人
      */
     public static final String QUERY_MEMBER = SERVER_URL + "QueryMemberServlet";
+
+    /**
+     * 添加联系人
+     */
+    public static final String ADD_MEMBER = SERVER_URL + "AddMemberServlet";
 }
