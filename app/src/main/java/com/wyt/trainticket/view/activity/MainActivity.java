@@ -84,7 +84,7 @@ public class MainActivity extends BaseActivity {
                 exitTime = System.currentTimeMillis();
             } else {
                 ActivityCollections.getInstance().finishAllActivity();
-                System.exit(0);
+//                System.exit(0);
             }
             return true;
         }

@@ -97,7 +97,7 @@ public class ModifyInfoActivity extends BaseActivity implements IModifyInfoView 
         } else {
             ProgressDialogUtils.showProgress(this);
             UserBean userBean = new UserBean();
-            userBean.setAccount(account);
+            userBean.setUserId(TrainTicketApplication.getUser().getUserId());
             userBean.setRealName(realName);
             userBean.setIdNumber(idNumber);
             modifyInfoPresenter.doModify(userBean);

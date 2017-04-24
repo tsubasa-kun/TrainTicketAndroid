@@ -26,7 +26,7 @@ public class ModifyInfoBiz implements IModifyInfoBiz{
     public void doModify(UserBean userBean, final CallBack callBack) {
         //组装请求参数
         RequestParams requestParams = new RequestParams(AppConfig.MODIFY_INFO);
-        requestParams.addParameter("account", userBean.getAccount());
+        requestParams.addParameter("userId", userBean.getUserId());
         requestParams.addParameter("realName", userBean.getRealName());
         requestParams.addParameter("idNumber", userBean.getIdNumber());
         //发送请求
