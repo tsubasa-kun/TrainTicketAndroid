@@ -14,8 +14,9 @@ public interface IAddMemberView {
 
     /**
      * 添加成功
+     * @param msg
      */
-    void addSuccess();
+    void addSuccess(String msg);
 
     /**
      * 添加失败

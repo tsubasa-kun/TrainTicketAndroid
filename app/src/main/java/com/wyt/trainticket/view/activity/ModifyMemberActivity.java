@@ -15,9 +15,8 @@ import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.event.ModifyMemberEvent;
 import com.wyt.trainticket.model.bean.MemberBean;
-import com.wyt.trainticket.model.bean.UserBean;
-import com.wyt.trainticket.presenter.AddMemberPresenter;
-import com.wyt.trainticket.view.interfaces.IAddMemberView;
+import com.wyt.trainticket.presenter.ModifyMemberPresenter;
+import com.wyt.trainticket.view.interfaces.IModifyMemberView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -27,12 +26,13 @@ import de.greenrobot.event.EventBus;
 /**
  * Created by cookie on 2017/4/22 0022.
  * <p>
- * 添加联系人页
+ * 编辑联系人页
  */
-@ContentView(R.layout.activity_add_member)
-public class AddMemberActivity extends BaseActivity implements IAddMemberView {
+@ContentView(R.layout.activity_modify_member)
+public class ModifyMemberActivity extends BaseActivity implements IModifyMemberView {
 
-    private AddMemberPresenter addMemberPresenter = new AddMemberPresenter(this);
+    private MemberBean member;
+    private ModifyMemberPresenter modifyMemberPresenter = new ModifyMemberPresenter(this);
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -42,8 +42,10 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
     private EditText realNameEt;
     @ViewInject(R.id.id_number_et)
     private EditText idNumberEt;
-    @ViewInject(R.id.add_btn)
-    private TextView addBtn;
+    @ViewInject(R.id.modify_btn)
+    private TextView modifyBtn;
+    @ViewInject(R.id.delete_btn)
+    private TextView deleteBtn;
 
     /**
      * 初始化控件
@@ -53,12 +55,18 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
     @Override
     public void initWidget(Bundle savedInstanceState) {
         //设置Title
-        titleTv.setText(R.string.add_member_title);
+        titleTv.setText(R.string.modify_member_title);
         //设置Title左按钮
         leftBtn.setImageResource(R.drawable.ic_keyboard_backspace_white);
+        //获取前一个页面传来的值
+        member = getIntent().getExtras().getParcelable("member");
+        //设置值
+        realNameEt.setText(member.getMemberRealName());
+        idNumberEt.setText(member.getMemberIdNumber());
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
-        addBtn.setOnClickListener(this);
+        modifyBtn.setOnClickListener(this);
+        deleteBtn.setOnClickListener(this);
     }
 
     /**
@@ -72,10 +80,15 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
             case R.id.left_btn:
                 finish();
                 break;
-            case R.id.add_btn:
+            case R.id.modify_btn:
                 //软键盘消失
                 KeyBoardUtils.closeKeybord(idNumberEt, this);
-                doAdd();
+                doModify();
+                break;
+            case R.id.delete_btn:
+                //软键盘消失
+                KeyBoardUtils.closeKeybord(idNumberEt, this);
+                doDelete();
                 break;
             default:
                 break;
@@ -83,10 +96,10 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
     }
 
     /**
-     * 添加
+     * 修改
      */
     @Override
-    public void doAdd() {
+    public void doModify() {
         String realName = realNameEt.getText().toString();
         String idNumber = idNumberEt.getText().toString();
         if (TextUtils.isEmpty(realName)) {
@@ -98,19 +111,20 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
         } else {
             ProgressDialogUtils.showProgress(this);
             MemberBean memberBean = new MemberBean();
-            memberBean.setUserId(Integer.parseInt(TrainTicketApplication.getUser().getUserId()));
+            memberBean.setId(member.getId());
+            memberBean.setUserId(member.getUserId());
             memberBean.setMemberRealName(realName);
             memberBean.setMemberIdNumber(idNumber);
-            addMemberPresenter.doAdd(memberBean);
+            modifyMemberPresenter.doModify(memberBean);
         }
     }
 
     /**
-     * 添加成功
+     * 修改成功
      * @param msg
      */
     @Override
-    public void addSuccess(String msg) {
+    public void modifySuccess(String msg) {
         ProgressDialogUtils.hideProgress();
         ToastUtils.show(this, msg);
         EventBus.getDefault().post(new ModifyMemberEvent());
@@ -118,11 +132,42 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
     }
 
     /**
-     * 添加失败
+     * 修改失败
      * @param msg
      */
     @Override
-    public void addFailed(String msg) {
+    public void modifyFailed(String msg) {
+        ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
+    }
+
+    /**
+     * 删除
+     */
+    @Override
+    public void doDelete() {
+        ProgressDialogUtils.showProgress(this);
+        modifyMemberPresenter.doDelete(member);
+    }
+
+    /**
+     * 删除成功
+     * @param msg
+     */
+    @Override
+    public void deleteSuccess(String msg) {
+        ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
+        EventBus.getDefault().post(new ModifyMemberEvent());
+        finish();
+    }
+
+    /**
+     * 删除失败
+     * @param msg
+     */
+    @Override
+    public void deleteFailed(String msg) {
         ProgressDialogUtils.hideProgress();
         ToastUtils.show(this, msg);
     }

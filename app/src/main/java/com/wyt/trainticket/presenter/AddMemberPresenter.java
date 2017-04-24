@@ -29,7 +29,7 @@ public class AddMemberPresenter {
         addMemberBiz.doAdd(memberBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iAddMemberView.addSuccess();
+                iAddMemberView.addSuccess((String)result);
             }
 
             @Override

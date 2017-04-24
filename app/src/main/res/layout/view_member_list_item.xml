@@ -34,11 +34,12 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/modify_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:textSize="12sp"
         android:textColor="@color/tomato"
-        android:text="点击编辑"/>
+        android:text="@string/modify_tag_text"/>
 
 </LinearLayout>

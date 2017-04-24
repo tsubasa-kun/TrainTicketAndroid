@@ -106,9 +106,15 @@ public class MemberActivity extends BaseActivity implements IMemberView {
         //关闭进度条
         ProgressDialogUtils.hideProgress();
         //配置数据到Adapter
-        CommonAdapter<MemberBean> memberAdapter = new CommonAdapter<MemberBean>(this, R.layout.view_member_list_item, members) {
+        final CommonAdapter<MemberBean> memberAdapter = new CommonAdapter<MemberBean>(this, R.layout.view_member_list_item, members) {
             @Override
             public void convert(CommonViewHolder holder, MemberBean memberBean) {
+                TextView modifyTag = holder.getView(R.id.modify_tag);
+                if (memberBean.getMemberIdNumber().equals(TrainTicketApplication.getUser().getIdNumber())) {
+                    modifyTag.setVisibility(View.GONE);
+                } else {
+                    modifyTag.setVisibility(View.VISIBLE);
+                }
                 holder.setText(R.id.real_name_tv, memberBean.getMemberRealName());
                 String idNumber = memberBean.getMemberIdNumber();
                 idNumber = idNumber.substring(0, 4) + "**********" + idNumber.substring(14, 18);
@@ -121,9 +127,14 @@ public class MemberActivity extends BaseActivity implements IMemberView {
         memberList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Bundle bundle = new Bundle();
-                bundle.putParcelable("member", members.get(position));
-                turn(EditMemberActivity.class, bundle);
+                MemberBean memberBean = members.get(position);
+                if (memberBean.getMemberIdNumber().equals(TrainTicketApplication.getUser().getIdNumber())) {
+                    ToastUtils.show(MemberActivity.this, R.string.modify_cant_tip);
+                } else {
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("member", memberBean);
+                    turn(ModifyMemberActivity.class, bundle);
+                }
             }
         });
     }
@@ -142,7 +153,9 @@ public class MemberActivity extends BaseActivity implements IMemberView {
 
     /**
      * 修改联系人事件
-     * from {@link AddMemberActivity#addSuccess()}
+     * from {@link AddMemberActivity#addSuccess(String)} ()}
+     * from {@link ModifyMemberActivity#modifySuccess(String)}
+     * from {@link ModifyMemberActivity#deleteSuccess(String)}
      * @param modifyMemberEvent
      */
     public void onEvent(ModifyMemberEvent modifyMemberEvent) {

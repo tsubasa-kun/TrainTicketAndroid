@@ -158,4 +158,14 @@ public class AppConfig {
      * 添加联系人
      */
     public static final String ADD_MEMBER = SERVER_URL + "AddMemberServlet";
+
+    /**
+     * 修改联系人
+     */
+    public static final String MODIFY_MEMBER = SERVER_URL + "ModifyMemberServlet";
+
+    /**
+     * 删除联系人
+     */
+    public static final String DELETE_MEMBER = SERVER_URL + "DeleteMemberServlet";
 }

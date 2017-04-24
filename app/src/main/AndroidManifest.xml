@@ -34,7 +34,7 @@
         <activity android:name=".view.activity.PayTicketActivity" />
         <activity android:name=".view.activity.MemberActivity" />
         <activity android:name=".view.activity.AddMemberActivity" />
-        <activity android:name=".view.activity.EditMemberActivity"></activity>
+        <activity android:name=".view.activity.ModifyMemberActivity"></activity>
     </application>
 
 </manifest>
