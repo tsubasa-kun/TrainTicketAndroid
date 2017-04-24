@@ -1,6 +1,7 @@
 package com.wyt.trainticket.model.biz.interfaces;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
+import com.wyt.trainticket.model.bean.MemberBean;
 
 /**
  * Created by Cookie on 2017/4/24.
@@ -11,9 +12,8 @@ import com.love_cookies.cookie_library.interfaces.CallBack;
 public interface IAddMemberBiz {
     /**
      * 添加
-     * @param realName
-     * @param idNumber
+     * @param memberBean
      * @param callBack
      */
-    void doAdd(String realName, String idNumber, CallBack callBack);
+    void doAdd(MemberBean memberBean, CallBack callBack);
 }

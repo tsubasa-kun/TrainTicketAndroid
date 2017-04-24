@@ -1,6 +1,7 @@
 package com.wyt.trainticket.presenter;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
+import com.wyt.trainticket.model.bean.MemberBean;
 import com.wyt.trainticket.model.biz.AddMemberBiz;
 import com.wyt.trainticket.view.interfaces.IAddMemberView;
 
@@ -20,8 +21,12 @@ public class AddMemberPresenter {
         this.iAddMemberView = iAddMemberView;
     }
 
-    public void doAdd(String realName, String idNumber) {
-        addMemberBiz.doAdd(realName, idNumber, new CallBack() {
+    /**
+     * 查询
+     * @param memberBean
+     */
+    public void doAdd(MemberBean memberBean) {
+        addMemberBiz.doAdd(memberBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
                 iAddMemberView.addSuccess();

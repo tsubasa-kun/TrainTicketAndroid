@@ -12,7 +12,9 @@ import com.love_cookies.cookie_library.utils.KeyBoardUtils;
 import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.event.ModifyMemberEvent;
+import com.wyt.trainticket.model.bean.MemberBean;
 import com.wyt.trainticket.model.bean.UserBean;
 import com.wyt.trainticket.presenter.AddMemberPresenter;
 import com.wyt.trainticket.view.interfaces.IAddMemberView;
@@ -95,7 +97,11 @@ public class AddMemberActivity extends BaseActivity implements IAddMemberView {
             ToastUtils.show(this, R.string.id_number_error_hint);
         } else {
             ProgressDialogUtils.showProgress(this);
-            addMemberPresenter.doAdd(realName, idNumber);
+            MemberBean memberBean = new MemberBean();
+            memberBean.setUserId(Integer.parseInt(TrainTicketApplication.getUser().getUserId()));
+            memberBean.setMemberRealName(realName);
+            memberBean.setMemberIdNumber(idNumber);
+            addMemberPresenter.doAdd(memberBean);
         }
     }
 

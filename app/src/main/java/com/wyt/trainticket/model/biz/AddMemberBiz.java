@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.model.bean.MemberBean;
 import com.wyt.trainticket.model.bean.ResultBean;
 import com.wyt.trainticket.model.biz.interfaces.IAddMemberBiz;
 
@@ -20,17 +21,16 @@ import org.xutils.x;
 public class AddMemberBiz implements IAddMemberBiz {
     /**
      * 添加联系人
-     * @param realName
-     * @param idNumber
+     * @param memberBean
      * @param callBack
      */
     @Override
-    public void doAdd(String realName, String idNumber, final CallBack callBack) {
+    public void doAdd(MemberBean memberBean, final CallBack callBack) {
         //组装请求参数
         RequestParams requestParams = new RequestParams(AppConfig.ADD_MEMBER);
-        requestParams.addParameter("userId", TrainTicketApplication.getUser().getUserId());
-        requestParams.addParameter("realName", realName);
-        requestParams.addParameter("idNumber", idNumber);
+        requestParams.addParameter("userId", memberBean.getUserId());
+        requestParams.addParameter("realName", memberBean.getMemberRealName());
+        requestParams.addParameter("idNumber", memberBean.getMemberIdNumber());
         //发送请求
         x.http().post(requestParams, new Callback.CacheCallback<String>() {
             @Override
