@@ -2,19 +2,28 @@ package com.wyt.trainticket.view.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.love_cookies.cookie_library.activity.BaseActivity;
+import com.love_cookies.cookie_library.adapter.CommonAdapter;
+import com.love_cookies.cookie_library.adapter.CommonViewHolder;
 import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
+import com.love_cookies.cookie_library.widget.MeasuredListView;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.model.bean.MemberBean;
+import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderBean;
 import com.wyt.trainticket.model.bean.TicketBean;
 import com.wyt.trainticket.presenter.TicketDetailPresenter;
@@ -24,6 +33,7 @@ import com.wyt.trainticket.view.widget.RadioGroupEx;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -43,6 +53,8 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     private String seatNo;//座位号
     private String type;//车票类型
     private TicketDetailPresenter ticketDetailPresenter = new TicketDetailPresenter(this);
+    private int SELECT_MEMBER = 0;
+    private MemberListBean memberListBean = new MemberListBean();
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -76,6 +88,10 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     private TextView submitBtn;
     @ViewInject(R.id.seat_rb)
     private RadioGroupEx seatRb;
+    @ViewInject(R.id.add_member_btn)
+    private LinearLayout addMemberBtn;
+    @ViewInject(R.id.member_list)
+    private MeasuredListView memberList;
 
     /**
      * 初始化控件
@@ -124,6 +140,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
+        addMemberBtn.setOnClickListener(this);
         seatRb.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -178,6 +195,9 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
             case R.id.submit_btn:
                 doSubmit();
                 break;
+            case R.id.add_member_btn:
+                turnForResult(SelectMemberActivity.class, SELECT_MEMBER);
+                break;
             default:
                 break;
         }
@@ -188,55 +208,59 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
      */
     @Override
     public void doSubmit() {
-        if (!seatCount.equals("--") && !seatCount.equals("无")) {
-            if (seat.equals("无座")) {
-                seatNo = "无";
+        if (memberListBean.getMembers() != null && memberListBean.getMembers().size() > 0) {
+            if (!seatCount.equals("--") && !seatCount.equals("无")) {
+                if (seat.equals("无座")) {
+                    seatNo = "无";
+                }
+                //拼装车票信息提示
+                String message = "当前所选车次为" + startDate + " " + ticketInfo.getStartTime() + "发出的"
+                        + ticketInfo.getTrainCode() + "次列车，您的座位为" + carriage + "车" + seatNo
+                        + "座。车票价格为" + money + "元";
+                //弹出确认框
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage(message);
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ProgressDialogUtils.showProgress(TicketDetailActivity.this, "正在生成订单...");
+                        OrderBean orderBean = new OrderBean();
+                        orderBean.setAccount(TrainTicketApplication.getUser().getAccount());
+                        orderBean.setTrainNo(ticketInfo.getTrainCode());
+                        orderBean.setFromStation(ticketInfo.getStartStationName());
+                        orderBean.setStartTime(ticketInfo.getStartTime());
+                        orderBean.setToStation(ticketInfo.getToStationName());
+                        orderBean.setEndTime(ticketInfo.getArriveTime());
+                        orderBean.setDate(startDate);
+                        orderBean.setSeat(seat);
+                        orderBean.setCarriage(carriage + "");
+                        orderBean.setSeatNo(seatNo);
+                        orderBean.setMoney(money + "");
+                        orderBean.setType(type);
+                        ticketDetailPresenter.doSubmit(orderBean);
+                        dialog.dismiss();
+                    }
+                });
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.create().show();
+            } else {
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage(R.string.seat_none_tip);
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.create().show();
             }
-            //拼装车票信息提示
-            String message = "当前所选车次为" + startDate + " " + ticketInfo.getStartTime() + "发出的"
-                    + ticketInfo.getTrainCode() + "次列车，您的座位为" + carriage + "车" + seatNo
-                    + "座。车票价格为" + money + "元";
-            //弹出确认框
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage(message);
-            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    ProgressDialogUtils.showProgress(TicketDetailActivity.this, "正在生成订单...");
-                    OrderBean orderBean = new OrderBean();
-                    orderBean.setAccount(TrainTicketApplication.getUser().getAccount());
-                    orderBean.setTrainNo(ticketInfo.getTrainCode());
-                    orderBean.setFromStation(ticketInfo.getStartStationName());
-                    orderBean.setStartTime(ticketInfo.getStartTime());
-                    orderBean.setToStation(ticketInfo.getToStationName());
-                    orderBean.setEndTime(ticketInfo.getArriveTime());
-                    orderBean.setDate(startDate);
-                    orderBean.setSeat(seat);
-                    orderBean.setCarriage(carriage + "");
-                    orderBean.setSeatNo(seatNo);
-                    orderBean.setMoney(money + "");
-                    orderBean.setType(type);
-                    ticketDetailPresenter.doSubmit(orderBean);
-                    dialog.dismiss();
-                }
-            });
-            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
-            builder.create().show();
         } else {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage(R.string.seat_none_tip);
-            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
-            builder.create().show();
+            ToastUtils.show(this, R.string.select_member_tip);
         }
     }
 
@@ -262,5 +286,38 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     public void orderFailed(String msg) {
         ProgressDialogUtils.hideProgress();
         ToastUtils.show(this, msg);
+    }
+
+    /**
+     * 处理上个页面返回的结果
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == SELECT_MEMBER) {
+            memberListBean = data.getExtras().getParcelable("member");
+            setMemberList(memberListBean.getMembers());
+        }
+    }
+
+    /**
+     * 设置乘客列表
+     *
+     * @param members
+     */
+    public void setMemberList(List<MemberBean> members) {
+        //配置数据到Adapter
+        CommonAdapter<MemberBean> memberAdapter = new CommonAdapter<MemberBean>(this, R.layout.view_ticket_member_liet_item, members) {
+            @Override
+            public void convert(final CommonViewHolder holder, MemberBean memberBean) {
+                holder.setText(R.id.real_name_tv, memberBean.getMemberRealName());
+            }
+        };
+        //ListView设置Adapter
+        memberList.setAdapter(memberAdapter);
     }
 }

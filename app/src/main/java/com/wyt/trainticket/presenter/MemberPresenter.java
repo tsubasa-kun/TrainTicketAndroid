@@ -27,10 +27,9 @@ public class MemberPresenter {
 
     /**
      * 查询联系人
-     * @param userId
      */
-    public void doQuery(String userId) {
-        memberBiz.doQuery(userId, new CallBack() {
+    public void doQuery() {
+        memberBiz.doQuery(new CallBack() {
             @Override
             public void onSuccess(Object result) {
                 iMemberView.setMemberList((List<MemberBean>)result);

@@ -13,9 +13,8 @@ import java.util.List;
 public interface IMemberView {
     /**
      * 查询联系人
-     * @param userId
      */
-    void getMember(String userId);
+    void getMember();
 
     /**
      * 设置联系人列表

@@ -52,15 +52,4 @@ public class ResultBean implements Parcelable {
         this.resMsg = in.readString();
     }
 
-    public static final Creator<ResultBean> CREATOR = new Creator<ResultBean>() {
-        @Override
-        public ResultBean createFromParcel(Parcel source) {
-            return new ResultBean(source);
-        }
-
-        @Override
-        public ResultBean[] newArray(int size) {
-            return new ResultBean[size];
-        }
-    };
 }

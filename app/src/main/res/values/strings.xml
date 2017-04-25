@@ -84,6 +84,10 @@
     <string name="reset_password_re_new_password_text">确认新密码</string>
     <string name="reset_password_re_new_password_hint">请再次输入新密码</string>
 
+    <string name="select_member_title">选择联系人</string>
+    <string name="select_member_tip">请选择联系人</string>
+    <string name="finish_btn_text">完成</string>
+
     <string name="about">关于</string>
 
     <string name="exit_text">注销</string>

@@ -1,8 +1,11 @@
 package com.wyt.trainticket.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -14,36 +17,37 @@ import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
-import com.wyt.trainticket.event.ModifyMemberEvent;
 import com.wyt.trainticket.model.bean.MemberBean;
+import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.presenter.MemberPresenter;
 import com.wyt.trainticket.view.interfaces.IMemberView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import de.greenrobot.event.EventBus;
-
 /**
- * Created by cookie on 2017/4/20 0020.
+ * Created by cookie on 2017/4/22 0022.
  * <p>
- * 管理联系人页面
+ * 选择联系人页
  */
-@ContentView(R.layout.activity_member)
-public class MemberActivity extends BaseActivity implements IMemberView {
+@ContentView(R.layout.activity_select_member)
+public class SelectMemberActivity extends BaseActivity implements IMemberView {
 
+    private List<MemberBean> memberDatas = new ArrayList<>();
+    private List<MemberBean> memberSelected = new ArrayList<>();
     private MemberPresenter memberPresenter = new MemberPresenter(this);
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
     @ViewInject(R.id.left_btn)
     private ImageView leftBtn;
-    @ViewInject(R.id.right_btn)
-    private ImageView rightBtn;
     @ViewInject(R.id.member_list)
     private ListView memberList;
+    @ViewInject(R.id.finish_btn)
+    private TextView finishBtn;
 
     /**
      * 初始化控件
@@ -52,17 +56,14 @@ public class MemberActivity extends BaseActivity implements IMemberView {
      */
     @Override
     public void initWidget(Bundle savedInstanceState) {
-        //注册EventBus
-        EventBus.getDefault().register(this);
         //设置Title
-        titleTv.setText(R.string.modify_member);
-        //设置Title左右按钮
+        titleTv.setText(R.string.select_member_title);
+        //设置Title左按钮
         leftBtn.setImageResource(R.drawable.ic_keyboard_backspace_white);
-        rightBtn.setImageResource(R.drawable.ic_add_white);
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
-        rightBtn.setOnClickListener(this);
-        //查询联系人
+        finishBtn.setOnClickListener(this);
+        //获取联系人
         getMember();
     }
 
@@ -77,12 +78,30 @@ public class MemberActivity extends BaseActivity implements IMemberView {
             case R.id.left_btn:
                 finish();
                 break;
-            case R.id.right_btn:
-                turn(AddMemberActivity.class);
+            case R.id.finish_btn:
+                selectFinish();
                 break;
             default:
                 break;
         }
+    }
+
+    //选中完成
+    public void selectFinish() {
+        memberSelected.clear();
+        for (int i = 0; i < memberDatas.size(); i ++) {
+            if (memberDatas.get(i).isChecked()) {
+                memberSelected.add(memberDatas.get(i));
+            }
+        }
+        MemberListBean memberListBean = new MemberListBean();
+        memberListBean.setMembers(memberSelected);
+        Intent intent = new Intent();
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("member", memberListBean);
+        intent.putExtras(bundle);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     /**
@@ -105,37 +124,26 @@ public class MemberActivity extends BaseActivity implements IMemberView {
         //关闭进度条
         ProgressDialogUtils.hideProgress();
         //配置数据到Adapter
-        final CommonAdapter<MemberBean> memberAdapter = new CommonAdapter<MemberBean>(this, R.layout.view_member_list_item, members) {
+        CommonAdapter<MemberBean> memberAdapter = new CommonAdapter<MemberBean>(this, R.layout.view_select_member_list_item, members) {
             @Override
-            public void convert(CommonViewHolder holder, MemberBean memberBean) {
-                TextView modifyTag = holder.getView(R.id.modify_tag);
-                if (memberBean.getMemberIdNumber().equals(TrainTicketApplication.getUser().getIdNumber())) {
-                    modifyTag.setVisibility(View.GONE);
-                } else {
-                    modifyTag.setVisibility(View.VISIBLE);
-                }
+            public void convert(final CommonViewHolder holder, MemberBean memberBean) {
+                CheckBox checkBox = holder.getView(R.id.checkbox);
+                checkBox.setChecked(memberBean.isChecked());
                 holder.setText(R.id.real_name_tv, memberBean.getMemberRealName());
                 String idNumber = memberBean.getMemberIdNumber();
                 idNumber = idNumber.substring(0, 4) + "**********" + idNumber.substring(14, 18);
                 holder.setText(R.id.id_number_tv, idNumber);
+                checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
+                        members.get(holder.getPosition()).setChecked(checked);
+                        memberDatas = members;
+                    }
+                });
             }
         };
         //ListView设置Adapter
         memberList.setAdapter(memberAdapter);
-        //ListView设置点击事件
-        memberList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                MemberBean memberBean = members.get(position);
-                if (memberBean.getMemberIdNumber().equals(TrainTicketApplication.getUser().getIdNumber())) {
-                    ToastUtils.show(MemberActivity.this, R.string.modify_cant_tip);
-                } else {
-                    Bundle bundle = new Bundle();
-                    bundle.putParcelable("member", memberBean);
-                    turn(ModifyMemberActivity.class, bundle);
-                }
-            }
-        });
     }
 
     /**
@@ -148,16 +156,5 @@ public class MemberActivity extends BaseActivity implements IMemberView {
         ProgressDialogUtils.hideProgress();
         //弹出提示
         ToastUtils.show(this, msg);
-    }
-
-    /**
-     * 修改联系人事件
-     * from {@link AddMemberActivity#addSuccess(String)} ()}
-     * from {@link ModifyMemberActivity#modifySuccess(String)}
-     * from {@link ModifyMemberActivity#deleteSuccess(String)}
-     * @param modifyMemberEvent
-     */
-    public void onEvent(ModifyMemberEvent modifyMemberEvent) {
-        getMember();
     }
 }

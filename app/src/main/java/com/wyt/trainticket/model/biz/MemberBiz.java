@@ -2,6 +2,7 @@ package com.wyt.trainticket.model.biz;
 
 import com.google.gson.Gson;
 import com.love_cookies.cookie_library.interfaces.CallBack;
+import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderListBean;
@@ -21,14 +22,13 @@ public class MemberBiz implements IMemberBiz {
 
     /**
      * 查询联系人
-     * @param userId
      * @param callBack
      */
     @Override
-    public void doQuery(String userId, final CallBack callBack) {
+    public void doQuery(final CallBack callBack) {
         //设置请求参数
         RequestParams requestParams = new RequestParams(AppConfig.QUERY_MEMBER);
-        requestParams.addParameter("userId", userId);
+        requestParams.addParameter("userId", TrainTicketApplication.getUser().getUserId());
         //发送请求
         x.http().post(requestParams, new Callback.CacheCallback<String>() {
             @Override

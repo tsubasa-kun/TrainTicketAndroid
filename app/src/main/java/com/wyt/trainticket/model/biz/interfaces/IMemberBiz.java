@@ -11,8 +11,7 @@ import com.love_cookies.cookie_library.interfaces.CallBack;
 public interface IMemberBiz {
     /**
      * 查询联系人
-     * @param userId
      * @param callBack
      */
-    void doQuery(String userId, CallBack callBack);
+    void doQuery(CallBack callBack);
 }
