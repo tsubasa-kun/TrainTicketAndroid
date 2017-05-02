@@ -250,6 +250,11 @@
                 android:dividerHeight="1px"
                 android:listSelector="#00000000" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/theme_color" />
+
             <!--提交按钮区域-->
             <LinearLayout
                 android:layout_width="match_parent"

@@ -19,6 +19,7 @@ import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.event.PayTicketEvent;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.presenter.OrderPresenter;
 import com.wyt.trainticket.view.interfaces.IOrderView;
 
@@ -83,8 +84,12 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     OrderBean orderBean = orderData.get(i);
                     ProgressDialogUtils.hideProgress();
+                    OrderListBean orderListBean = new OrderListBean();
+                    List<OrderBean> orders = new ArrayList<OrderBean>();
+                    orders.add(orderBean);
+                    orderListBean.setOrders(orders);
                     Bundle bundle = new Bundle();
-                    bundle.putParcelable("order", orderBean);
+                    bundle.putParcelable("orderList", orderListBean);
                     turn(PayTicketActivity.class, bundle);
                 }
             });
@@ -210,7 +215,7 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
             holder.setText(R.id.seat_tv, orderBean.getSeat());
             holder.setText(R.id.carriage_tv, orderBean.getCarriage() + "车");
             holder.setText(R.id.seat_no_tv, orderBean.getSeatNo() + "座");
-            holder.setText(R.id.real_name_tv, TrainTicketApplication.getUser().getRealName());
+            holder.setText(R.id.real_name_tv, orderBean.getRealName());
             holder.setText(R.id.type_tv, orderBean.getType());
             holder.setText(R.id.money_tv, orderBean.getMoney() + "元");
         }
@@ -218,7 +223,7 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
 
     /**
      * 支付车票事件
-     * from {@link PayTicketActivity#paySuccess(OrderBean)} ()}
+     * from {@link PayTicketActivity#paySuccess(OrderListBean)} ()}
      * @param payTicketEvent
      */
     public void onEvent(PayTicketEvent payTicketEvent) {

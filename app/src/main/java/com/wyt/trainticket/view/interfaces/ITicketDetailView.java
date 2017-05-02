@@ -1,6 +1,6 @@
 package com.wyt.trainticket.view.interfaces;
 
-import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 
 /**
  * Created by cookie on 2017/3/21 0021.
@@ -16,9 +16,9 @@ public interface ITicketDetailView {
     /**
      * 生成订单成功
      *
-     * @param orderBean
+     * @param orderListBean
      */
-    void orderSuccess(OrderBean orderBean);
+    void orderSuccess(OrderListBean orderListBean);
 
     /**
      * 生成订单失败

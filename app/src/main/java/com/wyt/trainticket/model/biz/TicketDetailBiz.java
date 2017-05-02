@@ -3,7 +3,9 @@ package com.wyt.trainticket.model.biz;
 import com.google.gson.Gson;
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.model.bean.ResultBean;
 import com.wyt.trainticket.model.biz.interfaces.ITicketDetailBiz;
 import com.wyt.trainticket.utils.DateTimeUtils;
@@ -19,6 +21,8 @@ import org.xutils.x;
  */
 public class TicketDetailBiz implements ITicketDetailBiz {
 
+    Gson gson = new Gson();
+
     /**
      * 提交
      *
@@ -26,7 +30,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
      * @param callBack   回调
      */
     @Override
-    public void doSubmit(final OrderBean orderBean, final CallBack callBack) {
+    public void doSubmit(final OrderBean orderBean, MemberListBean memberListBean, final CallBack callBack) {
         String dateTime = orderBean.getDate() + " " + orderBean.getStartTime();
         String timestamp = DateTimeUtils.getInstance().dataToTimestamp(dateTime);
         orderBean.setOrderId(timestamp);
@@ -34,6 +38,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         RequestParams requestParams = new RequestParams(AppConfig.ORDER_TICKET);
         requestParams.addParameter("orderId", orderBean.getOrderId());
         requestParams.addParameter("account", orderBean.getAccount());
+        requestParams.addParameter("members", gson.toJson(memberListBean));
         requestParams.addParameter("trainNo", orderBean.getTrainNo());
         requestParams.addParameter("fromStation", orderBean.getFromStation());
         requestParams.addParameter("startTime", orderBean.getStartTime());
@@ -49,13 +54,11 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         x.http().post(requestParams, new Callback.CacheCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Gson gson = new Gson();
-                OrderBean resultOrder = gson.fromJson(result, OrderBean.class);
-                if (resultOrder.getResStatus().equals("success")) {
-                    orderBean.setId(resultOrder.getId());
-                    callBack.onSuccess(orderBean);
+                OrderListBean orderListBean = gson.fromJson(result, OrderListBean.class);
+                if (orderListBean.getResStatus().equals("success")) {
+                    callBack.onSuccess(orderListBean);
                 } else {
-                    callBack.onFailed(resultOrder.getResMsg());
+                    callBack.onFailed(orderListBean.getResMsg());
                 }
             }
 

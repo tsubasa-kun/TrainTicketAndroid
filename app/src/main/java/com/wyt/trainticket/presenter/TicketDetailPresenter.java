@@ -1,7 +1,9 @@
 package com.wyt.trainticket.presenter;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
+import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.model.biz.TicketDetailBiz;
 import com.wyt.trainticket.view.interfaces.ITicketDetailView;
 
@@ -25,11 +27,11 @@ public class TicketDetailPresenter {
      *
      * @param orderBean
      */
-    public void doSubmit(OrderBean orderBean) {
-        ticketDetailBiz.doSubmit(orderBean, new CallBack() {
+    public void doSubmit(OrderBean orderBean, MemberListBean memberListBean) {
+        ticketDetailBiz.doSubmit(orderBean, memberListBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iTicketDetailView.orderSuccess((OrderBean)result);
+                iTicketDetailView.orderSuccess((OrderListBean)result);
             }
 
             @Override

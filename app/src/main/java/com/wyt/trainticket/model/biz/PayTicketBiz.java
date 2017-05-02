@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.model.bean.ResultBean;
 import com.wyt.trainticket.model.biz.interfaces.IPayTicketBiz;
 import com.wyt.trainticket.utils.DateTimeUtils;
@@ -19,25 +20,27 @@ import org.xutils.x;
  */
 
 public class PayTicketBiz implements IPayTicketBiz {
+
+    Gson gson = new Gson();
+
     /**
      * 提交
      *
-     * @param orderBean
+     * @param orderListBean
      * @param callBack   回调
      */
     @Override
-    public void doSubmit(final OrderBean orderBean, final CallBack callBack) {
+    public void doSubmit(final OrderListBean orderListBean, final CallBack callBack) {
         //组装请求参数
         RequestParams requestParams = new RequestParams(AppConfig.PAY_TICKET);
-        requestParams.addParameter("id", orderBean.getId());
+        requestParams.addParameter("orders", gson.toJson(orderListBean));
         //发送请求
         x.http().post(requestParams, new Callback.CacheCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Gson gson = new Gson();
                 ResultBean resultBean = gson.fromJson(result, ResultBean.class);
                 if (resultBean.getResStatus().equals("success")) {
-                    callBack.onSuccess(orderBean);
+                    callBack.onSuccess(orderListBean);
                 } else {
                     callBack.onFailed(resultBean.getResMsg());
                 }

@@ -16,6 +16,7 @@ import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.event.PayTicketEvent;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.presenter.PayTicketPresenter;
 import com.wyt.trainticket.view.interfaces.IPayTicketView;
 
@@ -33,8 +34,9 @@ import de.greenrobot.event.EventBus;
 public class PayTicketActivity extends BaseActivity implements IPayTicketView {
 
     private String payTyp;
-    private OrderBean orderBean;
+    private OrderListBean orderListBean;
     private PayTicketPresenter payTicketPresenter = new PayTicketPresenter(this);
+    private int money;
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -57,13 +59,14 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
     @Override
     public void initWidget(Bundle savedInstanceState) {
         //获取前一个页面传过来的数据
-        orderBean = getIntent().getParcelableExtra("order");
+        orderListBean = getIntent().getParcelableExtra("orderList");
         //设置Title
         titleTv.setText(R.string.pay_ticket);
         //设置Title左按钮
         leftBtn.setImageResource(R.drawable.ic_keyboard_backspace_white);
         //设置应付金额
-        shouldPayMoneyTv.setText(String.format(getResources().getString(R.string.should_pay_money), orderBean.getMoney()));
+        money = orderListBean.getOrders().size() * Integer.parseInt(orderListBean.getOrders().get(0).getMoney());
+        shouldPayMoneyTv.setText(String.format(getResources().getString(R.string.should_pay_money), money + ""));
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
@@ -103,7 +106,7 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
     @Override
     public void doSubmit() {
         //拼装车票信息提示
-        String message = "应付金额为" + orderBean.getMoney() + "元，使用" + payTyp + "支付，是否确认支付购票？";
+        String message = "应付金额为" + money + "元，使用" + payTyp + "支付，是否确认支付购票？";
         //弹出确认框
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(message);
@@ -111,7 +114,7 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 ProgressDialogUtils.showProgress(PayTicketActivity.this, "支付中...");
-                payTicketPresenter.doSubmit(orderBean);
+                payTicketPresenter.doSubmit(orderListBean);
                 dialog.dismiss();
             }
         });
@@ -127,15 +130,17 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
     /**
      * 支付成功
      *
-     * @param orderBean
+     * @param orderListBean
      */
     @Override
-    public void paySuccess(OrderBean orderBean) {
+    public void paySuccess(OrderListBean orderListBean) {
         ProgressDialogUtils.hideProgress();
-        Bundle bundle = new Bundle();
-        bundle.putParcelable("order", orderBean);
-        turnThenFinish(OutTicketActivity.class, bundle);
-        EventBus.getDefault().post(new PayTicketEvent());
+        for (int i = 0; i < orderListBean.getOrders().size(); i ++) {
+            Bundle bundle = new Bundle();
+            bundle.putParcelable("order", orderListBean.getOrders().get(i));
+            turnThenFinish(OutTicketActivity.class, bundle);
+            EventBus.getDefault().post(new PayTicketEvent());
+        }
     }
 
     /**

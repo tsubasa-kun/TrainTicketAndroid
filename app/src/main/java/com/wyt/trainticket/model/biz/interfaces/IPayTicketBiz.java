@@ -1,7 +1,7 @@
 package com.wyt.trainticket.model.biz.interfaces;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
-import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 
 /**
  * Created by Cookie on 2017/4/19.
@@ -13,8 +13,8 @@ public interface IPayTicketBiz {
     /**
      * 提交
      *
-     * @param orderBean
+     * @param orderListBean
      * @param callBack   回调
      */
-    void doSubmit(OrderBean orderBean, CallBack callBack);
+    void doSubmit(OrderListBean orderListBean, CallBack callBack);
 }

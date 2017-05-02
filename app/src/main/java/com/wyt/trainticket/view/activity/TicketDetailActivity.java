@@ -5,8 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -25,6 +23,7 @@ import com.wyt.trainticket.config.AppConfig;
 import com.wyt.trainticket.model.bean.MemberBean;
 import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.model.bean.TicketBean;
 import com.wyt.trainticket.presenter.TicketDetailPresenter;
 import com.wyt.trainticket.view.interfaces.ITicketDetailView;
@@ -237,7 +236,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                         orderBean.setSeatNo(seatNo);
                         orderBean.setMoney(money + "");
                         orderBean.setType(type);
-                        ticketDetailPresenter.doSubmit(orderBean);
+                        ticketDetailPresenter.doSubmit(orderBean, memberListBean);
                         dialog.dismiss();
                     }
                 });
@@ -267,13 +266,13 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     /**
      * 生成订单成功
      *
-     * @param orderBean
+     * @param orderListBean
      */
     @Override
-    public void orderSuccess(OrderBean orderBean) {
+    public void orderSuccess(OrderListBean orderListBean) {
         ProgressDialogUtils.hideProgress();
         Bundle bundle = new Bundle();
-        bundle.putParcelable("order", orderBean);
+        bundle.putParcelable("orderList", orderListBean);
         turnThenFinish(PayTicketActivity.class, bundle);
     }
 

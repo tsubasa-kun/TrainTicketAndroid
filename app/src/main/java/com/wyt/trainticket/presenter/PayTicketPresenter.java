@@ -2,6 +2,7 @@ package com.wyt.trainticket.presenter;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.model.biz.PayTicketBiz;
 import com.wyt.trainticket.view.interfaces.IPayTicketView;
 
@@ -22,13 +23,13 @@ public class PayTicketPresenter {
 
     /**
      * 提交
-     * @param orderBean
+     * @param orderListBean
      */
-    public void doSubmit(OrderBean orderBean) {
-        payTicketBiz.doSubmit(orderBean, new CallBack() {
+    public void doSubmit(OrderListBean orderListBean) {
+        payTicketBiz.doSubmit(orderListBean, new CallBack() {
             @Override
             public void onSuccess(Object result) {
-                iPayTicketView.paySuccess((OrderBean)result);
+                iPayTicketView.paySuccess((OrderListBean)result);
             }
 
             @Override

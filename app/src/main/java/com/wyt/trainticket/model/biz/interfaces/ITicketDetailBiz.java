@@ -1,6 +1,7 @@
 package com.wyt.trainticket.model.biz.interfaces;
 
 import com.love_cookies.cookie_library.interfaces.CallBack;
+import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderBean;
 
 /**
@@ -15,5 +16,5 @@ public interface ITicketDetailBiz {
      * @param orderBean
      * @param callBack   回调
      */
-    void doSubmit(OrderBean orderBean, CallBack callBack);
+    void doSubmit(OrderBean orderBean, MemberListBean memberListBean, CallBack callBack);
 }

@@ -12,6 +12,7 @@ public class OrderBean extends ResultBean implements Parcelable {
     private int id;//ID
     private String orderId;//订单ID
     private String account;//账户
+    private String realName;//真实姓名
     private String trainNo;//车次
     private String fromStation;//出发地
     private String startTime;//出发时间
@@ -23,6 +24,14 @@ public class OrderBean extends ResultBean implements Parcelable {
     private String seatNo;// 座位号
     private String money;//票价
     private String type;//车票类型
+
+    public String getRealName() {
+        return realName;
+    }
+
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
 
     public int getId() {
         return id;
@@ -136,6 +145,9 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.type = type;
     }
 
+    public OrderBean() {
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -143,9 +155,11 @@ public class OrderBean extends ResultBean implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        super.writeToParcel(dest, flags);
         dest.writeInt(this.id);
         dest.writeString(this.orderId);
         dest.writeString(this.account);
+        dest.writeString(this.realName);
         dest.writeString(this.trainNo);
         dest.writeString(this.fromStation);
         dest.writeString(this.startTime);
@@ -159,13 +173,12 @@ public class OrderBean extends ResultBean implements Parcelable {
         dest.writeString(this.type);
     }
 
-    public OrderBean() {
-    }
-
     protected OrderBean(Parcel in) {
+        super(in);
         this.id = in.readInt();
         this.orderId = in.readString();
         this.account = in.readString();
+        this.realName = in.readString();
         this.trainNo = in.readString();
         this.fromStation = in.readString();
         this.startTime = in.readString();
@@ -179,7 +192,7 @@ public class OrderBean extends ResultBean implements Parcelable {
         this.type = in.readString();
     }
 
-    public static final Parcelable.Creator<OrderBean> CREATOR = new Parcelable.Creator<OrderBean>() {
+    public static final Creator<OrderBean> CREATOR = new Creator<OrderBean>() {
         @Override
         public OrderBean createFromParcel(Parcel source) {
             return new OrderBean(source);
