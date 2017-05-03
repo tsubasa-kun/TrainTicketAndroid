@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -205,7 +206,7 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
         }
 
         @Override
-        public void convert(CommonViewHolder holder, OrderBean orderBean) {
+        public void convert(CommonViewHolder holder, final OrderBean orderBean) {
             //设置每项字段值
             holder.setText(R.id.date_tv, orderBean.getDate());
             holder.setText(R.id.start_time_tv, orderBean.getStartTime() + "开");
@@ -218,6 +219,27 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
             holder.setText(R.id.real_name_tv, orderBean.getRealName());
             holder.setText(R.id.type_tv, orderBean.getType());
             holder.setText(R.id.money_tv, orderBean.getMoney() + "元");
+
+            //退票改签按钮区域的显示和隐藏
+            LinearLayout tuiGaiLl = holder.getView(R.id.tui_gai_btn_ll);
+            tuiGaiLl.setVisibility(View.GONE);
+            if (ORDER_STATUS == AppConfig.ORDER_NOW) {
+                tuiGaiLl.setVisibility(View.VISIBLE);
+                TextView tuiBtn = holder.getView(R.id.tui_ticket_btn);
+                tuiBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        ToastUtils.show(OrderActivity.this, orderBean.getRealName() + "退票");
+                    }
+                });
+                TextView gaiBtn = holder.getView(R.id.gai_ticket_btn);
+                gaiBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        ToastUtils.show(OrderActivity.this, orderBean.getRealName() + "改签");
+                    }
+                });
+            }
         }
     }
 
