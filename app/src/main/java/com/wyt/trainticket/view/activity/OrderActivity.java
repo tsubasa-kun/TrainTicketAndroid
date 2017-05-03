@@ -229,14 +229,18 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
                 tuiBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        ToastUtils.show(OrderActivity.this, orderBean.getRealName() + "退票");
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelable("order", orderBean);
+                        turn(TuiTicketActivity.class, bundle);
                     }
                 });
                 TextView gaiBtn = holder.getView(R.id.gai_ticket_btn);
                 gaiBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        ToastUtils.show(OrderActivity.this, orderBean.getRealName() + "改签");
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelable("order", orderBean);
+                        turn(GaiTicketActivity.class, bundle);
                     }
                 });
             }

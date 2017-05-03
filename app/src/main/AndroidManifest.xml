@@ -35,7 +35,9 @@
         <activity android:name=".view.activity.MemberActivity" />
         <activity android:name=".view.activity.AddMemberActivity" />
         <activity android:name=".view.activity.ModifyMemberActivity" />
-        <activity android:name=".view.activity.SelectMemberActivity"></activity>
+        <activity android:name=".view.activity.SelectMemberActivity" />
+        <activity android:name=".view.activity.TuiTicketActivity" />
+        <activity android:name=".view.activity.GaiTicketActivity"></activity>
     </application>
 
 </manifest>

@@ -175,7 +175,7 @@
             android:background="@drawable/common_btn_bg"
             android:gravity="center"
             android:padding="4dp"
-            android:text="@string/tui_ticket_btn_text"
+            android:text="@string/tui_ticket_text"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -187,7 +187,7 @@
             android:background="@drawable/common_btn_bg"
             android:gravity="center"
             android:padding="4dp"
-            android:text="@string/gai_ticket_btn_text"
+            android:text="@string/gai_ticket_text"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
