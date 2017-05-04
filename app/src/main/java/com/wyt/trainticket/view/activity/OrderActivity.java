@@ -240,7 +240,7 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
                     public void onClick(View view) {
                         Bundle bundle = new Bundle();
                         bundle.putParcelable("order", orderBean);
-                        turn(GaiTicketActivity.class, bundle);
+                        turn(QueryTicketActivity.class, bundle);
                     }
                 });
             }
@@ -251,6 +251,7 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
      * 支付车票事件
      * from {@link PayTicketActivity#paySuccess(OrderListBean)} ()}
      * from {@link TuiTicketActivity#tuiTicketSuccess()}
+     * from {@link TicketDetailActivity#orderSuccess(OrderListBean)}
      * @param orderChangeEvent
      */
     public void onEvent(OrderChangeEvent orderChangeEvent) {

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -20,6 +21,7 @@ import com.love_cookies.cookie_library.widget.MeasuredListView;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.event.OrderChangeEvent;
 import com.wyt.trainticket.model.bean.MemberBean;
 import com.wyt.trainticket.model.bean.MemberListBean;
 import com.wyt.trainticket.model.bean.OrderBean;
@@ -32,8 +34,11 @@ import com.wyt.trainticket.view.widget.RadioGroupEx;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by cookie on 2017/3/20 0020.
@@ -54,6 +59,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     private TicketDetailPresenter ticketDetailPresenter = new TicketDetailPresenter(this);
     private int SELECT_MEMBER = 0;
     private MemberListBean memberListBean = new MemberListBean();
+    private OrderBean order;
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -103,6 +109,17 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         startDate = getIntent().getStringExtra("startDate");
         ticketInfo = getIntent().getParcelableExtra("ticket_info");
         type = getIntent().getStringExtra("type");
+        order = getIntent().getParcelableExtra("order");
+
+        if (order != null) {
+            MemberBean memberBean = new MemberBean();
+            memberBean.setMemberRealName(order.getRealName());
+            List<MemberBean> orderMember = new ArrayList<>();
+            orderMember.add(memberBean);
+            memberListBean.setMembers(orderMember);
+            addMemberBtn.setVisibility(View.GONE);
+        }
+
         switch (type) {
             default:
             case AppConfig.ADULT:
@@ -215,7 +232,10 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                 //拼装车票信息提示
                 String message = "当前所选车次为" + startDate + " " + ticketInfo.getStartTime() + "发出的"
                         + ticketInfo.getTrainCode() + "次列车，您的座位为" + carriage + "车" + seatNo
-                        + "座。车票价格为" + money + "元";
+                        + "座。车票价格为" + money + "元。";
+                if (order != null && !TextUtils.isEmpty(order.getMoney())) {
+                    message = message + "\n改签前的车票车票费用：" + order.getMoney() + "将原路退回。";
+                }
                 //弹出确认框
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage(message);
@@ -236,7 +256,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                         orderBean.setSeatNo(seatNo);
                         orderBean.setMoney(money + "");
                         orderBean.setType(type);
-                        ticketDetailPresenter.doSubmit(orderBean, memberListBean);
+                        ticketDetailPresenter.doSubmit(orderBean, memberListBean, order);
                         dialog.dismiss();
                     }
                 });
@@ -273,6 +293,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         ProgressDialogUtils.hideProgress();
         Bundle bundle = new Bundle();
         bundle.putParcelable("orderList", orderListBean);
+        EventBus.getDefault().post(new OrderChangeEvent());
         turnThenFinish(PayTicketActivity.class, bundle);
     }
 

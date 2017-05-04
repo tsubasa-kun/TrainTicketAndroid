@@ -30,7 +30,7 @@ public class TicketDetailBiz implements ITicketDetailBiz {
      * @param callBack   回调
      */
     @Override
-    public void doSubmit(final OrderBean orderBean, MemberListBean memberListBean, final CallBack callBack) {
+    public void doSubmit(final OrderBean orderBean, MemberListBean memberListBean, OrderBean oldOrder, final CallBack callBack) {
         String dateTime = orderBean.getDate() + " " + orderBean.getStartTime();
         String timestamp = DateTimeUtils.getInstance().dataToTimestamp(dateTime);
         orderBean.setOrderId(timestamp);
@@ -50,6 +50,11 @@ public class TicketDetailBiz implements ITicketDetailBiz {
         requestParams.addParameter("seatNo", orderBean.getSeatNo());
         requestParams.addParameter("money", orderBean.getMoney());
         requestParams.addParameter("type", orderBean.getType());
+
+        if (oldOrder != null) {
+            requestParams.addParameter("id", oldOrder.getId());
+        }
+
         //发送请求
         x.http().post(requestParams, new Callback.CacheCallback<String>() {
             @Override

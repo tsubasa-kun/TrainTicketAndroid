@@ -12,9 +12,10 @@ import com.wyt.trainticket.model.bean.OrderBean;
 public interface ITicketDetailBiz {
     /**
      * 提交
-     *
      * @param orderBean
-     * @param callBack   回调
+     * @param memberListBean
+     * @param oldOrder
+     * @param callBack
      */
-    void doSubmit(OrderBean orderBean, MemberListBean memberListBean, CallBack callBack);
+    void doSubmit(OrderBean orderBean, MemberListBean memberListBean, OrderBean oldOrder, CallBack callBack);
 }

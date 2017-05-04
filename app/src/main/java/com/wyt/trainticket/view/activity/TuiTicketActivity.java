@@ -126,7 +126,7 @@ public class TuiTicketActivity extends BaseActivity implements ITuiTicketView {
     public void tuiTicketSuccess() {
         ProgressDialogUtils.hideProgress();
         //信息提示
-        String message = "退票成功，车票费用：" + orderBean.getMoney() + "将原路退回";
+        String message = "退票成功，车票费用：" + orderBean.getMoney() + "将原路退回。";
         //弹出确认框
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(message);

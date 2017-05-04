@@ -24,11 +24,12 @@ public class TicketDetailPresenter {
 
     /**
      * 提交
-     *
      * @param orderBean
+     * @param memberListBean
+     * @param oldOrder
      */
-    public void doSubmit(OrderBean orderBean, MemberListBean memberListBean) {
-        ticketDetailBiz.doSubmit(orderBean, memberListBean, new CallBack() {
+    public void doSubmit(OrderBean orderBean, MemberListBean memberListBean, OrderBean oldOrder) {
+        ticketDetailBiz.doSubmit(orderBean, memberListBean, oldOrder, new CallBack() {
             @Override
             public void onSuccess(Object result) {
                 iTicketDetailView.orderSuccess((OrderListBean)result);

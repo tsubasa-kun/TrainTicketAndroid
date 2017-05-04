@@ -14,6 +14,9 @@ import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.config.AppConfig;
+import com.wyt.trainticket.event.OrderChangeEvent;
+import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.model.bean.TicketBean;
 import com.wyt.trainticket.model.bean.TicketListBean;
 import com.wyt.trainticket.presenter.QueryTicketPresenter;
@@ -21,6 +24,8 @@ import com.wyt.trainticket.view.interfaces.IQueryTicketView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
+
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by cookie on 2017/3/17 0017.
@@ -35,6 +40,7 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
     private String startDate;
     private String type;
     private int model;
+    private OrderBean order;
     private QueryTicketPresenter queryTicketPresenter = new QueryTicketPresenter(this);
 
     @ViewInject(R.id.title_tv)
@@ -53,12 +59,23 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
      */
     @Override
     public void initWidget(Bundle savedInstanceState) {
+        //注册EventBus
+        EventBus.getDefault().register(this);
         //获取前面页面传递过来的参数
         startStation = getIntent().getStringExtra("startStation");
         endStation = getIntent().getStringExtra("endStation");
         startDate = getIntent().getStringExtra("startDate");
         type = getIntent().getStringExtra("type");
         model = getIntent().getIntExtra("model", AppConfig.MODEL_ALL);
+        order = getIntent().getParcelableExtra("order");
+
+        if (order != null) {
+            startStation = order.getFromStation();
+            endStation = order.getToStation();
+            startDate = order.getDate();
+            type = order.getType();
+        }
+
         //设置Title
         titleTv.setText(startDate);
         //设置Title左按钮
@@ -139,6 +156,7 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
                 bundle.putString("startDate", startDate);
                 bundle.putString("type", type);
                 bundle.putParcelable("ticket_info", ticketListBean.getTickets().get(position));
+                bundle.putParcelable("order", order);
                 turn(TicketDetailActivity.class, bundle);
             }
         });
@@ -151,6 +169,17 @@ public class QueryTicketActivity extends BaseActivity implements IQueryTicketVie
     public void queryFailed() {
         ProgressDialogUtils.hideProgress();
         ToastUtils.show(this, R.string.query_ticket_failed);
+    }
+
+    /**
+     * 支付车票事件
+     * from {@link PayTicketActivity#paySuccess(OrderListBean)}
+     * from {@link TuiTicketActivity#tuiTicketSuccess()}
+     * from {@link TicketDetailActivity#orderSuccess(OrderListBean)}
+     * @param orderChangeEvent
+     */
+    public void onEvent(OrderChangeEvent orderChangeEvent) {
+        finish();
     }
 
 }
