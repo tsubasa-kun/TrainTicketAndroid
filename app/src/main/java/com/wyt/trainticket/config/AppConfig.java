@@ -168,4 +168,9 @@ public class AppConfig {
      * 删除联系人
      */
     public static final String DELETE_MEMBER = SERVER_URL + "DeleteMemberServlet";
+
+    /**
+     * 退票
+     */
+    public static final String TUI_TICKET = SERVER_URL + "TuiTicketServlet";
 }

@@ -14,8 +14,7 @@ import com.love_cookies.cookie_library.activity.BaseActivity;
 import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
 import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
-import com.wyt.trainticket.event.PayTicketEvent;
-import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.event.OrderChangeEvent;
 import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.presenter.PayTicketPresenter;
 import com.wyt.trainticket.view.interfaces.IPayTicketView;
@@ -139,7 +138,7 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
             Bundle bundle = new Bundle();
             bundle.putParcelable("order", orderListBean.getOrders().get(i));
             turnThenFinish(OutTicketActivity.class, bundle);
-            EventBus.getDefault().post(new PayTicketEvent());
+            EventBus.getDefault().post(new OrderChangeEvent());
         }
     }
 

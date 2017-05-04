@@ -1,16 +1,26 @@
 package com.wyt.trainticket.view.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.love_cookies.cookie_library.activity.BaseActivity;
+import com.love_cookies.cookie_library.utils.ProgressDialogUtils;
+import com.love_cookies.cookie_library.utils.ToastUtils;
 import com.wyt.trainticket.R;
+import com.wyt.trainticket.app.TrainTicketApplication;
+import com.wyt.trainticket.event.OrderChangeEvent;
 import com.wyt.trainticket.model.bean.OrderBean;
+import com.wyt.trainticket.presenter.TuiTicketPresenter;
+import com.wyt.trainticket.view.interfaces.ITuiTicketView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
+
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by cookie on 2017/05/04 0004.
@@ -18,15 +28,15 @@ import org.xutils.view.annotation.ViewInject;
  * 退票页
  */
 @ContentView(R.layout.activity_tui_ticket)
-public class TuiTicketActivity extends BaseActivity {
+public class TuiTicketActivity extends BaseActivity implements ITuiTicketView {
 
     private OrderBean orderBean;
+    private TuiTicketPresenter tuiTicketPresenter = new TuiTicketPresenter(this);
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
     @ViewInject(R.id.left_btn)
     private ImageView leftBtn;
-
     @ViewInject(R.id.date_tv)
     private TextView dateTv;
     @ViewInject(R.id.start_time_tv)
@@ -94,10 +104,50 @@ public class TuiTicketActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tui_ticket_btn:
-                //退票把status改成2，orderID改成0
+                doTuiTicket();
                 break;
             default:
                 break;
         }
+    }
+
+    /**
+     * 退票
+     */
+    @Override
+    public void doTuiTicket() {
+        tuiTicketPresenter.doTuiTicket(orderBean.getId());
+    }
+
+    /**
+     * 退票成功
+     */
+    @Override
+    public void tuiTicketSuccess() {
+        ProgressDialogUtils.hideProgress();
+        //信息提示
+        String message = "退票成功，车票费用：" + orderBean.getMoney() + "将原路退回";
+        //弹出确认框
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(message);
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+                EventBus.getDefault().post(new OrderChangeEvent());
+                dialog.dismiss();
+            }
+        });
+        builder.create().show();
+    }
+
+    /**
+     * 退票失败
+     * @param msg
+     */
+    @Override
+    public void tuiTicketFailed(String msg) {
+        ProgressDialogUtils.hideProgress();
+        ToastUtils.show(this, msg);
     }
 }

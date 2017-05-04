@@ -18,7 +18,7 @@ import com.love_cookies.cookie_library.widget.LoadAndRefreshView;
 import com.wyt.trainticket.R;
 import com.wyt.trainticket.app.TrainTicketApplication;
 import com.wyt.trainticket.config.AppConfig;
-import com.wyt.trainticket.event.PayTicketEvent;
+import com.wyt.trainticket.event.OrderChangeEvent;
 import com.wyt.trainticket.model.bean.OrderBean;
 import com.wyt.trainticket.model.bean.OrderListBean;
 import com.wyt.trainticket.presenter.OrderPresenter;
@@ -250,9 +250,10 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
     /**
      * 支付车票事件
      * from {@link PayTicketActivity#paySuccess(OrderListBean)} ()}
-     * @param payTicketEvent
+     * from {@link TuiTicketActivity#tuiTicketSuccess()}
+     * @param orderChangeEvent
      */
-    public void onEvent(PayTicketEvent payTicketEvent) {
+    public void onEvent(OrderChangeEvent orderChangeEvent) {
         offset = 0;
         getOrder(offset);
     }
