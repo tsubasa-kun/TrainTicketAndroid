@@ -225,7 +225,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     @Override
     public void doSubmit() {
         if (memberListBean.getMembers() != null && memberListBean.getMembers().size() > 0) {
-            if (!seatCount.equals("--") && !seatCount.equals("无")) {
+            if (!seatCount.equals("--") && !seatCount.equals("无")  && !seatCount.equals("0")) {
                 if (seat.equals("无座")) {
                     seatNo = "无";
                 }
