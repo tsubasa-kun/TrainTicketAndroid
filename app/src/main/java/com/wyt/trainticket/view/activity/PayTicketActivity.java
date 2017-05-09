@@ -35,7 +35,7 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
     private String payTyp;
     private OrderListBean orderListBean;
     private PayTicketPresenter payTicketPresenter = new PayTicketPresenter(this);
-    private int money;
+    private double money;
 
     @ViewInject(R.id.title_tv)
     private TextView titleTv;
@@ -64,7 +64,7 @@ public class PayTicketActivity extends BaseActivity implements IPayTicketView {
         //设置Title左按钮
         leftBtn.setImageResource(R.drawable.ic_keyboard_backspace_white);
         //设置应付金额
-        money = orderListBean.getOrders().size() * Integer.parseInt(orderListBean.getOrders().get(0).getMoney());
+        money = orderListBean.getOrders().size() * Double.valueOf(orderListBean.getOrders().get(0).getMoney());
         shouldPayMoneyTv.setText(String.format(getResources().getString(R.string.should_pay_money), money + ""));
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);

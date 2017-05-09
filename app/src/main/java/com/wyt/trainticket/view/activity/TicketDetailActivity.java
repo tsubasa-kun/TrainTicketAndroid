@@ -52,7 +52,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
     private TicketBean ticketInfo;
     private String seat = AppConfig.SWZ;//席别
     private String seatCount = "--";//席别车票数
-    private int money;//票价
+    private double money;//票价
     private int carriage;//车厢
     private String seatNo;//座位号
     private String type;//车票类型
@@ -152,7 +152,7 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
         wzRb.setText(String.format(getResources().getString(R.string.wz_num_text), ticketInfo.getWzNum()));
         //默认选中商务座
         seatCount = ticketInfo.getSwzNum();
-        money = Integer.parseInt(ticketInfo.getSwzMoney());
+        money = Double.valueOf(ticketInfo.getSwzMoney());
         //添加按钮点击事件
         leftBtn.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
@@ -165,32 +165,32 @@ public class TicketDetailActivity extends BaseActivity implements ITicketDetailV
                     case R.id.swz_rb:
                         seat = AppConfig.SWZ;
                         seatCount = ticketInfo.getSwzNum();
-                        money = Integer.parseInt(ticketInfo.getSwzMoney());
+                        money = Double.valueOf(ticketInfo.getSwzMoney());
                         break;
                     case R.id.zy_rb:
                         seat = AppConfig.YDZ;
                         seatCount = ticketInfo.getZyNum();
-                        money = Integer.parseInt(ticketInfo.getZyMoney());
+                        money = Double.valueOf(ticketInfo.getZyMoney());
                         break;
                     case R.id.ze_rb:
                         seat = AppConfig.EDZ;
                         seatCount = ticketInfo.getZeNum();
-                        money = Integer.parseInt(ticketInfo.getZeMoney());
+                        money = Double.valueOf(ticketInfo.getZeMoney());
                         break;
                     case R.id.yz_rb:
                         seat = AppConfig.YZ;
                         seatCount = ticketInfo.getYzNum();
-                        money = Integer.parseInt(ticketInfo.getYzMoney());
+                        money = Double.valueOf(ticketInfo.getYzMoney());
                         break;
                     case R.id.yw_rb:
                         seat = AppConfig.YW;
                         seatCount = ticketInfo.getYwNum();
-                        money = Integer.parseInt(ticketInfo.getYwMoney());
+                        money = Double.valueOf(ticketInfo.getYwMoney());
                         break;
                     case R.id.wz_rb:
                         seat = AppConfig.WZ;
                         seatCount = ticketInfo.getWzNum();
-                        money = Integer.parseInt(ticketInfo.getWzMoney());
+                        money = Double.valueOf(ticketInfo.getWzMoney());
                         break;
                 }
             }
