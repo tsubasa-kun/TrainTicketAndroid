@@ -2,6 +2,7 @@ package com.wyt.trainticket.view.activity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -31,6 +32,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.greenrobot.event.EventBus;
+
+import static android.R.attr.delay;
 
 /**
  * Created by cookie on 2017/3/21 0021.
@@ -256,7 +259,13 @@ public class OrderActivity extends BaseActivity implements IOrderView, LoadAndRe
      */
     public void onEvent(OrderChangeEvent orderChangeEvent) {
         offset = 0;
-        getOrder(offset);
+//        getOrder(offset);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        offset = 0;
+        getOrder(offset);
+    }
 }

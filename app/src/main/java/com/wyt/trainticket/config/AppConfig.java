@@ -102,7 +102,7 @@ public class AppConfig {
     /**
      * 域名
      */
-    public static final String DOMAIN = "http://192.168.1.5:8080";
+    public static final String DOMAIN = "http://192.168.1.11:8080";
 
     /**
      * 服务器API地址
